@@ -1,0 +1,10 @@
+//
+// Created by Ted on 20/06/2024.
+//
+
+#ifndef MOSTRANDOM_FREEROAMFUNCTIONS_H
+#define MOSTRANDOM_FREEROAMFUNCTIONS_H
+
+void randomizeFreeRoam();
+
+#endif //MOSTRANDOM_FREEROAMFUNCTIONS_H

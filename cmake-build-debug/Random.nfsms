@@ -1,0 +1,1330 @@
+# AI difficulty and cars for opponents are randomized here
+change_vault gameplay 16_2_2_sprint/ronnie_mccrae gpcore
+update_field gameplay 16_2_2_sprint/ronnie_mccrae SkillLevel 16
+add_field gameplay 16_2_2_sprint/ronnie_mccrae 0xb1ece070
+update_field gameplay 16_2_2_sprint/ronnie_mccrae 0xb1ece070 1
+update_field gameplay 16_2_2_sprint/ronnie_mccrae PresetRide CE_GT2
+change_vault gameplay 16_2_3_sprint/toru_sato gpcore
+update_field gameplay 16_2_3_sprint/toru_sato SkillLevel 15
+add_field gameplay 16_2_3_sprint/toru_sato 0xb1ece070
+update_field gameplay 16_2_3_sprint/toru_sato 0xb1ece070 0.9
+update_field gameplay 16_2_3_sprint/toru_sato PresetRide BL11
+change_vault gameplay 16_1_1_circuit/opponent gpcore
+update_field gameplay 16_1_1_circuit/opponent SkillLevel 77
+add_field gameplay 16_1_1_circuit/opponent 0xb1ece070
+update_field gameplay 16_1_1_circuit/opponent 0xb1ece070 0.9
+update_field gameplay 16_1_1_circuit/opponent PresetRide CASTROLGT
+update_field gameplay race_bin_15/tony_ho SkillLevel 14
+update_field gameplay race_bin_15/tony_ho PresetRide BL15
+update_field gameplay race_bin_14/vince_kilic SkillLevel 16
+update_field gameplay race_bin_14/vince_kilic PresetRide CE_ELISE
+update_field gameplay race_bin_13/victor_vasquez SkillLevel 18
+update_field gameplay race_bin_13/victor_vasquez 0xb1ece070 0.5
+update_field gameplay race_bin_13/victor_vasquez PresetRide BONUS_C6R
+update_field gameplay race_bin_12/isabel_diaz SkillLevel 45
+update_field gameplay race_bin_12/isabel_diaz 0xb1ece070 0.6
+update_field gameplay race_bin_12/isabel_diaz PresetRide BL7
+update_field gameplay race_bin_11/lou_park SkillLevel 52
+update_field gameplay race_bin_11/lou_park 0xb1ece070 0.9
+update_field gameplay race_bin_11/lou_park PresetRide OPM_WRX_VERSION2
+update_field gameplay race_bin_10/karl_smit SkillLevel 47
+update_field gameplay race_bin_10/karl_smit 0xb1ece070 0.1
+update_field gameplay race_bin_10/karl_smit PresetRide BL10
+update_field gameplay race_bin_09/pierre_dupont SkillLevel 41
+update_field gameplay race_bin_09/pierre_dupont 0xb1ece070 0.7
+update_field gameplay race_bin_09/pierre_dupont PresetRide CE_ELISE
+update_field gameplay race_bin_08/jade_barrett SkillLevel 41
+update_field gameplay race_bin_08/jade_barrett 0xb1ece070 0.1
+update_field gameplay race_bin_08/jade_barrett PresetRide CE_SUPRA
+update_field gameplay race_bin_07/kira_nazakato SkillLevel 21
+update_field gameplay race_bin_07/kira_nazakato 0xb1ece070 0.6
+update_field gameplay race_bin_07/kira_nazakato PresetRide OPM_WRX_VERSION2
+update_field gameplay race_bin_06/hector_domingo SkillLevel 33
+update_field gameplay race_bin_06/hector_domingo 0xb1ece070 0.3
+update_field gameplay race_bin_06/hector_domingo PresetRide BL5
+update_field gameplay race_bin_05/wes_allen SkillLevel 59
+update_field gameplay race_bin_05/wes_allen 0xb1ece070 0.1
+update_field gameplay race_bin_05/wes_allen PresetRide BL12
+update_field gameplay race_bin_04/joe_vega SkillLevel 91
+update_field gameplay race_bin_04/joe_vega 0xb1ece070 0
+update_field gameplay race_bin_04/joe_vega PresetRide BL15
+update_field gameplay race_bin_03/ronnie_mccrea SkillLevel 39
+update_field gameplay race_bin_03/ronnie_mccrea 0xb1ece070 0.9
+update_field gameplay race_bin_03/ronnie_mccrea PresetRide BL2
+update_field gameplay race_bin_02/toro_sato SkillLevel 100
+update_field gameplay race_bin_02/toro_sato 0xb1ece070 0.2
+update_field gameplay race_bin_02/toro_sato PresetRide CASTROLGT
+update_field gameplay race_bin_01/razor_callahan SkillLevel 60
+update_field gameplay race_bin_01/razor_callahan 0xb1ece070 0.3
+update_field gameplay race_bin_01/razor_callahan PresetRide CE_C6R
+change_vault gameplay 16_1_1_circuit/opponent2 gpcore
+update_field gameplay 16_1_1_circuit/opponent2 SkillLevel 41
+add_field gameplay 16_1_1_circuit/opponent2 0xb1ece070
+update_field gameplay 16_1_1_circuit/opponent2 0xb1ece070 0.6
+update_field gameplay 16_1_1_circuit/opponent2 PresetRide BL12
+change_vault gameplay 16_1_1_circuit/opponent3 gpcore
+update_field gameplay 16_1_1_circuit/opponent3 SkillLevel 33
+add_field gameplay 16_1_1_circuit/opponent3 0xb1ece070
+update_field gameplay 16_1_1_circuit/opponent3 0xb1ece070 0.3
+update_field gameplay 16_1_1_circuit/opponent3 PresetRide BL15
+change_vault gameplay race_bin_01/character1 gpcore
+update_field gameplay race_bin_01/character1 SkillLevel 84
+update_field gameplay race_bin_01/character1 0xb1ece070 0.5
+change_vault gameplay race_bin_01/character2 gpcore
+update_field gameplay race_bin_01/character2 SkillLevel 90
+update_field gameplay race_bin_01/character2 0xb1ece070 0.6
+change_vault gameplay race_bin_01/character3 gpcore
+update_field gameplay race_bin_01/character3 SkillLevel 79
+update_field gameplay race_bin_01/character3 0xb1ece070 0.6
+add_field gameplay race_bin_01/character3 PresetRide
+update_field gameplay race_bin_01/character3 PresetRide CASTROLGT
+change_vault gameplay race_bin_02/character1 gpcore
+update_field gameplay race_bin_02/character1 SkillLevel 61
+update_field gameplay race_bin_02/character1 0xb1ece070 0.8
+change_vault gameplay race_bin_02/character2 gpcore
+update_field gameplay race_bin_02/character2 SkillLevel 57
+update_field gameplay race_bin_02/character2 0xb1ece070 0.4
+add_field gameplay race_bin_02/character2 PresetRide
+update_field gameplay race_bin_02/character2 PresetRide CE_997S
+change_vault gameplay race_bin_02/character3 gpcore
+update_field gameplay race_bin_02/character3 SkillLevel 84
+update_field gameplay race_bin_02/character3 0xb1ece070 1
+add_field gameplay race_bin_02/character3 PresetRide
+update_field gameplay race_bin_02/character3 PresetRide RAZORMUSTANG
+change_vault gameplay race_bin_03/character1 gpcore
+update_field gameplay race_bin_03/character1 SkillLevel 72
+update_field gameplay race_bin_03/character1 0xb1ece070 0.1
+change_vault gameplay race_bin_03/character2 gpcore
+update_field gameplay race_bin_03/character2 SkillLevel 91
+update_field gameplay race_bin_03/character2 0xb1ece070 0.3
+add_field gameplay race_bin_03/character2 PresetRide
+update_field gameplay race_bin_03/character2 PresetRide OPM_WRX_VERSION2
+change_vault gameplay race_bin_03/character3 gpcore
+update_field gameplay race_bin_03/character3 SkillLevel 78
+update_field gameplay race_bin_03/character3 0xb1ece070 1
+add_field gameplay race_bin_03/character3 PresetRide
+update_field gameplay race_bin_03/character3 PresetRide CE_SL500
+change_vault gameplay race_bin_04/character1 gpcore
+update_field gameplay race_bin_04/character1 SkillLevel 76
+update_field gameplay race_bin_04/character1 0xb1ece070 0.5
+add_field gameplay race_bin_04/character1 PresetRide
+update_field gameplay race_bin_04/character1 PresetRide BL14
+change_vault gameplay race_bin_04/character2 gpcore
+update_field gameplay race_bin_04/character2 SkillLevel 88
+update_field gameplay race_bin_04/character2 0xb1ece070 1
+add_field gameplay race_bin_04/character2 PresetRide
+update_field gameplay race_bin_04/character2 PresetRide OPM_MUSTANG_BOSS
+change_vault gameplay race_bin_04/character3 gpcore
+update_field gameplay race_bin_04/character3 SkillLevel 90
+update_field gameplay race_bin_04/character3 0xb1ece070 0.5
+add_field gameplay race_bin_04/character3 PresetRide
+update_field gameplay race_bin_04/character3 PresetRide OPM_MUSTANG_BOSS
+change_vault gameplay race_bin_05/character1 gpcore
+update_field gameplay race_bin_05/character1 SkillLevel 63
+update_field gameplay race_bin_05/character1 0xb1ece070 1
+add_field gameplay race_bin_05/character1 PresetRide
+update_field gameplay race_bin_05/character1 PresetRide BL4
+change_vault gameplay race_bin_05/character2 gpcore
+update_field gameplay race_bin_05/character2 SkillLevel 94
+update_field gameplay race_bin_05/character2 0xb1ece070 0.2
+add_field gameplay race_bin_05/character2 PresetRide
+update_field gameplay race_bin_05/character2 PresetRide BL7
+change_vault gameplay race_bin_05/character3 gpcore
+update_field gameplay race_bin_05/character3 SkillLevel 55
+update_field gameplay race_bin_05/character3 0xb1ece070 0.1
+change_vault gameplay race_bin_06/character1 gpcore
+update_field gameplay race_bin_06/character1 SkillLevel 52
+update_field gameplay race_bin_06/character1 0xb1ece070 0.2
+change_vault gameplay race_bin_06/character2 gpcore
+update_field gameplay race_bin_06/character2 SkillLevel 82
+update_field gameplay race_bin_06/character2 0xb1ece070 0.4
+change_vault gameplay race_bin_06/character3 gpcore
+update_field gameplay race_bin_06/character3 SkillLevel 85
+update_field gameplay race_bin_06/character3 0xb1ece070 0.2
+add_field gameplay race_bin_06/character3 PresetRide
+update_field gameplay race_bin_06/character3 PresetRide RAZORMUSTANG
+change_vault gameplay race_bin_07/character1 gpcore
+update_field gameplay race_bin_07/character1 SkillLevel 88
+update_field gameplay race_bin_07/character1 0xb1ece070 0.8
+add_field gameplay race_bin_07/character1 PresetRide
+update_field gameplay race_bin_07/character1 PresetRide BL14
+change_vault gameplay race_bin_07/character2 gpcore
+update_field gameplay race_bin_07/character2 SkillLevel 83
+update_field gameplay race_bin_07/character2 0xb1ece070 0.7
+change_vault gameplay race_bin_07/character3 gpcore
+update_field gameplay race_bin_07/character3 SkillLevel 31
+update_field gameplay race_bin_07/character3 0xb1ece070 0.5
+add_field gameplay race_bin_07/character3 PresetRide
+update_field gameplay race_bin_07/character3 PresetRide CE_ELISE
+change_vault gameplay race_bin_08/character1 gpcore
+update_field gameplay race_bin_08/character1 SkillLevel 85
+update_field gameplay race_bin_08/character1 0xb1ece070 0.5
+add_field gameplay race_bin_08/character1 PresetRide
+update_field gameplay race_bin_08/character1 PresetRide BL8
+change_vault gameplay race_bin_08/character2 gpcore
+update_field gameplay race_bin_08/character2 SkillLevel 77
+update_field gameplay race_bin_08/character2 0xb1ece070 0.1
+add_field gameplay race_bin_08/character2 PresetRide
+update_field gameplay race_bin_08/character2 PresetRide OPM_MUSTANG_BOSS
+change_vault gameplay race_bin_08/character3 gpcore
+update_field gameplay race_bin_08/character3 SkillLevel 75
+update_field gameplay race_bin_08/character3 0xb1ece070 0.6
+add_field gameplay race_bin_08/character3 PresetRide
+update_field gameplay race_bin_08/character3 PresetRide BL3
+change_vault gameplay race_bin_09/character1 gpcore
+update_field gameplay race_bin_09/character1 SkillLevel 42
+update_field gameplay race_bin_09/character1 0xb1ece070 0.1
+add_field gameplay race_bin_09/character1 PresetRide
+update_field gameplay race_bin_09/character1 PresetRide CE_997S
+change_vault gameplay race_bin_09/character2 gpcore
+update_field gameplay race_bin_09/character2 SkillLevel 25
+update_field gameplay race_bin_09/character2 0xb1ece070 0.5
+add_field gameplay race_bin_09/character2 PresetRide
+update_field gameplay race_bin_09/character2 PresetRide CE_GTRSTREET
+change_vault gameplay race_bin_09/character3 gpcore
+update_field gameplay race_bin_09/character3 SkillLevel 58
+update_field gameplay race_bin_09/character3 0xb1ece070 0.8
+change_vault gameplay race_bin_10/character1 gpcore
+update_field gameplay race_bin_10/character1 SkillLevel 42
+update_field gameplay race_bin_10/character1 0xb1ece070 0.8
+change_vault gameplay race_bin_10/character2 gpcore
+update_field gameplay race_bin_10/character2 SkillLevel 57
+update_field gameplay race_bin_10/character2 0xb1ece070 0.5
+add_field gameplay race_bin_10/character2 PresetRide
+update_field gameplay race_bin_10/character2 PresetRide CE_SL65
+change_vault gameplay race_bin_10/character3 gpcore
+update_field gameplay race_bin_10/character3 SkillLevel 74
+update_field gameplay race_bin_10/character3 0xb1ece070 1
+add_field gameplay race_bin_10/character3 PresetRide
+update_field gameplay race_bin_10/character3 PresetRide BL11
+change_vault gameplay race_bin_11/character1 gpcore
+update_field gameplay race_bin_11/character1 SkillLevel 35
+update_field gameplay race_bin_11/character1 0xb1ece070 0.3
+change_vault gameplay race_bin_11/character2 gpcore
+update_field gameplay race_bin_11/character2 SkillLevel 37
+update_field gameplay race_bin_11/character2 0xb1ece070 0.1
+change_vault gameplay race_bin_11/character3 gpcore
+update_field gameplay race_bin_11/character3 SkillLevel 43
+update_field gameplay race_bin_11/character3 0xb1ece070 0.4
+add_field gameplay race_bin_11/character3 PresetRide
+update_field gameplay race_bin_11/character3 PresetRide BL6
+change_vault gameplay race_bin_12/character1 gpcore
+update_field gameplay race_bin_12/character1 SkillLevel 38
+update_field gameplay race_bin_12/character1 0xb1ece070 0.4
+change_vault gameplay race_bin_12/character2 gpcore
+update_field gameplay race_bin_12/character2 SkillLevel 36
+update_field gameplay race_bin_12/character2 0xb1ece070 0.1
+change_vault gameplay race_bin_12/character3 gpcore
+update_field gameplay race_bin_12/character3 SkillLevel 40
+update_field gameplay race_bin_12/character3 0xb1ece070 0.3
+change_vault gameplay race_bin_13/character1 gpcore
+update_field gameplay race_bin_13/character1 SkillLevel 26
+update_field gameplay race_bin_13/character1 0xb1ece070 0.6
+add_field gameplay race_bin_13/character1 PresetRide
+update_field gameplay race_bin_13/character1 PresetRide CE_GT2
+change_vault gameplay race_bin_13/character2 gpcore
+update_field gameplay race_bin_13/character2 SkillLevel 45
+update_field gameplay race_bin_13/character2 0xb1ece070 0.5
+change_vault gameplay race_bin_13/character3 gpcore
+update_field gameplay race_bin_13/character3 SkillLevel 52
+update_field gameplay race_bin_13/character3 0xb1ece070 0.2
+add_field gameplay race_bin_13/character3 PresetRide
+update_field gameplay race_bin_13/character3 PresetRide BL11
+change_vault gameplay race_bin_14/character1 gpcore
+update_field gameplay race_bin_14/character1 SkillLevel 21
+change_vault gameplay race_bin_14/character2 gpcore
+update_field gameplay race_bin_14/character2 SkillLevel 26
+change_vault gameplay race_bin_14/character3 gpcore
+update_field gameplay race_bin_14/character3 SkillLevel 38
+change_vault gameplay race_bin_15/opponent1 gpcore
+update_field gameplay race_bin_15/opponent1 SkillLevel 35
+change_vault gameplay race_bin_15/opponent2 gpcore
+update_field gameplay race_bin_15/opponent2 SkillLevel 33
+change_vault gameplay race_bin_15/opponent3 gpcore
+update_field gameplay race_bin_15/opponent3 SkillLevel 19
+update_field gameplay 16_2_1_d_day_intro/opponent SkillLevel 13
+add_field gameplay 16_2_1_d_day_intro/opponent 0xb1ece070
+update_field gameplay 16_2_1_d_day_intro/opponent 0xb1ece070 0.800000
+update_field gameplay 16_1_0_partial_dday/razor SkillLevel 13
+add_field gameplay 16_1_0_partial_dday/razor 0xb1ece070
+update_field gameplay 16_1_0_partial_dday/razor 0xb1ece070 0.800000
+delete_field gameplay 16_1_1_circuit/opponent ForceStartPosition
+delete_field gameplay 16_1_1_circuit/opponent Children
+delete_field gameplay 16_2_1_d_day_intro/opponent ForceStartPosition
+delete_field gameplay 16_2_2_sprint/ronnie_mccrae ForceStartPosition
+delete_field gameplay 16_2_2_sprint/ronnie_mccrae Children
+delete_field gameplay 16_2_3_sprint/toru_sato Children
+
+# free roam zones and the prologue drive to safehouse are randomized
+update_field gameplay menu_gate_carlot/zone_carlot_1 Position X 4246.829102
+update_field gameplay menu_gate_carlot/zone_carlot_1 Position Y 719.402405
+update_field gameplay menu_gate_carlot/zone_carlot_1 Position Z 54.270020
+update_field gameplay menu_gate_carlot/zone_carlot_1 Radius 7.000000
+update_field gameplay menu_gate_carlot/zone_carlot_1/respawn Position X 4256.168945
+update_field gameplay menu_gate_carlot/zone_carlot_1/respawn Position Y 718.010681
+update_field gameplay menu_gate_carlot/zone_carlot_1/respawn Position Z 54.125969
+update_field gameplay menu_gate_carlot/zone_carlot_1/respawn Rotation -95.686180
+update_field gameplay menu_gate_carlot/zone_carlot_1 BinIndex 15
+update_field gameplay menu_gate_carlot/zone_carlot_3 Position X 1509.354980
+update_field gameplay menu_gate_carlot/zone_carlot_3 Position Y 2563.893066
+update_field gameplay menu_gate_carlot/zone_carlot_3 Position Z 157.616196
+update_field gameplay menu_gate_carlot/zone_carlot_3 Radius 7.000000
+update_field gameplay menu_gate_carlot/zone_carlot_3/respawn Position X 1497.652954
+update_field gameplay menu_gate_carlot/zone_carlot_3/respawn Position Y 2571.383057
+update_field gameplay menu_gate_carlot/zone_carlot_3/respawn Position Z 158.846695
+update_field gameplay menu_gate_carlot/zone_carlot_3/respawn Rotation -141.660904
+update_field gameplay career_start_l2ra Position X 1497.652954
+update_field gameplay career_start_l2ra Position Y 2571.383057
+update_field gameplay career_start_l2ra Position Z 158.846695
+update_field gameplay career_start_l2ra Rotation -141.660904
+update_field gameplay menu_gate_carlot/zone_carlot_3 BinIndex 15
+update_field gameplay menu_gate_safehouse/zone_safehouse_5 Position X 1777.094971
+update_field gameplay menu_gate_safehouse/zone_safehouse_5 Position Y 2503.468018
+update_field gameplay menu_gate_safehouse/zone_safehouse_5 Position Z 147.793503
+update_field gameplay menu_gate_safehouse/zone_safehouse_5 Radius 7.000000
+update_field gameplay menu_gate_safehouse/zone_safehouse_5/respawn Position X 1762.761963
+update_field gameplay menu_gate_safehouse/zone_safehouse_5/respawn Position Y 2508.818115
+update_field gameplay menu_gate_safehouse/zone_safehouse_5/respawn Position Z 147.284103
+update_field gameplay menu_gate_safehouse/zone_safehouse_5/respawn Rotation -115.415802
+update_field gameplay menu_gate_safehouse/zone_safehouse_5 BinIndex 15
+update_field gameplay menu_gate_customshop/zone_customshop_7 Position X 698.182129
+update_field gameplay menu_gate_customshop/zone_customshop_7 Position Y 4523.472168
+update_field gameplay menu_gate_customshop/zone_customshop_7 Position Z 214.664597
+update_field gameplay menu_gate_customshop/zone_customshop_7 Radius 6.000000
+update_field gameplay menu_gate_customshop/zone_customshop_7/respawn Position X 716.100830
+update_field gameplay menu_gate_customshop/zone_customshop_7/respawn Position Y 4523.805176
+update_field gameplay menu_gate_customshop/zone_customshop_7/respawn Position Z 212.849594
+update_field gameplay menu_gate_customshop/zone_customshop_7/respawn Rotation 82.594513
+update_field gameplay menu_gate_customshop/zone_customshop_7 BinIndex 15
+update_field gameplay menu_gate_customshop/zone_customshop_4 Position X 4204.790039
+update_field gameplay menu_gate_customshop/zone_customshop_4 Position Y 1257.427002
+update_field gameplay menu_gate_customshop/zone_customshop_4 Position Z 46.188961
+update_field gameplay menu_gate_customshop/zone_customshop_4 Radius 4.000000
+update_field gameplay menu_gate_customshop/zone_customshop_4/respawn Position X 4206.654785
+update_field gameplay menu_gate_customshop/zone_customshop_4/respawn Position Y 1269.722046
+update_field gameplay menu_gate_customshop/zone_customshop_4/respawn Position Z 45.990238
+update_field gameplay menu_gate_customshop/zone_customshop_4/respawn Rotation -25.458670
+update_field gameplay menu_gate_customshop/zone_customshop_4 BinIndex 15
+update_field gameplay menu_gate_safehouse/zone_safehouse_4 Position X 3398.795898
+update_field gameplay menu_gate_safehouse/zone_safehouse_4 Position Y -231.784698
+update_field gameplay menu_gate_safehouse/zone_safehouse_4 Position Z 12.447270
+update_field gameplay menu_gate_safehouse/zone_safehouse_4 Radius 7.000000
+update_field gameplay menu_gate_safehouse/zone_safehouse_4/respawn Position X 3398.937988
+update_field gameplay menu_gate_safehouse/zone_safehouse_4/respawn Position Y -223.054901
+update_field gameplay menu_gate_safehouse/zone_safehouse_4/respawn Position Z 12.442380
+update_field gameplay menu_gate_safehouse/zone_safehouse_4/respawn Rotation 4.078270
+update_field gameplay menu_gate_safehouse/zone_safehouse_4 BinIndex 15
+update_field gameplay menu_gate_safehouse/zone_safehouse_2 Position X 4257.523926
+update_field gameplay menu_gate_safehouse/zone_safehouse_2 Position Y 78.698387
+update_field gameplay menu_gate_safehouse/zone_safehouse_2 Position Z 9.291016
+update_field gameplay menu_gate_safehouse/zone_safehouse_2 Radius 7.000000
+update_field gameplay menu_gate_safehouse/zone_safehouse_2/respawn Position X 4245.937988
+update_field gameplay menu_gate_safehouse/zone_safehouse_2/respawn Position Y 79.007538
+update_field gameplay menu_gate_safehouse/zone_safehouse_2/respawn Position Z 9.711914
+update_field gameplay menu_gate_safehouse/zone_safehouse_2/respawn Rotation -107.137497
+update_field gameplay menu_gate_safehouse/zone_safehouse_2 BinIndex 15
+update_field gameplay menu_gate_carlot/zone_carlot_2 Position X 1750.890015
+update_field gameplay menu_gate_carlot/zone_carlot_2 Position Y 512.140625
+update_field gameplay menu_gate_carlot/zone_carlot_2 Position Z 90.856453
+update_field gameplay menu_gate_carlot/zone_carlot_2 Radius 4.000000
+update_field gameplay menu_gate_carlot/zone_carlot_2/respawn Position X 1749.083984
+update_field gameplay menu_gate_carlot/zone_carlot_2/respawn Position Y 517.292297
+update_field gameplay menu_gate_carlot/zone_carlot_2/respawn Position Z 90.733398
+update_field gameplay menu_gate_carlot/zone_carlot_2/respawn Rotation 170.776505
+update_field gameplay menu_gate_carlot/zone_carlot_2 BinIndex 15
+update_field gameplay menu_gate_customshop/zone_customshop_2 Position X 1850.651978
+update_field gameplay menu_gate_customshop/zone_customshop_2 Position Y 1211.020996
+update_field gameplay menu_gate_customshop/zone_customshop_2 Position Z 143.549805
+update_field gameplay menu_gate_customshop/zone_customshop_2 Radius 6.000000
+update_field gameplay menu_gate_customshop/zone_customshop_2/respawn Position X 1842.901978
+update_field gameplay menu_gate_customshop/zone_customshop_2/respawn Position Y 1215.779053
+update_field gameplay menu_gate_customshop/zone_customshop_2/respawn Position Z 143.149399
+update_field gameplay menu_gate_customshop/zone_customshop_2/respawn Rotation -127.022903
+update_field gameplay menu_gate_customshop/zone_customshop_2 BinIndex 15
+update_field gameplay menu_gate_safehouse/zone_safehouse_1 Position X 2328.784912
+update_field gameplay menu_gate_safehouse/zone_safehouse_1 Position Y -66.364166
+update_field gameplay menu_gate_safehouse/zone_safehouse_1 Position Z 90.966797
+update_field gameplay menu_gate_safehouse/zone_safehouse_1 Radius 7.000000
+update_field gameplay menu_gate_safehouse/zone_safehouse_1/respawn Position X 2329.800049
+update_field gameplay menu_gate_safehouse/zone_safehouse_1/respawn Position Y -82.489159
+update_field gameplay menu_gate_safehouse/zone_safehouse_1/respawn Position Z 90.882812
+update_field gameplay menu_gate_safehouse/zone_safehouse_1/respawn Rotation 169.433594
+update_field gameplay race_bin_16/drive_to_safe_house/gpstarget Position X 2328.784912
+update_field gameplay race_bin_16/drive_to_safe_house/gpstarget Position Y -66.364166
+update_field gameplay race_bin_16/drive_to_safe_house/gpstarget Position Z 90.966797
+update_field gameplay race_bin_16/drive_to_safe_house/gpstarget Rotation 169.433594
+update_field gameplay race_bin_16/drive_to_safe_house/gpstarget Dimensions X 25
+update_field gameplay race_bin_16/drive_to_safe_house/gpstarget Dimensions Y 25
+update_field gameplay race_bin_16/drive_to_safe_house/gpstarget Dimensions Z 25
+update_field gameplay race_bin_16/drive_to_safe_house MiniMapItem menu_gate_safehouse/zone_safehouse_1
+update_field gameplay race_bin_16/drive_to_safe_house RespawnMarker menu_gate_safehouse/zone_safehouse_1/respawn
+update_field gameplay menu_gate_safehouse/zone_safehouse_1 BinIndex 16
+update_field gameplay menu_gate_customshop/zone_customshop_8 Position X 3497.087891
+update_field gameplay menu_gate_customshop/zone_customshop_8 Position Y 2011.370972
+update_field gameplay menu_gate_customshop/zone_customshop_8 Position Z 73.986816
+update_field gameplay menu_gate_customshop/zone_customshop_8 Radius 7.000000
+update_field gameplay menu_gate_customshop/zone_customshop_8/respawn Position X 3508.648926
+update_field gameplay menu_gate_customshop/zone_customshop_8/respawn Position Y 2016.713989
+update_field gameplay menu_gate_customshop/zone_customshop_8/respawn Position Z 72.723633
+update_field gameplay menu_gate_customshop/zone_customshop_8/respawn Rotation 108.259499
+update_field gameplay menu_gate_customshop/zone_customshop_8 BinIndex 15
+update_field gameplay menu_gate_customshop/zone_customshop_5 Position X 3627.767090
+update_field gameplay menu_gate_customshop/zone_customshop_5 Position Y 3340.500000
+update_field gameplay menu_gate_customshop/zone_customshop_5 Position Z 6.772949
+update_field gameplay menu_gate_customshop/zone_customshop_5 Radius 7.000000
+update_field gameplay menu_gate_customshop/zone_customshop_5/respawn Position X 3623.124023
+update_field gameplay menu_gate_customshop/zone_customshop_5/respawn Position Y 3355.153076
+update_field gameplay menu_gate_customshop/zone_customshop_5/respawn Position Z 7.018555
+update_field gameplay menu_gate_customshop/zone_customshop_5/respawn Rotation -27.476830
+update_field gameplay menu_gate_customshop/zone_customshop_5 BinIndex 15
+update_field gameplay menu_gate_customshop/zone_customshop_3 Position X 1064.187012
+update_field gameplay menu_gate_customshop/zone_customshop_3 Position Y 51.790760
+update_field gameplay menu_gate_customshop/zone_customshop_3 Position Z 99.677742
+update_field gameplay menu_gate_customshop/zone_customshop_3 Radius 5.000000
+update_field gameplay menu_gate_customshop/zone_customshop_3/respawn Position X 1069.119019
+update_field gameplay menu_gate_customshop/zone_customshop_3/respawn Position Y 42.145260
+update_field gameplay menu_gate_customshop/zone_customshop_3/respawn Position Z 99.595703
+update_field gameplay menu_gate_customshop/zone_customshop_3/respawn Rotation 34.987350
+update_field gameplay menu_gate_customshop/zone_customshop_3 BinIndex 15
+update_field gameplay menu_gate_customshop/zone_customshop_6 Position X 981.631775
+update_field gameplay menu_gate_customshop/zone_customshop_6 Position Y 2147.321045
+update_field gameplay menu_gate_customshop/zone_customshop_6 Position Z 152.293900
+update_field gameplay menu_gate_customshop/zone_customshop_6 Radius 4.000000
+update_field gameplay menu_gate_customshop/zone_customshop_6/respawn Position X 986.669312
+update_field gameplay menu_gate_customshop/zone_customshop_6/respawn Position Y 2149.917969
+update_field gameplay menu_gate_customshop/zone_customshop_6/respawn Position Z 152.305405
+update_field gameplay menu_gate_customshop/zone_customshop_6/respawn Rotation -27.312429
+update_field gameplay menu_gate_customshop/zone_customshop_6 BinIndex 15
+update_field gameplay menu_gate_customshop/zone_customshop_1 Position X 3595.971924
+update_field gameplay menu_gate_customshop/zone_customshop_1 Position Y 3627.556885
+update_field gameplay menu_gate_customshop/zone_customshop_1 Position Z 30.477051
+update_field gameplay menu_gate_customshop/zone_customshop_1 Radius 7.000000
+update_field gameplay menu_gate_customshop/zone_customshop_1/respawn Position X 3591.582031
+update_field gameplay menu_gate_customshop/zone_customshop_1/respawn Position Y 3636.861084
+update_field gameplay menu_gate_customshop/zone_customshop_1/respawn Position Z 30.630859
+update_field gameplay menu_gate_customshop/zone_customshop_1/respawn Rotation 34.067219
+update_field gameplay menu_gate_customshop/zone_customshop_1 BinIndex 15
+delete_field gameplay race_bin_16 Barriers
+delete_field gameplay race_bin_15 Barriers
+delete_field gameplay race_bin_14 Barriers
+delete_field gameplay race_bin_13 Barriers
+delete_field gameplay race_bin_12 Barriers
+delete_field gameplay race_bin_11 Barriers
+delete_field gameplay race_bin_10 Barriers
+delete_field gameplay race_bin_09 Barriers
+
+# converting black edition races to regular races
+delete_field gameplay race_bin_collectors/21_2_2_sprint CollectorsEditionRace
+delete_field gameplay race_bin_collectors/21_2_1_sprint CollectorsEditionRace
+delete_field gameplay race_bin_collectors/21_1_1_circuit CollectorsEditionRace
+add_field gameplay race_bin_collectors/21_1_1_circuit Opponents 3
+add_field gameplay race_bin_collectors/21_2_1_sprint Opponents 3
+add_field gameplay race_bin_collectors/21_2_2_sprint Opponents 3
+update_field gameplay race_bin_collectors gameplayvault gpcore
+
+# copy one of the speedtraps to use as a template for race conversions
+copy_node gameplay race_bin_09/9_5_3_speedtrap_race/speedtrap4 speedtrap_template
+
+# deleting old milestone nodes
+delete_node gameplay milestones/bin_01/challenge_1_cops_damaged
+delete_node gameplay milestones/bin_03/challenge_3_cops_damaged
+delete_node gameplay milestones/bin_04/challenge_4_cops_damaged
+delete_node gameplay milestones/bin_06/challenge_6_cops_damaged
+delete_node gameplay milestones/bin_08/challenge_8_cops_damaged
+delete_node gameplay milestones/bin_09/challenge_9_cops_damaged
+delete_node gameplay milestones/bin_12/challenge_12_cops_damaged
+delete_node gameplay milestones/bin_13/challenge_13_cops_damaged
+delete_node gameplay milestones/bin_01/challenge_1_cops_destroyed
+delete_node gameplay milestones/bin_03/challenge_3_cops_destroyed
+delete_node gameplay milestones/bin_04/challenge_4_cops_destroyed
+delete_node gameplay milestones/bin_05/challenge_5_cops_destroyed
+delete_node gameplay milestones/bin_07/challenge_7_cops_destroyed
+delete_node gameplay milestones/bin_09/challenge_9_cops_destroyed
+delete_node gameplay milestones/bin_10/challenge_10_cops_destroyed
+delete_node gameplay milestones/bin_13/challenge_13_cops_destroyed
+delete_node gameplay milestones/bin_02/challenge_2_cost_to_state
+delete_node gameplay milestones/bin_04/challenge_4_cost_to_state
+delete_node gameplay milestones/bin_05/challenge_5_cost_to_state
+delete_node gameplay milestones/bin_07/challenge_7_cost_to_state
+delete_node gameplay milestones/bin_10/challenge_10_cost_to_state
+delete_node gameplay milestones/bin_11/challenge_11_cost_to_state
+delete_node gameplay milestones/bin_01/challenge_1_pursuit_evasion_time
+delete_node gameplay milestones/bin_03/challenge_3_pursuit_evasion_time
+delete_node gameplay milestones/bin_05/challenge_5_pursuit_evasion_time
+delete_node gameplay milestones/bin_07/challenge_7_pursuit_evasion_time
+delete_node gameplay milestones/bin_09/challenge_9_pursuit_evasion_time
+delete_node gameplay milestones/bin_12/challenge_12_pursuit_evasion_time
+delete_node gameplay milestones/bin_13/challenge_13_pursuit_evasion_time
+delete_node gameplay milestones/bin_01/challenge_1_pursuit_length
+delete_node gameplay milestones/bin_02/challenge_2_pursuit_length
+delete_node gameplay milestones/bin_03/challenge_3_pursuit_length
+delete_node gameplay milestones/bin_06/challenge_6_pursuit_length
+delete_node gameplay milestones/bin_08/challenge_8_pursuit_length
+delete_node gameplay milestones/bin_10/challenge_10_pursuit_length
+delete_node gameplay milestones/bin_12/challenge_12_pursuit_length
+delete_node gameplay milestones/bin_02/challenge_2_roadblocks_dodged
+delete_node gameplay milestones/bin_06/challenge_6_roadblocks_dodged
+delete_node gameplay milestones/bin_07/challenge_7_roadblocks_dodged
+delete_node gameplay milestones/bin_09/challenge_9_roadblocks_dodged
+delete_node gameplay milestones/bin_10/challenge_10_roadblocks_dodged
+delete_node gameplay milestones/bin_02/challenge_2_tire_spikes_dodged
+delete_node gameplay milestones/bin_05/challenge_5_tire_spikes_dodged
+delete_node gameplay milestones/bin_06/challenge_6_tire_spikes_dodged
+delete_node gameplay milestones/bin_04/challenge_4_total_infractions
+delete_node gameplay milestones/bin_08/challenge_8_total_infractions
+delete_node gameplay milestones/bin_11/challenge_11_total_infractions
+rename_node gameplay milestones/bin_15/challenge_15_cops_damaged milestones/templates/challenge_cops_damaged
+rename_node gameplay milestones/bin_14/challenge_14_cops_destroyed milestones/templates/challenge_cops_destroyed
+rename_node gameplay milestones/bin_14/challenge_14_cost_to_state milestones/templates/challenge_cost_to_state
+rename_node gameplay milestones/bin_15/challenge_15_pursuit_evasion_time milestones/templates/challenge_pursuit_evasion_time
+rename_node gameplay milestones/bin_15/challenge_15_pursuit_length milestones/templates/challenge_pursuit_length
+rename_node gameplay milestones/bin_11/challenge_11_roadblocks_dodged milestones/templates/challenge_roadblocks_dodged
+rename_node gameplay milestones/bin_08/challenge_8_tire_spikes_dodged milestones/templates/challenge_tire_spikes_dodged
+rename_node gameplay milestones/bin_14/challenge_14_total_infractions milestones/templates/challenge_total_infractions
+copy_node gameplay milestone_cops_destroyed milestone milestone_cops_immobilized
+update_field gameplay milestone_cops_immobilized Name milestone_cops_immobilized
+update_field gameplay milestone_cops_immobilized MilestoneName cops_destroyed_in_pursuit
+copy_node gameplay milestones/templates/challenge_cops_destroyed milestone_cops_immobilized milestones/templates/challenge_cops_immobilized
+
+# performance markers modified as needed
+rename_node gameplay race_bin_15/rewards/reward_brakes templates/rewards/reward_brakes
+change_vault gameplay templates/rewards/reward_brakes gpcore
+update_field gameplay templates/rewards/reward_brakes Name templates/rewards/reward_brakes
+rename_node gameplay race_bin_14/rewards/reward_chassis templates/rewards/reward_chassis
+change_vault gameplay templates/rewards/reward_chassis gpcore
+update_field gameplay templates/rewards/reward_chassis Name templates/rewards/reward_chassis
+rename_node gameplay race_bin_13/rewards/reward_transmission1 templates/rewards/reward_transmission
+change_vault gameplay templates/rewards/reward_transmission gpcore
+update_field gameplay templates/rewards/reward_transmission Name templates/rewards/reward_transmission
+rename_node gameplay race_bin_12/rewards/reward_induction1 templates/rewards/reward_induction
+change_vault gameplay templates/rewards/reward_induction gpcore
+update_field gameplay templates/rewards/reward_induction Name templates/rewards/reward_induction
+rename_node gameplay race_bin_11/rewards/reward_tires1 templates/rewards/reward_tires
+change_vault gameplay templates/rewards/reward_tires gpcore
+update_field gameplay templates/rewards/reward_tires Name templates/rewards/reward_tires
+delete_node gameplay race_bin_10/rewards/reward_chassis1
+delete_node gameplay race_bin_09/rewards/reward_induction1
+delete_node gameplay race_bin_08/rewards/reward_transmission1
+delete_node gameplay race_bin_07/rewards/reward_tires1
+delete_node gameplay race_bin_06/rewards/reward_chassis1
+delete_node gameplay race_bin_05/rewards/reward_induction1
+rename_node gameplay race_bin_04/rewards/reward_engine1 templates/rewards/reward_engine
+change_vault gameplay templates/rewards/reward_engine gpcore
+update_field gameplay templates/rewards/reward_engine Name templates/rewards/reward_engine
+delete_node gameplay race_bin_03/rewards/reward_tires1
+delete_node gameplay race_bin_02/rewards/reward_induction1
+add_node gameplay reward_nos templates/rewards/reward_nos
+add_field gameplay templates/rewards/reward_nos Template
+add_field gameplay templates/rewards/reward_nos Name
+update_field gameplay templates/rewards/reward_nos CollectionName templates/rewards/reward_nos
+update_field gameplay templates/rewards/reward_nos Name templates/rewards/reward_nos
+
+# visual markers modified as needed
+rename_node gameplay race_bin_15/rewards/reward_vinyl templates/rewards/reward_vinyl
+change_vault gameplay templates/rewards/reward_vinyl gpcore
+update_field gameplay templates/rewards/reward_vinyl Name templates/rewards/reward_vinyl
+rename_node gameplay race_bin_15/rewards/reward_rims templates/rewards/reward_rims
+change_vault gameplay templates/rewards/reward_rims gpcore
+update_field gameplay templates/rewards/reward_rims Name templates/rewards/reward_rims
+delete_node gameplay race_bin_14/rewards/reward_vinyl
+rename_node gameplay race_bin_14/rewards/reward_hood templates/rewards/reward_hood
+change_vault gameplay templates/rewards/reward_hood gpcore
+update_field gameplay templates/rewards/reward_hood Name templates/rewards/reward_hood
+rename_node gameplay race_bin_13/rewards/reward_hud1 templates/rewards/reward_hud
+change_vault gameplay templates/rewards/reward_hud gpcore
+update_field gameplay templates/rewards/reward_hud Name templates/rewards/reward_hud
+rename_node gameplay race_bin_13/rewards/reward_body1 templates/rewards/reward_body
+change_vault gameplay templates/rewards/reward_body gpcore
+update_field gameplay templates/rewards/reward_body Name templates/rewards/reward_body
+delete_node gameplay race_bin_12/rewards/reward_vinyl1
+delete_node gameplay race_bin_12/rewards/reward_body1
+delete_node gameplay race_bin_11/rewards/reward_rims1
+rename_node gameplay race_bin_11/rewards/reward_spoiler1 templates/rewards/reward_spoiler
+change_vault gameplay templates/rewards/reward_spoiler gpcore
+update_field gameplay templates/rewards/reward_spoiler Name templates/rewards/reward_spoiler
+rename_node gameplay race_bin_10/rewards/reward_roofscoop1 templates/rewards/reward_roofscoop
+change_vault gameplay templates/rewards/reward_roofscoop gpcore
+update_field gameplay templates/rewards/reward_roofscoop Name templates/rewards/reward_roofscoop
+delete_node gameplay race_bin_10/rewards/reward_hood1
+delete_node gameplay race_bin_09/rewards/reward_hud1
+delete_node gameplay race_bin_09/rewards/reward_hood1
+delete_node gameplay race_bin_08/rewards/reward_spoiler1
+delete_node gameplay race_bin_08/rewards/reward_body1
+delete_node gameplay race_bin_07/rewards/reward_vinyl1
+delete_node gameplay race_bin_07/rewards/reward_spoiler1
+delete_node gameplay race_bin_06/rewards/reward_vinyl1
+delete_node gameplay race_bin_06/rewards/reward_rims1
+delete_node gameplay race_bin_05/rewards/reward_vinyl1
+delete_node gameplay race_bin_05/rewards/reward_hood1
+delete_node gameplay race_bin_04/rewards/reward_body1
+delete_node gameplay race_bin_04/rewards/reward_vinyl1
+delete_node gameplay race_bin_03/rewards/reward_roofscoop1
+delete_node gameplay race_bin_03/rewards/reward_rims1
+delete_node gameplay race_bin_02/rewards/reward_vinyl1
+delete_node gameplay race_bin_02/rewards/reward_hud1
+add_node gameplay reward_paint templates/rewards/reward_paint
+add_field gameplay templates/rewards/reward_paint Template
+add_field gameplay templates/rewards/reward_paint Name
+update_field gameplay templates/rewards/reward_paint CollectionName templates/rewards/reward_paint
+update_field gameplay templates/rewards/reward_paint Name templates/rewards/reward_paint
+
+# random markers modified as needed
+delete_node gameplay race_bin_02/rewards/reward_pink_slip1
+rename_node gameplay race_bin_15/rewards/reward_out_of_jail_free1 templates/rewards/reward_out_of_jail_free
+change_vault gameplay templates/rewards/reward_out_of_jail_free gpcore
+update_field gameplay templates/rewards/reward_out_of_jail_free Name templates/rewards/reward_out_of_jail_free
+rename_node gameplay race_bin_14/rewards/reward_add_impound_box1 templates/rewards/reward_add_impound_box
+change_vault gameplay templates/rewards/reward_add_impound_box gpcore
+update_field gameplay templates/rewards/reward_add_impound_box Name templates/rewards/reward_add_impound_box
+delete_node gameplay race_bin_14/rewards/reward_cash_bonus
+delete_node gameplay race_bin_13/rewards/reward_cash_bonus1
+delete_node gameplay race_bin_13/rewards/reward_cash_bonus2
+delete_node gameplay race_bin_12/rewards/reward_add_impound_box1
+rename_node gameplay race_bin_12/rewards/reward_release_car_from_impound1 templates/rewards/reward_release_car_from_impound
+change_vault gameplay templates/rewards/reward_release_car_from_impound gpcore
+update_field gameplay templates/rewards/reward_release_car_from_impound Name templates/rewards/reward_release_car_from_impound
+delete_node gameplay race_bin_11/rewards/reward_cash_bonus1
+delete_node gameplay race_bin_11/rewards/reward_out_of_jail_free1
+delete_node gameplay race_bin_10/rewards/reward_add_impound_box1
+delete_node gameplay race_bin_10/rewards/reward_out_of_jail_free1
+delete_node gameplay race_bin_09/rewards/reward_add_impound_box1
+delete_node gameplay race_bin_09/rewards/reward_release_car_from_impound1
+delete_node gameplay race_bin_08/rewards/reward_add_impound_box1
+delete_node gameplay race_bin_08/rewards/reward_out_of_jail_free1
+delete_node gameplay race_bin_07/rewards/reward_out_of_jail_free1
+delete_node gameplay race_bin_07/rewards/reward_release_car_from_impound1
+delete_node gameplay race_bin_06/rewards/reward_out_of_jail_free1
+delete_node gameplay race_bin_06/rewards/reward_cash_bonus1
+delete_node gameplay race_bin_05/rewards/reward_add_impound_box1
+delete_node gameplay race_bin_05/rewards/reward_out_of_jail_free1
+delete_node gameplay race_bin_04/rewards/reward_release_car_from_impound1
+delete_node gameplay race_bin_04/rewards/reward_cash_bonus1
+delete_node gameplay race_bin_03/rewards/reward_add_impound_box1
+delete_node gameplay race_bin_03/rewards/reward_out_of_jail_free1
+delete_node gameplay race_bin_02/rewards/reward_out_of_jail_free1
+delete_node gameplay race_bin_02/rewards/reward_release_car_from_impound1
+rename_node gameplay race_bin_15/rewards/reward_pink_slip1 templates/rewards/reward_pink_slip
+change_vault gameplay templates/rewards/reward_pink_slip gpcore
+update_field gameplay templates/rewards/reward_pink_slip Name templates/rewards/reward_pink_slip
+delete_node gameplay race_bin_14/rewards/reward_pink_slip1
+delete_node gameplay race_bin_13/rewards/reward_pink_slip1
+delete_node gameplay race_bin_12/rewards/reward_pink_slip1
+delete_node gameplay race_bin_11/rewards/reward_pink_slip1
+delete_node gameplay race_bin_10/rewards/reward_pink_slip1
+delete_node gameplay race_bin_09/rewards/reward_pink_slip1
+delete_node gameplay race_bin_08/rewards/reward_pink_slip1
+delete_node gameplay race_bin_07/rewards/reward_pink_slip1
+delete_node gameplay race_bin_06/rewards/reward_pink_slip1
+delete_node gameplay race_bin_05/rewards/reward_pink_slip1
+delete_node gameplay race_bin_04/rewards/reward_pink_slip1
+delete_node gameplay race_bin_03/rewards/reward_pink_slip1
+rename_node gameplay race_bin_15/rewards/reward_cash_bonus1 templates/rewards/reward_cash_bonus
+update_field gameplay templates/rewards/reward_cash_bonus Name templates/rewards/reward_cash_bonus
+change_vault gameplay templates/rewards/reward_cash_bonus gpcore
+
+# set car for events not in the pool and randomize scripted opponents
+update_field gameplay 16_1_0_partial_dday PlayerCarType BONUS_SL65
+update_field gameplay 16_2_1_d_day_intro PlayerCarType BONUS_SL65
+add_field gameplay 16_1_0_partial_dday PlayerCarPerformance
+update_field gameplay 16_1_0_partial_dday PlayerCarPerformance 0.5
+add_field gameplay 16_2_1_d_day_intro PlayerCarPerformance
+update_field gameplay 16_2_1_d_day_intro PlayerCarPerformance 0.5
+update_field gameplay race_bin_01/epic_pursuit PlayerCarType BONUS_SL65
+add_field gameplay race_bin_01/epic_pursuit PlayerCarPerformance
+update_field gameplay race_bin_01/epic_pursuit PlayerCarPerformance 1
+update_field gameplay 16_2_1_d_day_intro/opponent PresetRide BL7
+update_field gameplay 16_1_0_partial_dday/razor PresetRide BL7
+update_field gameplay 16_nis_rog_razor/razor PresetRide BL7
+update_field gameplay 16_nis_rog_razor/rog PresetRide OPM_WRX_VERSION2
+update_field gameplay 16_nis_rog_razor/rog PresetRide OPM_WRX_VERSION2
+update_field gameplay 16_1_1_circuit/opponent PresetRide OPM_WRX_VERSION2
+update_field gameplay race_bin_01/razor_callahan PresetRide BONUS_SL65
+
+# prologue, race 1
+change_vault gameplay race_bin_02/3_2_1_r_sprint gpcore
+add_field gameplay race_bin_02/3_2_1_r_sprint DDayRace
+update_field gameplay race_bin_02/3_2_1_r_sprint DDayRace True
+add_field gameplay race_bin_02/3_2_1_r_sprint PostRaceActivity
+add_field gameplay race_bin_02/3_2_1_r_sprint IntroMovie
+update_field gameplay race_bin_02/3_2_1_r_sprint CashValue 10000
+delete_node gameplay race_bin_02/engage/3_2_1_r_engage
+update_field gameplay 16_1_0_partial_dday PostRaceActivity race_bin_02/3_2_1_r_sprint
+resize_field gameplay race_bin_02/3_2_1_r_sprint Opponents 1
+update_field gameplay race_bin_02/3_2_1_r_sprint Opponents[0] 16_2_2_sprint/ronnie_mccrae
+update_field gameplay race_bin_02/3_2_1_r_sprint IntroMovie storyfmv_her136
+add_field gameplay race_bin_02/3_2_1_r_sprint IntroNIS
+update_field gameplay race_bin_02/3_2_1_r_sprint IntroNIS IntroNis04
+add_field gameplay race_bin_02/3_2_1_r_sprint CopsInRace
+update_field gameplay race_bin_02/3_2_1_r_sprint CopsInRace False
+update_field gameplay race_bin_02/3_2_1_r_sprint TrafficLevel 14
+add_field gameplay race_bin_02/3_2_1_r_sprint SpeedTrapList
+resize_field gameplay race_bin_02/3_2_1_r_sprint SpeedTrapList 7
+resize_field gameplay race_bin_02/3_2_1_r_sprint Children 27
+copy_node gameplay speedtrap_template speedtrap race_bin_02/3_2_1_r_sprint/speedtrap1
+change_vault gameplay race_bin_02/3_2_1_r_sprint/speedtrap1 3_2_1_r_sprint
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap1 Name race_bin_02/3_2_1_r_sprint/speedtrap1
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap1 CollectionName race_bin_02/3_2_1_r_sprint/speedtrap1
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap1 Position X 994.015
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap1 Position Y 232.354
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap1 Position Z 102.5693
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap1 Radius 25
+update_field gameplay race_bin_02/3_2_1_r_sprint SpeedTrapList[0] race_bin_02/3_2_1_r_sprint/speedtrap1
+update_field gameplay race_bin_02/3_2_1_r_sprint Children[20] race_bin_02/3_2_1_r_sprint/speedtrap1
+copy_node gameplay speedtrap_template speedtrap race_bin_02/3_2_1_r_sprint/speedtrap2
+change_vault gameplay race_bin_02/3_2_1_r_sprint/speedtrap2 3_2_1_r_sprint
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap2 Name race_bin_02/3_2_1_r_sprint/speedtrap2
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap2 CollectionName race_bin_02/3_2_1_r_sprint/speedtrap2
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap2 Position X 1801.94
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap2 Position Y 596.3895
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap2 Position Z 94.05957
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap2 Radius 25
+update_field gameplay race_bin_02/3_2_1_r_sprint SpeedTrapList[1] race_bin_02/3_2_1_r_sprint/speedtrap2
+update_field gameplay race_bin_02/3_2_1_r_sprint Children[21] race_bin_02/3_2_1_r_sprint/speedtrap2
+copy_node gameplay speedtrap_template speedtrap race_bin_02/3_2_1_r_sprint/speedtrap3
+change_vault gameplay race_bin_02/3_2_1_r_sprint/speedtrap3 3_2_1_r_sprint
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap3 Name race_bin_02/3_2_1_r_sprint/speedtrap3
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap3 CollectionName race_bin_02/3_2_1_r_sprint/speedtrap3
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap3 Position X 2007.052
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap3 Position Y 1057.502
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap3 Position Z 140.2119
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap3 Radius 20
+update_field gameplay race_bin_02/3_2_1_r_sprint SpeedTrapList[2] race_bin_02/3_2_1_r_sprint/speedtrap3
+update_field gameplay race_bin_02/3_2_1_r_sprint Children[22] race_bin_02/3_2_1_r_sprint/speedtrap3
+copy_node gameplay speedtrap_template speedtrap race_bin_02/3_2_1_r_sprint/speedtrap4
+change_vault gameplay race_bin_02/3_2_1_r_sprint/speedtrap4 3_2_1_r_sprint
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap4 Name race_bin_02/3_2_1_r_sprint/speedtrap4
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap4 CollectionName race_bin_02/3_2_1_r_sprint/speedtrap4
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap4 Position X 2540.304
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap4 Position Y 1957.851
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap4 Position Z 105.7998
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap4 Radius 20
+update_field gameplay race_bin_02/3_2_1_r_sprint SpeedTrapList[3] race_bin_02/3_2_1_r_sprint/speedtrap4
+update_field gameplay race_bin_02/3_2_1_r_sprint Children[23] race_bin_02/3_2_1_r_sprint/speedtrap4
+copy_node gameplay speedtrap_template speedtrap race_bin_02/3_2_1_r_sprint/speedtrap5
+change_vault gameplay race_bin_02/3_2_1_r_sprint/speedtrap5 3_2_1_r_sprint
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap5 Name race_bin_02/3_2_1_r_sprint/speedtrap5
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap5 CollectionName race_bin_02/3_2_1_r_sprint/speedtrap5
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap5 Position X 3120.457
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap5 Position Y 2609.163
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap5 Position Z 49.46973
+update_field gameplay race_bin_02/3_2_1_r_sprint SpeedTrapList[4] race_bin_02/3_2_1_r_sprint/speedtrap5
+update_field gameplay race_bin_02/3_2_1_r_sprint Children[24] race_bin_02/3_2_1_r_sprint/speedtrap5
+copy_node gameplay speedtrap_template speedtrap race_bin_02/3_2_1_r_sprint/speedtrap6
+change_vault gameplay race_bin_02/3_2_1_r_sprint/speedtrap6 3_2_1_r_sprint
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap6 Name race_bin_02/3_2_1_r_sprint/speedtrap6
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap6 CollectionName race_bin_02/3_2_1_r_sprint/speedtrap6
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap6 Position X 2953.734
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap6 Position Y 2993.214
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap6 Position Z 57.72754
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap6 Radius 20
+update_field gameplay race_bin_02/3_2_1_r_sprint SpeedTrapList[5] race_bin_02/3_2_1_r_sprint/speedtrap6
+update_field gameplay race_bin_02/3_2_1_r_sprint Children[25] race_bin_02/3_2_1_r_sprint/speedtrap6
+copy_node gameplay speedtrap_template speedtrap race_bin_02/3_2_1_r_sprint/speedtrap7
+change_vault gameplay race_bin_02/3_2_1_r_sprint/speedtrap7 3_2_1_r_sprint
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap7 Name race_bin_02/3_2_1_r_sprint/speedtrap7
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap7 CollectionName race_bin_02/3_2_1_r_sprint/speedtrap7
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap7 Position X 3331.071
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap7 Position Y 3618.003
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap7 Position Z 37.65234
+update_field gameplay race_bin_02/3_2_1_r_sprint/speedtrap7 Radius 25
+update_field gameplay race_bin_02/3_2_1_r_sprint SpeedTrapList[6] race_bin_02/3_2_1_r_sprint/speedtrap7
+update_field gameplay race_bin_02/3_2_1_r_sprint Children[26] race_bin_02/3_2_1_r_sprint/speedtrap7
+copy_node gameplay race_bin_02/3_2_1_r_sprint speedtraprace race_bin_02/3_2_1_r_sprint_copy
+delete_node gameplay race_bin_02/3_2_1_r_sprint
+rename_node gameplay race_bin_02/3_2_1_r_sprint_copy race_bin_02/3_2_1_r_sprint
+add_field gameplay race_bin_02/3_2_1_r_sprint PlayerCarType
+update_field gameplay race_bin_02/3_2_1_r_sprint PlayerCarType BONUS_SL65
+add_field gameplay race_bin_02/3_2_1_r_sprint PlayerCarPerformance
+update_field gameplay race_bin_02/3_2_1_r_sprint PlayerCarPerformance 0.5
+
+# prologue, race 2
+change_vault gameplay race_bin_01/1_5_2_speedtraprace gpcore
+update_field gameplay race_bin_01/1_5_2_speedtraprace DDayRace True
+delete_field gameplay race_bin_01/1_5_2_speedtraprace BossRace
+delete_field gameplay race_bin_01/1_5_2_speedtraprace RivalBestTime
+update_field gameplay race_bin_01/1_5_2_speedtraprace CashValue 10000
+delete_node gameplay race_bin_01/engage/1_5_2_engage
+update_field gameplay race_bin_02/3_2_1_r_sprint PostRaceActivity race_bin_01/1_5_2_speedtraprace
+update_field gameplay race_bin_01/1_5_2_speedtraprace Opponents[0] 16_2_3_sprint/toru_sato
+update_field gameplay race_bin_01/1_5_2_speedtraprace IntroMovie storyfmv_rap30
+update_field gameplay race_bin_01/1_5_2_speedtraprace IntroNIS IntroNis06
+update_field gameplay race_bin_01/1_5_2_speedtraprace CopsInRace False
+update_field gameplay race_bin_01/1_5_2_speedtraprace TrafficLevel 29
+add_field gameplay race_bin_01/1_5_2_speedtraprace PlayerCarType
+update_field gameplay race_bin_01/1_5_2_speedtraprace PlayerCarType BONUS_SL65
+add_field gameplay race_bin_01/1_5_2_speedtraprace PlayerCarPerformance
+update_field gameplay race_bin_01/1_5_2_speedtraprace PlayerCarPerformance 0.5
+
+# prologue, race 3
+change_vault gameplay race_bin_05/5_1_104_circuit gpcore
+add_field gameplay race_bin_05/5_1_104_circuit DDayRace
+update_field gameplay race_bin_05/5_1_104_circuit DDayRace True
+add_field gameplay race_bin_05/5_1_104_circuit PostRaceActivity
+add_field gameplay race_bin_05/5_1_104_circuit IntroMovie
+update_field gameplay race_bin_05/5_1_104_circuit CashValue 10000
+update_field gameplay race_bin_01/1_5_2_speedtraprace PostRaceActivity race_bin_05/5_1_104_circuit
+update_field gameplay race_bin_05/5_1_104_circuit PostRaceActivity 16_nis_rog_razor
+update_field gameplay race_bin_05/5_1_104_circuit Opponents[0] race_bin_10/character3
+update_field gameplay race_bin_05/5_1_104_circuit Opponents[1] race_bin_06/character2
+update_field gameplay race_bin_05/5_1_104_circuit Opponents[2] 16_1_1_circuit/opponent
+update_field gameplay race_bin_05/5_1_104_circuit IntroMovie storyfmv_saf25
+update_field gameplay race_bin_05/5_1_104_circuit IntroNIS GenericStart
+update_field gameplay race_bin_05/5_1_104_circuit CopsInRace False
+update_field gameplay race_bin_05/5_1_104_circuit TrafficLevel 97
+add_field gameplay race_bin_05/5_1_104_circuit EventIconType
+update_field gameplay race_bin_05/5_1_104_circuit EventIconType knockout
+add_field gameplay race_bin_05/5_1_104_circuit KnockoutsPerLap
+update_field gameplay race_bin_05/5_1_104_circuit KnockoutsPerLap 1
+update_field gameplay race_bin_05/5_1_104_circuit NumLaps 3
+add_field gameplay race_bin_05/5_1_104_circuit PlayerCarType
+update_field gameplay race_bin_05/5_1_104_circuit PlayerCarType BONUS_SL65
+add_field gameplay race_bin_05/5_1_104_circuit PlayerCarPerformance
+update_field gameplay race_bin_05/5_1_104_circuit PlayerCarPerformance 0.5
+
+# FMVs for prologue Razor races
+update_field gameplay 16_1_0_partial_dday IntroMovie storyfmv_bla134
+update_field gameplay 16_2_1_d_day_intro OutroMovie psa
+
+# changing number of races for race_bin_15
+resize_field gameplay race_bin_15 Children 17
+resize_field gameplay race_bin_15 WorldRaces 6
+resize_field gameplay race_bin_15 BossRaces 3
+update_field gameplay race_bin_15 RequiredRacesWon 2
+
+# race_bin_15, race 1
+change_vault gameplay race_bin_12/12_5_101_speedtrap race_bin_15
+update_field gameplay race_bin_12/12_5_101_speedtrap Opponents[0] race_bin_14/character1
+update_field gameplay race_bin_12/12_5_101_speedtrap Opponents[1] race_bin_15/opponent1
+update_field gameplay race_bin_12/12_5_101_speedtrap Opponents[2] race_bin_15/opponent2
+update_field gameplay race_bin_12/12_5_101_speedtrap CashValue 1616
+update_field gameplay race_bin_12/12_5_101_speedtrap IntroNIS IntroNis07
+update_field gameplay race_bin_15 WorldRaces[0] race_bin_12/12_5_101_speedtrap
+update_field gameplay race_bin_15 Children[1] race_bin_12/12_5_101_speedtrap
+update_field gameplay race_bin_12/12_5_101_speedtrap CopsInRace True
+update_field gameplay race_bin_12/12_5_101_speedtrap TrafficLevel 51
+
+# race_bin_15, race 2
+change_vault gameplay race_bin_03/3_1_102_circuit race_bin_15
+update_field gameplay race_bin_03/3_1_102_circuit Opponents[0] race_bin_15/opponent2
+update_field gameplay race_bin_03/3_1_102_circuit Opponents[1] race_bin_14/character3
+update_field gameplay race_bin_03/3_1_102_circuit Opponents[2] race_bin_14/character2
+update_field gameplay race_bin_03/3_1_102_circuit CashValue 1121
+update_field gameplay race_bin_03/3_1_102_circuit IntroNIS IntroNis06
+update_field gameplay race_bin_15 WorldRaces[1] race_bin_03/3_1_102_circuit
+update_field gameplay race_bin_15 Children[2] race_bin_03/3_1_102_circuit
+update_field gameplay race_bin_03/3_1_102_circuit CopsInRace False
+update_field gameplay race_bin_03/3_1_102_circuit TrafficLevel 92
+add_field gameplay race_bin_03/3_1_102_circuit EventIconType
+update_field gameplay race_bin_03/3_1_102_circuit EventIconType knockout
+add_field gameplay race_bin_03/3_1_102_circuit KnockoutsPerLap
+update_field gameplay race_bin_03/3_1_102_circuit KnockoutsPerLap 1
+update_field gameplay race_bin_03/3_1_102_circuit NumLaps 3
+
+# race_bin_15, race 3
+change_vault gameplay race_bin_06/6_1_1_circuit race_bin_15
+delete_field gameplay race_bin_06/6_1_1_circuit RivalBestTime
+update_field gameplay race_bin_06/6_1_1_circuit CashValue 1215
+delete_field gameplay race_bin_06/6_1_1_circuit BossRace
+delete_field gameplay race_bin_06/6_1_1_circuit PostRaceActivity
+resize_field gameplay race_bin_06/6_1_1_circuit Opponents 3
+update_field gameplay race_bin_06/6_1_1_circuit Opponents[0] race_bin_14/character1
+update_field gameplay race_bin_06/6_1_1_circuit Opponents[1] race_bin_14/character2
+update_field gameplay race_bin_06/6_1_1_circuit Opponents[2] race_bin_14/character3
+update_field gameplay race_bin_06/6_1_1_circuit IntroNIS IntroNis06
+update_field gameplay race_bin_15 WorldRaces[2] race_bin_06/6_1_1_circuit
+update_field gameplay race_bin_15 Children[3] race_bin_06/6_1_1_circuit
+update_field gameplay race_bin_06/6_1_1_circuit CopsInRace False
+update_field gameplay race_bin_06/6_1_1_circuit TrafficLevel 63
+update_field gameplay race_bin_06/6_1_1_circuit NumLaps 3
+
+# race_bin_15, race 4
+change_vault gameplay race_bin_06/6_5_101_speedtrap race_bin_15
+update_field gameplay race_bin_06/6_5_101_speedtrap Opponents[0] race_bin_14/character1
+update_field gameplay race_bin_06/6_5_101_speedtrap Opponents[1] race_bin_15/opponent2
+update_field gameplay race_bin_06/6_5_101_speedtrap Opponents[2] race_bin_15/opponent1
+update_field gameplay race_bin_06/6_5_101_speedtrap CashValue 1238
+update_field gameplay race_bin_06/6_5_101_speedtrap IntroNIS IntroNis07
+update_field gameplay race_bin_15 WorldRaces[3] race_bin_06/6_5_101_speedtrap
+update_field gameplay race_bin_15 Children[4] race_bin_06/6_5_101_speedtrap
+update_field gameplay race_bin_06/6_5_101_speedtrap CopsInRace False
+update_field gameplay race_bin_06/6_5_101_speedtrap TrafficLevel 42
+delete_field gameplay race_bin_06/6_5_101_speedtrap SpeedTrapList
+delete_node gameplay race_bin_06/6_5_101_speedtrap/speedtrap1
+delete_node gameplay race_bin_06/6_5_101_speedtrap/speedtrap2
+delete_node gameplay race_bin_06/6_5_101_speedtrap/speedtrap3
+delete_node gameplay race_bin_06/6_5_101_speedtrap/speedtrap4
+delete_node gameplay race_bin_06/6_5_101_speedtrap/speedtrap5
+delete_node gameplay race_bin_06/6_5_101_speedtrap/speedtrap6
+delete_node gameplay race_bin_06/6_5_101_speedtrap/speedtrap7
+resize_field gameplay race_bin_06/6_5_101_speedtrap Children 10
+copy_node gameplay race_bin_06/6_5_101_speedtrap p2p race_bin_06/6_5_101_speedtrap_copy
+delete_node gameplay race_bin_06/6_5_101_speedtrap
+rename_node gameplay race_bin_06/6_5_101_speedtrap_copy race_bin_06/6_5_101_speedtrap
+
+# race_bin_15, race 5
+change_vault gameplay race_bin_07/7_3_103_knockout race_bin_15
+update_field gameplay race_bin_07/7_3_103_knockout Opponents[0] race_bin_14/character2
+update_field gameplay race_bin_07/7_3_103_knockout Opponents[1] race_bin_15/opponent1
+update_field gameplay race_bin_07/7_3_103_knockout Opponents[2] race_bin_14/character3
+update_field gameplay race_bin_07/7_3_103_knockout CashValue 1860
+update_field gameplay race_bin_07/7_3_103_knockout IntroNIS IntroNis03
+update_field gameplay race_bin_15 WorldRaces[4] race_bin_07/7_3_103_knockout
+update_field gameplay race_bin_15 Children[7] race_bin_07/7_3_103_knockout
+update_field gameplay race_bin_07/7_3_103_knockout CopsInRace False
+update_field gameplay race_bin_07/7_3_103_knockout TrafficLevel 88
+update_field gameplay race_bin_07/7_3_103_knockout NumLaps 3
+
+# race_bin_15, race 6
+change_vault gameplay race_bin_04/4_4_1_tollbooth race_bin_15
+update_field gameplay race_bin_04/4_4_1_tollbooth CashValue 2135
+update_field gameplay race_bin_15 WorldRaces[5] race_bin_04/4_4_1_tollbooth
+update_field gameplay race_bin_15 Children[13] race_bin_04/4_4_1_tollbooth
+add_field gameplay race_bin_04/4_4_1_tollbooth CopsInRace
+update_field gameplay race_bin_04/4_4_1_tollbooth CopsInRace True
+update_field gameplay race_bin_04/4_4_1_tollbooth TrafficLevel 32
+
+# race_bin_15, race 7
+change_vault gameplay race_bin_01/1_3_104_knockout race_bin_15
+add_field gameplay race_bin_01/1_3_104_knockout BossRace
+update_field gameplay race_bin_01/1_3_104_knockout BossRace True
+add_field gameplay race_bin_01/1_3_104_knockout RivalBestTime
+update_field gameplay race_bin_01/1_3_104_knockout RivalBestTime 397
+resize_field gameplay race_bin_01/1_3_104_knockout Opponents 1
+update_field gameplay race_bin_01/1_3_104_knockout Opponents[0] race_bin_15/tony_ho
+update_field gameplay race_bin_01/1_3_104_knockout CashValue 0
+add_field gameplay race_bin_01/1_3_104_knockout PostRaceActivity
+update_field gameplay race_bin_01/1_3_104_knockout IntroNIS IntroNis03
+update_field gameplay race_bin_15 BossRaces[0] race_bin_01/1_3_104_knockout
+update_field gameplay race_bin_15 Children[14] race_bin_01/1_3_104_knockout
+update_field gameplay race_bin_01/1_3_104_knockout CopsInRace True
+update_field gameplay race_bin_01/1_3_104_knockout TrafficLevel 83
+add_field gameplay race_bin_01/1_3_104_knockout EventIconType
+update_field gameplay race_bin_01/1_3_104_knockout EventIconType circuit
+add_field gameplay race_bin_01/1_3_104_knockout KnockoutsPerLap
+update_field gameplay race_bin_01/1_3_104_knockout KnockoutsPerLap 0
+update_field gameplay race_bin_01/1_3_104_knockout NumLaps 3
+
+# race_bin_15, race 8
+change_vault gameplay race_bin_05/5_5_2_speedtrap race_bin_15
+delete_node gameplay race_bin_05/engage/5_5_2_engage
+add_field gameplay race_bin_05/5_5_2_speedtrap BossRace
+update_field gameplay race_bin_05/5_5_2_speedtrap BossRace True
+add_field gameplay race_bin_05/5_5_2_speedtrap RivalBestTime
+update_field gameplay race_bin_05/5_5_2_speedtrap RivalBestTime 455
+resize_field gameplay race_bin_05/5_5_2_speedtrap Opponents 1
+update_field gameplay race_bin_05/5_5_2_speedtrap Opponents[0] race_bin_15/tony_ho
+update_field gameplay race_bin_01/1_3_104_knockout PostRaceActivity race_bin_05/5_5_2_speedtrap
+update_field gameplay race_bin_05/5_5_2_speedtrap CashValue 0
+add_field gameplay race_bin_05/5_5_2_speedtrap PostRaceActivity
+update_field gameplay race_bin_05/5_5_2_speedtrap IntroNIS IntroNis01
+update_field gameplay race_bin_15 BossRaces[1] race_bin_05/5_5_2_speedtrap
+update_field gameplay race_bin_15 Children[15] race_bin_05/5_5_2_speedtrap
+update_field gameplay race_bin_05/5_5_2_speedtrap CopsInRace True
+update_field gameplay race_bin_05/5_5_2_speedtrap TrafficLevel 92
+
+# race_bin_15, race 9
+change_vault gameplay race_bin_05/5_4_1_tollbooth race_bin_15
+delete_node gameplay race_bin_05/engage/5_4_1_engage
+add_field gameplay race_bin_05/5_4_1_tollbooth BossRace
+update_field gameplay race_bin_05/5_4_1_tollbooth BossRace True
+add_field gameplay race_bin_05/5_4_1_tollbooth RivalBestTime
+update_field gameplay race_bin_05/5_4_1_tollbooth RivalBestTime 345
+update_field gameplay race_bin_05/5_5_2_speedtrap PostRaceActivity race_bin_05/5_4_1_tollbooth
+update_field gameplay race_bin_05/5_4_1_tollbooth CashValue 3422
+add_field gameplay race_bin_05/5_4_1_tollbooth IsMarkerRace
+update_field gameplay race_bin_05/5_4_1_tollbooth IsMarkerRace True
+add_field gameplay race_bin_05/5_4_1_tollbooth RewardsForWinner 6
+copy_node gameplay templates/rewards/reward_cash_bonus reward_cash_bonus race_bin_15/rewards/reward_cash_bonus1
+update_field gameplay race_bin_15/rewards/reward_cash_bonus1 CashReward 9797
+copy_node gameplay templates/rewards/reward_chassis reward_chassis race_bin_15/rewards/reward_chassis1
+change_vault gameplay race_bin_15/rewards/reward_chassis1 race_bin_15
+update_field gameplay race_bin_15/rewards/reward_chassis1 Name race_bin_15/rewards/reward_chassis1
+update_field gameplay race_bin_15/rewards/reward_chassis1 CollectionName race_bin_15/rewards/reward_chassis1
+update_field gameplay race_bin_05/5_4_1_tollbooth RewardsForWinner[0] race_bin_15/rewards/reward_chassis1
+update_field gameplay race_bin_15/rewards Children[0] race_bin_15/rewards/reward_chassis1
+copy_node gameplay templates/rewards/reward_out_of_jail_free reward_out_of_jail_free race_bin_15/rewards/reward_out_of_jail_free1
+change_vault gameplay race_bin_15/rewards/reward_out_of_jail_free1 race_bin_15
+update_field gameplay race_bin_15/rewards/reward_out_of_jail_free1 Name race_bin_15/rewards/reward_out_of_jail_free1
+update_field gameplay race_bin_15/rewards/reward_out_of_jail_free1 CollectionName race_bin_15/rewards/reward_out_of_jail_free1
+update_field gameplay race_bin_05/5_4_1_tollbooth RewardsForWinner[1] race_bin_15/rewards/reward_out_of_jail_free1
+update_field gameplay race_bin_15/rewards Children[1] race_bin_15/rewards/reward_out_of_jail_free1
+change_vault gameplay race_bin_15/rewards/reward_cash_bonus1 race_bin_15
+update_field gameplay race_bin_15/rewards/reward_cash_bonus1 Name race_bin_15/rewards/reward_cash_bonus1
+update_field gameplay race_bin_15/rewards/reward_cash_bonus1 CollectionName race_bin_15/rewards/reward_cash_bonus1
+update_field gameplay race_bin_05/5_4_1_tollbooth RewardsForWinner[2] race_bin_15/rewards/reward_cash_bonus1
+update_field gameplay race_bin_15/rewards Children[2] race_bin_15/rewards/reward_cash_bonus1
+copy_node gameplay templates/rewards/reward_chassis reward_chassis race_bin_15/rewards/reward_chassis2
+change_vault gameplay race_bin_15/rewards/reward_chassis2 race_bin_15
+update_field gameplay race_bin_15/rewards/reward_chassis2 Name race_bin_15/rewards/reward_chassis2
+update_field gameplay race_bin_15/rewards/reward_chassis2 CollectionName race_bin_15/rewards/reward_chassis2
+update_field gameplay race_bin_05/5_4_1_tollbooth RewardsForWinner[3] race_bin_15/rewards/reward_chassis2
+update_field gameplay race_bin_15/rewards Children[3] race_bin_15/rewards/reward_chassis2
+copy_node gameplay templates/rewards/reward_hood reward_hood race_bin_15/rewards/reward_hood1
+change_vault gameplay race_bin_15/rewards/reward_hood1 race_bin_15
+update_field gameplay race_bin_15/rewards/reward_hood1 Name race_bin_15/rewards/reward_hood1
+update_field gameplay race_bin_15/rewards/reward_hood1 CollectionName race_bin_15/rewards/reward_hood1
+update_field gameplay race_bin_05/5_4_1_tollbooth RewardsForWinner[4] race_bin_15/rewards/reward_hood1
+update_field gameplay race_bin_15/rewards Children[4] race_bin_15/rewards/reward_hood1
+copy_node gameplay templates/rewards/reward_nos reward_nos race_bin_15/rewards/reward_nos1
+change_vault gameplay race_bin_15/rewards/reward_nos1 race_bin_15
+update_field gameplay race_bin_15/rewards/reward_nos1 Name race_bin_15/rewards/reward_nos1
+update_field gameplay race_bin_15/rewards/reward_nos1 CollectionName race_bin_15/rewards/reward_nos1
+update_field gameplay race_bin_05/5_4_1_tollbooth RewardsForWinner[5] race_bin_15/rewards/reward_nos1
+update_field gameplay race_bin_15/rewards Children[5] race_bin_15/rewards/reward_nos1
+update_field gameplay race_bin_15 BossRaces[2] race_bin_05/5_4_1_tollbooth
+update_field gameplay race_bin_15 Children[16] race_bin_05/5_4_1_tollbooth
+add_field gameplay race_bin_05/5_4_1_tollbooth CopsInRace
+update_field gameplay race_bin_05/5_4_1_tollbooth CopsInRace True
+update_field gameplay race_bin_05/5_4_1_tollbooth TrafficLevel 30
+
+# updating race triggers for race_bin_15
+resize_field gameplay race_bin_15/engage Children 2
+resize_field gameplay race_bin_15/engage RaceTriggers 2
+update_field gameplay race_bin_15/engage Children[0] race_bin_06/engage/6_1_1_engage
+update_field gameplay race_bin_15/engage RaceTriggers[0] race_bin_06/engage/6_1_1_engage
+change_vault gameplay race_bin_06/engage/6_1_1_engage race_bin_15
+delete_field gameplay race_bin_06/engage/6_1_1_engage InitiallyUnlocked
+update_field gameplay race_bin_15/engage Children[1] race_bin_04/engage/4_4_1_engage
+update_field gameplay race_bin_15/engage RaceTriggers[1] race_bin_04/engage/4_4_1_engage
+change_vault gameplay race_bin_04/engage/4_4_1_engage race_bin_15
+
+# randomizing milestones for race_bin_15
+resize_field gameplay milestones/bin_15 Children 4
+copy_node gameplay milestones/templates/challenge_cops_damaged milestone_cops_damaged milestones/bin_15/challenge_15_cops_damaged
+update_field gameplay milestones/bin_15 Children[0] milestones/bin_15/challenge_15_cops_damaged
+update_field gameplay milestones/bin_15/challenge_15_cops_damaged Name milestones/bin_15/challenge_15_cops_damaged
+update_field gameplay milestones/bin_15/challenge_15_cops_damaged CollectionName milestones/bin_15/challenge_15_cops_damaged
+update_field gameplay milestones/bin_15/challenge_15_cops_damaged BinIndex 15
+update_field gameplay milestones/bin_15/challenge_15_cops_damaged GoalEasy 4
+update_field gameplay milestones/bin_15/challenge_15_cops_damaged GoalHard 4
+update_field gameplay milestones/bin_15/challenge_15_cops_damaged Bounty 3912
+update_field gameplay milestones/bin_15/challenge_15_cops_damaged SpawnPoint speedtraps/bin_04/taggedcarmarker2
+copy_node gameplay milestones/templates/challenge_cost_to_state milestone_cost_to_state milestones/bin_15/challenge_15_cost_to_state
+update_field gameplay milestones/bin_15 Children[1] milestones/bin_15/challenge_15_cost_to_state
+update_field gameplay milestones/bin_15/challenge_15_cost_to_state Name milestones/bin_15/challenge_15_cost_to_state
+update_field gameplay milestones/bin_15/challenge_15_cost_to_state CollectionName milestones/bin_15/challenge_15_cost_to_state
+update_field gameplay milestones/bin_15/challenge_15_cost_to_state BinIndex 15
+update_field gameplay milestones/bin_15/challenge_15_cost_to_state GoalEasy 16227
+update_field gameplay milestones/bin_15/challenge_15_cost_to_state GoalHard 16227
+update_field gameplay milestones/bin_15/challenge_15_cost_to_state Bounty 3912
+update_field gameplay milestones/bin_15/challenge_15_cost_to_state SpawnPoint speedtraps/bin_12/taggedcarmarker1
+copy_node gameplay milestones/templates/challenge_cops_destroyed milestone_cops_destroyed milestones/bin_15/challenge_15_cops_destroyed
+update_field gameplay milestones/bin_15 Children[2] milestones/bin_15/challenge_15_cops_destroyed
+update_field gameplay milestones/bin_15/challenge_15_cops_destroyed Name milestones/bin_15/challenge_15_cops_destroyed
+update_field gameplay milestones/bin_15/challenge_15_cops_destroyed CollectionName milestones/bin_15/challenge_15_cops_destroyed
+update_field gameplay milestones/bin_15/challenge_15_cops_destroyed BinIndex 15
+update_field gameplay milestones/bin_15/challenge_15_cops_destroyed GoalEasy 3791
+update_field gameplay milestones/bin_15/challenge_15_cops_destroyed GoalHard 3791
+update_field gameplay milestones/bin_15/challenge_15_cops_destroyed Bounty 3912
+update_field gameplay milestones/bin_15/challenge_15_cops_destroyed SpawnPoint speedtraps/bin_06/taggedcarmarker2
+copy_node gameplay milestones/templates/challenge_pursuit_evasion_time milestone_pursuit_evasion_time milestones/bin_15/challenge_15_pursuit_evasion_time
+update_field gameplay milestones/bin_15 Children[3] milestones/bin_15/challenge_15_pursuit_evasion_time
+update_field gameplay milestones/bin_15/challenge_15_pursuit_evasion_time Name milestones/bin_15/challenge_15_pursuit_evasion_time
+update_field gameplay milestones/bin_15/challenge_15_pursuit_evasion_time CollectionName milestones/bin_15/challenge_15_pursuit_evasion_time
+update_field gameplay milestones/bin_15/challenge_15_pursuit_evasion_time BinIndex 15
+update_field gameplay milestones/bin_15/challenge_15_pursuit_evasion_time GoalEasy 196
+update_field gameplay milestones/bin_15/challenge_15_pursuit_evasion_time GoalHard 196
+update_field gameplay milestones/bin_15/challenge_15_pursuit_evasion_time Bounty 3912
+update_field gameplay milestones/bin_15/challenge_15_pursuit_evasion_time SpawnPoint speedtraps/bin_13/taggedcarmarker1
+
+# randomizing speedtrap bounty for race_bin_15
+update_field gameplay speedtraps/bin_15/speedtrap1 Bounty 2794
+
+# changing number of milestones and bounty for race_bin_15
+update_field gameplay race_bin_15 RequiredBounty 22355
+update_field gameplay race_bin_15 RequiredChallenges 2
+
+# changing number of races for race_bin_14
+resize_field gameplay race_bin_14 Children 25
+resize_field gameplay race_bin_14 WorldRaces 16
+update_field gameplay race_bin_14 RequiredRacesWon 5
+
+# race_bin_14, race 1
+change_vault gameplay race_bin_11/11_2_101_sprint race_bin_14
+update_field gameplay race_bin_11/11_2_101_sprint Opponents[0] race_bin_15/opponent3
+update_field gameplay race_bin_11/11_2_101_sprint Opponents[1] race_bin_14/character1
+update_field gameplay race_bin_11/11_2_101_sprint Opponents[2] race_bin_14/character3
+update_field gameplay race_bin_11/11_2_101_sprint CashValue 2823
+update_field gameplay race_bin_11/11_2_101_sprint IntroNIS IntroNis06
+update_field gameplay race_bin_14 WorldRaces[0] race_bin_11/11_2_101_sprint
+update_field gameplay race_bin_14 Children[1] race_bin_11/11_2_101_sprint
+update_field gameplay race_bin_11/11_2_101_sprint CopsInRace False
+update_field gameplay race_bin_11/11_2_101_sprint TrafficLevel 98
+add_field gameplay race_bin_11/11_2_101_sprint SpeedTrapList
+resize_field gameplay race_bin_11/11_2_101_sprint SpeedTrapList 5
+resize_field gameplay race_bin_11/11_2_101_sprint Children 16
+copy_node gameplay speedtrap_template speedtrap race_bin_11/11_2_101_sprint/speedtrap1
+change_vault gameplay race_bin_11/11_2_101_sprint/speedtrap1 11_2_101_sprint
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap1 Name race_bin_11/11_2_101_sprint/speedtrap1
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap1 CollectionName race_bin_11/11_2_101_sprint/speedtrap1
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap1 Position X 1154.9
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap1 Position Y 3059.25
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap1 Position Z 199.5
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap1 Radius 15
+update_field gameplay race_bin_11/11_2_101_sprint SpeedTrapList[0] race_bin_11/11_2_101_sprint/speedtrap1
+update_field gameplay race_bin_11/11_2_101_sprint Children[11] race_bin_11/11_2_101_sprint/speedtrap1
+copy_node gameplay speedtrap_template speedtrap race_bin_11/11_2_101_sprint/speedtrap2
+change_vault gameplay race_bin_11/11_2_101_sprint/speedtrap2 11_2_101_sprint
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap2 Name race_bin_11/11_2_101_sprint/speedtrap2
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap2 CollectionName race_bin_11/11_2_101_sprint/speedtrap2
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap2 Position X 1432.65
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap2 Position Y 2424.7
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap2 Position Z 150.5
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap2 Radius 15
+update_field gameplay race_bin_11/11_2_101_sprint SpeedTrapList[1] race_bin_11/11_2_101_sprint/speedtrap2
+update_field gameplay race_bin_11/11_2_101_sprint Children[12] race_bin_11/11_2_101_sprint/speedtrap2
+copy_node gameplay speedtrap_template speedtrap race_bin_11/11_2_101_sprint/speedtrap3
+change_vault gameplay race_bin_11/11_2_101_sprint/speedtrap3 11_2_101_sprint
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap3 Name race_bin_11/11_2_101_sprint/speedtrap3
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap3 CollectionName race_bin_11/11_2_101_sprint/speedtrap3
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap3 Position X 787.88
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap3 Position Y 2778.35
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap3 Position Z 151.5
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap3 Radius 15
+update_field gameplay race_bin_11/11_2_101_sprint SpeedTrapList[2] race_bin_11/11_2_101_sprint/speedtrap3
+update_field gameplay race_bin_11/11_2_101_sprint Children[13] race_bin_11/11_2_101_sprint/speedtrap3
+copy_node gameplay speedtrap_template speedtrap race_bin_11/11_2_101_sprint/speedtrap4
+change_vault gameplay race_bin_11/11_2_101_sprint/speedtrap4 11_2_101_sprint
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap4 Name race_bin_11/11_2_101_sprint/speedtrap4
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap4 CollectionName race_bin_11/11_2_101_sprint/speedtrap4
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap4 Position X 948.7
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap4 Position Y 2177.05
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap4 Position Z 154.5
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap4 Radius 20
+update_field gameplay race_bin_11/11_2_101_sprint SpeedTrapList[3] race_bin_11/11_2_101_sprint/speedtrap4
+update_field gameplay race_bin_11/11_2_101_sprint Children[14] race_bin_11/11_2_101_sprint/speedtrap4
+copy_node gameplay speedtrap_template speedtrap race_bin_11/11_2_101_sprint/speedtrap5
+change_vault gameplay race_bin_11/11_2_101_sprint/speedtrap5 11_2_101_sprint
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap5 Name race_bin_11/11_2_101_sprint/speedtrap5
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap5 CollectionName race_bin_11/11_2_101_sprint/speedtrap5
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap5 Position X 1648.6
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap5 Position Y 2334.9
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap5 Position Z 150.5
+update_field gameplay race_bin_11/11_2_101_sprint/speedtrap5 Radius 15
+update_field gameplay race_bin_11/11_2_101_sprint SpeedTrapList[4] race_bin_11/11_2_101_sprint/speedtrap5
+update_field gameplay race_bin_11/11_2_101_sprint Children[15] race_bin_11/11_2_101_sprint/speedtrap5
+copy_node gameplay race_bin_11/11_2_101_sprint speedtraprace race_bin_11/11_2_101_sprint_copy
+delete_node gameplay race_bin_11/11_2_101_sprint
+rename_node gameplay race_bin_11/11_2_101_sprint_copy race_bin_11/11_2_101_sprint
+
+# race_bin_14, race 2
+change_vault gameplay race_bin_12/12_1_2_circuit race_bin_14
+add_node gameplay engagetrigger_circuit race_bin_12/engage/engagetrigger_circuit_12_1_2
+change_vault gameplay race_bin_12/engage/engagetrigger_circuit_12_1_2 race_bin_14
+add_field gameplay race_bin_12/engage/engagetrigger_circuit_12_1_2 Name
+update_field gameplay race_bin_12/engage/engagetrigger_circuit_12_1_2 Name race_bin_12/engage/engagetrigger_circuit_12_1_2
+update_field gameplay race_bin_12/engage/engagetrigger_circuit_12_1_2 CollectionName race_bin_12/engage/engagetrigger_circuit_12_1_2
+add_field gameplay race_bin_12/engage/engagetrigger_circuit_12_1_2 TargetActivity
+update_field gameplay race_bin_12/engage/engagetrigger_circuit_12_1_2 TargetActivity race_bin_12/12_1_2_circuit
+add_field gameplay race_bin_12/engage/engagetrigger_circuit_12_1_2 Template
+update_field gameplay race_bin_12/engage/engagetrigger_circuit_12_1_2 Template False
+add_field gameplay race_bin_12/engage/engagetrigger_circuit_12_1_2 Position
+update_field gameplay race_bin_12/engage/engagetrigger_circuit_12_1_2 Position X 1466.443
+update_field gameplay race_bin_12/engage/engagetrigger_circuit_12_1_2 Position Y 3742.286
+update_field gameplay race_bin_12/engage/engagetrigger_circuit_12_1_2 Position Z 189.0587
+delete_field gameplay race_bin_12/12_1_2_circuit RivalBestTime
+update_field gameplay race_bin_12/12_1_2_circuit CashValue 2437
+delete_field gameplay race_bin_12/12_1_2_circuit BossRace
+delete_field gameplay race_bin_12/12_1_2_circuit IsMarkerRace
+delete_field gameplay race_bin_12/12_1_2_circuit RewardsForWinner
+resize_field gameplay race_bin_12/12_1_2_circuit Opponents 3
+update_field gameplay race_bin_12/12_1_2_circuit Opponents[0] race_bin_15/opponent1
+update_field gameplay race_bin_12/12_1_2_circuit Opponents[1] race_bin_15/opponent2
+update_field gameplay race_bin_12/12_1_2_circuit Opponents[2] race_bin_15/opponent3
+update_field gameplay race_bin_12/12_1_2_circuit IntroNIS IntroNis04
+update_field gameplay race_bin_14 WorldRaces[1] race_bin_12/12_1_2_circuit
+update_field gameplay race_bin_14 Children[2] race_bin_12/12_1_2_circuit
+update_field gameplay race_bin_12/12_1_2_circuit CopsInRace False
+update_field gameplay race_bin_12/12_1_2_circuit TrafficLevel 56
+update_field gameplay race_bin_12/12_1_2_circuit NumLaps 3
+
+# race_bin_14, race 3
+change_vault gameplay race_bin_08/8_1_103_circuit race_bin_14
+update_field gameplay race_bin_08/8_1_103_circuit Opponents[0] race_bin_15/opponent1
+update_field gameplay race_bin_08/8_1_103_circuit Opponents[1] race_bin_15/opponent3
+update_field gameplay race_bin_08/8_1_103_circuit Opponents[2] race_bin_15/opponent2
+update_field gameplay race_bin_08/8_1_103_circuit CashValue 1720
+update_field gameplay race_bin_08/8_1_103_circuit IntroNIS IntroNis03
+update_field gameplay race_bin_14 WorldRaces[2] race_bin_08/8_1_103_circuit
+update_field gameplay race_bin_14 Children[3] race_bin_08/8_1_103_circuit
+update_field gameplay race_bin_08/8_1_103_circuit CopsInRace False
+update_field gameplay race_bin_08/8_1_103_circuit TrafficLevel 56
+update_field gameplay race_bin_08/8_1_103_circuit NumLaps 4
+
+# race_bin_14, race 4
+change_vault gameplay race_bin_10/10_3_2_knockout race_bin_14
+update_field gameplay race_bin_10/10_3_2_knockout Opponents[0] race_bin_14/character2
+update_field gameplay race_bin_10/10_3_2_knockout Opponents[1] race_bin_15/opponent2
+update_field gameplay race_bin_10/10_3_2_knockout Opponents[2] race_bin_14/character3
+update_field gameplay race_bin_10/10_3_2_knockout CashValue 1762
+update_field gameplay race_bin_10/10_3_2_knockout IntroNIS IntroNis03
+update_field gameplay race_bin_14 WorldRaces[3] race_bin_10/10_3_2_knockout
+update_field gameplay race_bin_14 Children[4] race_bin_10/10_3_2_knockout
+update_field gameplay race_bin_10/10_3_2_knockout CopsInRace False
+update_field gameplay race_bin_10/10_3_2_knockout TrafficLevel 46
+add_field gameplay race_bin_10/10_3_2_knockout EventIconType
+update_field gameplay race_bin_10/10_3_2_knockout EventIconType circuit
+update_field gameplay race_bin_10/10_3_2_knockout KnockoutsPerLap 0
+update_field gameplay race_bin_10/10_3_2_knockout NumLaps 1
+
+# race_bin_14, race 5
+change_vault gameplay race_bin_01/1_1_1_circuit race_bin_14
+update_field gameplay race_bin_01/1_1_1_circuit Opponents[0] race_bin_14/character1
+update_field gameplay race_bin_01/1_1_1_circuit Opponents[1] race_bin_15/opponent3
+update_field gameplay race_bin_01/1_1_1_circuit Opponents[2] race_bin_15/opponent1
+update_field gameplay race_bin_01/1_1_1_circuit CashValue 1023
+update_field gameplay race_bin_01/1_1_1_circuit IntroNIS IntroNis08
+update_field gameplay race_bin_14 WorldRaces[4] race_bin_01/1_1_1_circuit
+update_field gameplay race_bin_14 Children[5] race_bin_01/1_1_1_circuit
+update_field gameplay race_bin_01/1_1_1_circuit CopsInRace False
+update_field gameplay race_bin_01/1_1_1_circuit TrafficLevel 46
+add_field gameplay race_bin_01/1_1_1_circuit NumLaps
+update_field gameplay race_bin_01/1_1_1_circuit NumLaps 1
+
+# race_bin_14, race 6
+change_vault gameplay race_bin_04/9_1_1_r_circuit race_bin_14
+update_field gameplay race_bin_04/9_1_1_r_circuit Opponents[0] race_bin_14/character2
+update_field gameplay race_bin_04/9_1_1_r_circuit Opponents[1] race_bin_15/opponent1
+update_field gameplay race_bin_04/9_1_1_r_circuit Opponents[2] race_bin_15/opponent3
+update_field gameplay race_bin_04/9_1_1_r_circuit CashValue 2831
+update_field gameplay race_bin_04/9_1_1_r_circuit IntroNIS GenericStart
+update_field gameplay race_bin_14 WorldRaces[5] race_bin_04/9_1_1_r_circuit
+update_field gameplay race_bin_14 Children[6] race_bin_04/9_1_1_r_circuit
+update_field gameplay race_bin_04/9_1_1_r_circuit CopsInRace False
+update_field gameplay race_bin_04/9_1_1_r_circuit TrafficLevel 10
+add_field gameplay race_bin_04/9_1_1_r_circuit NumLaps
+add_field gameplay race_bin_04/9_1_1_r_circuit EventIconType
+update_field gameplay race_bin_04/9_1_1_r_circuit EventIconType knockout
+add_field gameplay race_bin_04/9_1_1_r_circuit KnockoutsPerLap
+update_field gameplay race_bin_04/9_1_1_r_circuit KnockoutsPerLap 1
+update_field gameplay race_bin_04/9_1_1_r_circuit NumLaps 3
+
+# race_bin_14, race 7
+change_vault gameplay race_bin_11/11_5_1_speedtrap_race race_bin_14
+update_field gameplay race_bin_11/11_5_1_speedtrap_race Opponents[0] race_bin_14/character2
+update_field gameplay race_bin_11/11_5_1_speedtrap_race Opponents[1] race_bin_14/character3
+update_field gameplay race_bin_11/11_5_1_speedtrap_race Opponents[2] race_bin_15/opponent2
+update_field gameplay race_bin_11/11_5_1_speedtrap_race CashValue 2286
+update_field gameplay race_bin_11/11_5_1_speedtrap_race IntroNIS IntroNis07
+update_field gameplay race_bin_14 WorldRaces[6] race_bin_11/11_5_1_speedtrap_race
+update_field gameplay race_bin_14 Children[7] race_bin_11/11_5_1_speedtrap_race
+update_field gameplay race_bin_11/11_5_1_speedtrap_race CopsInRace False
+update_field gameplay race_bin_11/11_5_1_speedtrap_race TrafficLevel 90
+delete_field gameplay race_bin_11/11_5_1_speedtrap_race SpeedTrapList
+delete_node gameplay race_bin_11/11_5_1_speedtrap_race/speedtrap1
+delete_node gameplay race_bin_11/11_5_1_speedtrap_race/speedtrap2
+delete_node gameplay race_bin_11/11_5_1_speedtrap_race/speedtrap3
+delete_node gameplay race_bin_11/11_5_1_speedtrap_race/speedtrap4
+delete_node gameplay race_bin_11/11_5_1_speedtrap_race/speedtrap5
+update_field gameplay race_bin_11/11_5_1_speedtrap_race EventIconType p2p
+update_field gameplay race_bin_11/11_5_1_speedtrap_race Children[12] race_bin_11/11_5_1_speedtrap_race/wrongway
+resize_field gameplay race_bin_11/11_5_1_speedtrap_race Children 13
+copy_node gameplay race_bin_11/11_5_1_speedtrap_race p2p race_bin_11/11_5_1_speedtrap_race_copy
+delete_node gameplay race_bin_11/11_5_1_speedtrap_race
+rename_node gameplay race_bin_11/11_5_1_speedtrap_race_copy race_bin_11/11_5_1_speedtrap_race
+
+# race_bin_14, race 8
+change_vault gameplay race_bin_06/6_4_2_tollbooth race_bin_14
+update_field gameplay race_bin_06/6_4_2_tollbooth CashValue 1402
+update_field gameplay race_bin_14 WorldRaces[7] race_bin_06/6_4_2_tollbooth
+update_field gameplay race_bin_14 Children[9] race_bin_06/6_4_2_tollbooth
+update_field gameplay race_bin_06/6_4_2_tollbooth CopsInRace False
+update_field gameplay race_bin_06/6_4_2_tollbooth TrafficLevel 42
+
+# race_bin_14, race 9
+change_vault gameplay race_bin_07/7_5_1_speedtrap race_bin_14
+update_field gameplay race_bin_07/7_5_1_speedtrap Opponents[0] race_bin_15/opponent1
+update_field gameplay race_bin_07/7_5_1_speedtrap Opponents[1] race_bin_14/character1
+update_field gameplay race_bin_07/7_5_1_speedtrap Opponents[2] race_bin_14/character3
+update_field gameplay race_bin_07/7_5_1_speedtrap CashValue 1923
+update_field gameplay race_bin_07/7_5_1_speedtrap IntroNIS IntroNis04
+update_field gameplay race_bin_14 WorldRaces[8] race_bin_07/7_5_1_speedtrap
+update_field gameplay race_bin_14 Children[15] race_bin_07/7_5_1_speedtrap
+update_field gameplay race_bin_07/7_5_1_speedtrap CopsInRace False
+update_field gameplay race_bin_07/7_5_1_speedtrap TrafficLevel 55
+delete_field gameplay race_bin_07/7_5_1_speedtrap SpeedTrapList
+delete_node gameplay race_bin_07/7_5_1_speedtrap/speedtrap2
+delete_node gameplay race_bin_07/7_5_1_speedtrap/speedtrap3
+delete_node gameplay race_bin_07/7_5_1_speedtrap/speedtrap4
+delete_node gameplay race_bin_07/7_5_1_speedtrap/speedtrap5
+delete_node gameplay race_bin_07/7_5_1_speedtrap/speedtrap6
+delete_node gameplay race_bin_07/7_5_1_speedtrap/speedtrap7
+update_field gameplay race_bin_07/7_5_1_speedtrap EventIconType p2p
+update_field gameplay race_bin_07/7_5_1_speedtrap Children[9] race_bin_07/7_5_1_speedtrap/checkpoint8
+update_field gameplay race_bin_07/7_5_1_speedtrap Children[10] race_bin_07/7_5_1_speedtrap/checkpoint9
+update_field gameplay race_bin_07/7_5_1_speedtrap Children[11] race_bin_07/7_5_1_speedtrap/checkpoint10
+update_field gameplay race_bin_07/7_5_1_speedtrap Children[12] race_bin_07/7_5_1_speedtrap/shortcut1
+update_field gameplay race_bin_07/7_5_1_speedtrap Children[13] race_bin_07/7_5_1_speedtrap/shortcut2
+update_field gameplay race_bin_07/7_5_1_speedtrap Children[14] race_bin_07/7_5_1_speedtrap/shortcut3
+update_field gameplay race_bin_07/7_5_1_speedtrap Children[15] race_bin_07/7_5_1_speedtrap/wrongway
+update_field gameplay race_bin_07/7_5_1_speedtrap Children[16] race_bin_07/7_5_1_speedtrap/shortcut5
+update_field gameplay race_bin_07/7_5_1_speedtrap Children[17] race_bin_07/7_5_1_speedtrap/shortcut6
+update_field gameplay race_bin_07/7_5_1_speedtrap Children[18] race_bin_07/7_5_1_speedtrap/shortcut7
+update_field gameplay race_bin_07/7_5_1_speedtrap Children[19] race_bin_07/7_5_1_speedtrap/shortcut8
+update_field gameplay race_bin_07/7_5_1_speedtrap Children[20] race_bin_07/7_5_1_speedtrap/shortcut9
+resize_field gameplay race_bin_07/7_5_1_speedtrap Children 21
+copy_node gameplay race_bin_07/7_5_1_speedtrap p2p race_bin_07/7_5_1_speedtrap_copy
+delete_node gameplay race_bin_07/7_5_1_speedtrap
+rename_node gameplay race_bin_07/7_5_1_speedtrap_copy race_bin_07/7_5_1_speedtrap
+
+# race_bin_14, race 10
+change_vault gameplay race_bin_03/3_4_1_r_tollbooth race_bin_14
+update_field gameplay race_bin_03/3_4_1_r_tollbooth CashValue 2379
+update_field gameplay race_bin_14 WorldRaces[9] race_bin_03/3_4_1_r_tollbooth
+update_field gameplay race_bin_14 Children[16] race_bin_03/3_4_1_r_tollbooth
+update_field gameplay race_bin_03/3_4_1_r_tollbooth CopsInRace True
+update_field gameplay race_bin_03/3_4_1_r_tollbooth TrafficLevel 65
+
+# race_bin_14, race 11
+change_vault gameplay race_bin_08/8_1_105_circuit race_bin_14
+update_field gameplay race_bin_08/8_1_105_circuit Opponents[0] race_bin_14/character2
+update_field gameplay race_bin_08/8_1_105_circuit Opponents[1] race_bin_14/character3
+update_field gameplay race_bin_08/8_1_105_circuit Opponents[2] race_bin_15/opponent3
+update_field gameplay race_bin_08/8_1_105_circuit CashValue 2557
+update_field gameplay race_bin_08/8_1_105_circuit IntroNIS IntroNis07
+update_field gameplay race_bin_14 WorldRaces[10] race_bin_08/8_1_105_circuit
+update_field gameplay race_bin_14 Children[17] race_bin_08/8_1_105_circuit
+update_field gameplay race_bin_08/8_1_105_circuit CopsInRace True
+update_field gameplay race_bin_08/8_1_105_circuit TrafficLevel 73
+update_field gameplay race_bin_08/8_1_105_circuit NumLaps 1
+
+# race_bin_14, race 12
+change_vault gameplay race_bin_13/13_4_2_tollbooth race_bin_14
+update_field gameplay race_bin_13/13_4_2_tollbooth CashValue 1328
+update_field gameplay race_bin_14 WorldRaces[11] race_bin_13/13_4_2_tollbooth
+update_field gameplay race_bin_14 Children[18] race_bin_13/13_4_2_tollbooth
+update_field gameplay race_bin_13/13_4_2_tollbooth CopsInRace False
+update_field gameplay race_bin_13/13_4_2_tollbooth TrafficLevel 95
+
+# race_bin_14, race 13
+change_vault gameplay race_bin_04/4_2_103_sprint race_bin_14
+update_field gameplay race_bin_04/4_2_103_sprint Opponents[0] race_bin_14/character1
+update_field gameplay race_bin_04/4_2_103_sprint Opponents[1] race_bin_14/character3
+update_field gameplay race_bin_04/4_2_103_sprint Opponents[2] race_bin_15/opponent2
+update_field gameplay race_bin_04/4_2_103_sprint CashValue 2420
+update_field gameplay race_bin_04/4_2_103_sprint IntroNIS IntroNis06
+update_field gameplay race_bin_14 WorldRaces[12] race_bin_04/4_2_103_sprint
+update_field gameplay race_bin_14 Children[19] race_bin_04/4_2_103_sprint
+update_field gameplay race_bin_04/4_2_103_sprint CopsInRace False
+update_field gameplay race_bin_04/4_2_103_sprint TrafficLevel 31
+
+# race_bin_14, race 14
+change_vault gameplay race_bin_08/8_2_101_sprint race_bin_14
+update_field gameplay race_bin_08/8_2_101_sprint Opponents[0] race_bin_14/character2
+update_field gameplay race_bin_08/8_2_101_sprint Opponents[1] race_bin_15/opponent3
+update_field gameplay race_bin_08/8_2_101_sprint Opponents[2] race_bin_15/opponent2
+update_field gameplay race_bin_08/8_2_101_sprint CashValue 1566
+update_field gameplay race_bin_08/8_2_101_sprint IntroNIS IntroNis06
+update_field gameplay race_bin_14 WorldRaces[13] race_bin_08/8_2_101_sprint
+update_field gameplay race_bin_14 Children[20] race_bin_08/8_2_101_sprint
+update_field gameplay race_bin_08/8_2_101_sprint CopsInRace False
+update_field gameplay race_bin_08/8_2_101_sprint TrafficLevel 23
+
+# race_bin_14, race 15
+change_vault gameplay race_bin_01/1_5_1_speedtraprace race_bin_14
+update_field gameplay race_bin_01/1_5_1_speedtraprace Opponents[0] race_bin_14/character1
+update_field gameplay race_bin_01/1_5_1_speedtraprace Opponents[1] race_bin_15/opponent3
+update_field gameplay race_bin_01/1_5_1_speedtraprace Opponents[2] race_bin_15/opponent1
+update_field gameplay race_bin_01/1_5_1_speedtraprace CashValue 1569
+update_field gameplay race_bin_01/1_5_1_speedtraprace IntroNIS IntroNis03
+update_field gameplay race_bin_14 WorldRaces[14] race_bin_01/1_5_1_speedtraprace
