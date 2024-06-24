@@ -935,7 +935,7 @@ int main()
     currentRaceVariation = bossRacesResult.first;
 
     //Variables for pursuits
-    int currentMinimumBounty = pickRandomNumber(10000, 30000);
+    int currentMinimumBounty = pickRandomNumber(20000, 40000);
     int previousMinimumBounty = currentMinimumBounty;
     int bountyGap = currentMinimumBounty;
 
@@ -976,7 +976,7 @@ int main()
     numberOfBossRacesForBoss = bossRacesResult.second;
     currentRaceVariation = bossRacesResult.first;
 
-    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 10000, previousMinimumBounty + 30000);
+    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 20000, previousMinimumBounty + 40000);
     bountyGap = currentMinimumBounty - previousMinimumBounty;
     previousMinimumBounty = currentMinimumBounty;
 
@@ -993,7 +993,7 @@ int main()
     numberOfBossRacesForBoss = bossRacesResult.second;
     currentRaceVariation = bossRacesResult.first;
 
-    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 10000, previousMinimumBounty + 30000);
+    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 20000, previousMinimumBounty + 40000);
     bountyGap = currentMinimumBounty - previousMinimumBounty;
     previousMinimumBounty = currentMinimumBounty;
 

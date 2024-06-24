@@ -63,9 +63,9 @@ void randomizeMilestones(std::ofstream& file, int heatLevel, int bountyGap, cons
 
     switch(pickRandomNumber(1, 3))
     {
-        case 1: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.175); break;
-        case 2: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.15); break;
-        default: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.125);
+        case 1: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.2); break;
+        case 2: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.175); break;
+        default: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.15);
     }
 
     //Select and randomize between 2 and 4 milestones
@@ -260,6 +260,7 @@ void randomizeMilestones(std::ofstream& file, int heatLevel, int bountyGap, cons
 int randomizeSpeedtraps(std::ofstream& file, int bountyGap, const std::string& raceBin)
 {
     int numberOfSpeedtraps;
+    int speedtrapBountyValue;
 
     switch(std::stoi(raceBin.substr(9, 2)))
     {
@@ -270,27 +271,18 @@ int randomizeSpeedtraps(std::ofstream& file, int bountyGap, const std::string& r
 
     file << std::string("# randomizing speedtrap bounty for ").append(raceBin).append("\n");
 
+    switch(pickRandomNumber(1, 3))
+    {
+        case 1: speedtrapBountyValue = static_cast<int>(bountyGap * 0.20); break;
+        case 2: speedtrapBountyValue = static_cast<int>(bountyGap * 0.175); break;
+        default: speedtrapBountyValue = static_cast<int>(bountyGap * 0.15);
+    }
+
     for ( int loop = 0; loop < numberOfSpeedtraps; loop++ )
     {
-        switch(pickRandomNumber(1, 3))
-        {
-            case 1:
-                file << std::string("update_field gameplay speedtraps/").append(raceBin.substr(5, 6))
-                .append("/speedtrap").append(std::to_string(loop + 1)).append(" Bounty ")
-                .append(std::to_string(static_cast<int>(bountyGap * 0.15))).append("\n");
-                break;
-
-            case 2:
-                file << std::string("update_field gameplay speedtraps/").append(raceBin.substr(5, 6))
-                .append("/speedtrap").append(std::to_string(loop + 1)).append(" Bounty ")
-                .append(std::to_string(static_cast<int>(bountyGap * 0.125))).append("\n");
-                break;
-
-            default:
-                file << std::string("update_field gameplay speedtraps/").append(raceBin.substr(5, 6))
-                .append("/speedtrap").append(std::to_string(loop + 1)).append(" Bounty ")
-                .append(std::to_string(static_cast<int>(bountyGap * 0.1))).append("\n");
-        }
+        file << std::string("update_field gameplay speedtraps/").append(raceBin.substr(5, 6))
+        .append("/speedtrap").append(std::to_string(loop + 1)).append(" Bounty ")
+        .append(std::to_string(speedtrapBountyValue)).append("\n");
     }
 
     file << std::string("\n");

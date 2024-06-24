@@ -41,44 +41,44 @@ void randomizeFreeRoam()
 
         //Change nodes in vlted to match selection
         file << std::string("update_field gameplay ").append(chosenZone).append(" Position X ")
-                .append(std::to_string(chosenZoneCoordinates[0])).append("\n");
+        .append(std::to_string(chosenZoneCoordinates[0])).append("\n");
 
         file << std::string("update_field gameplay ").append(chosenZone).append(" Position Y ")
-                .append(std::to_string(chosenZoneCoordinates[1])).append("\n");
+        .append(std::to_string(chosenZoneCoordinates[1])).append("\n");
 
         file << std::string("update_field gameplay ").append(chosenZone).append(" Position Z ")
-                .append(std::to_string(chosenZoneCoordinates[2])).append("\n");
+        .append(std::to_string(chosenZoneCoordinates[2])).append("\n");
 
         file << std::string("update_field gameplay ").append(chosenZone).append(" Radius ")
-                .append(std::to_string(chosenZoneCoordinates[3])).append("\n");
+        .append(std::to_string(chosenZoneCoordinates[3])).append("\n");
 
         file << std::string("update_field gameplay ").append(chosenZone).append("/respawn Position X ")
-                .append(std::to_string(chosenRespawnCoordinates[0])).append("\n");
+        .append(std::to_string(chosenRespawnCoordinates[0])).append("\n");
 
         file << std::string("update_field gameplay ").append(chosenZone).append("/respawn Position Y ")
-                .append(std::to_string(chosenRespawnCoordinates[1])).append("\n");
+        .append(std::to_string(chosenRespawnCoordinates[1])).append("\n");
 
         file << std::string("update_field gameplay ").append(chosenZone).append("/respawn Position Z ")
-                .append(std::to_string(chosenRespawnCoordinates[2])).append("\n");
+        .append(std::to_string(chosenRespawnCoordinates[2])).append("\n");
 
         file << std::string("update_field gameplay ").append(chosenZone).append("/respawn Rotation ")
-                .append(std::to_string(chosenRespawnCoordinates[3])).append("\n");
+        .append(std::to_string(chosenRespawnCoordinates[3])).append("\n");
 
         if ( chosenZone == newGPSTarget || chosenZone == newCareerStart )
         {
             if ( chosenZone == newCareerStart )
             {
                 file << std::string("update_field gameplay career_start_l2ra Position X ")
-                        .append(std::to_string(chosenRespawnCoordinates[0])).append("\n");
+                .append(std::to_string(chosenRespawnCoordinates[0])).append("\n");
 
                 file << std::string("update_field gameplay career_start_l2ra Position Y ")
-                        .append(std::to_string(chosenRespawnCoordinates[1])).append("\n");
+                .append(std::to_string(chosenRespawnCoordinates[1])).append("\n");
 
                 file << std::string("update_field gameplay career_start_l2ra Position Z ")
-                        .append(std::to_string(chosenRespawnCoordinates[2])).append("\n");
+                .append(std::to_string(chosenRespawnCoordinates[2])).append("\n");
 
                 file << std::string("update_field gameplay career_start_l2ra Rotation ")
-                        .append(std::to_string(chosenRespawnCoordinates[3])).append("\n");
+                .append(std::to_string(chosenRespawnCoordinates[3])).append("\n");
             }
 
             else if ( chosenZone == newGPSTarget )

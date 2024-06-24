@@ -423,8 +423,6 @@ void createSpeedtrapTemplate()
     file.close();
 }
 
-
-
 void deleteSpeedtrapTemplate()
 {
     std::ofstream file;
