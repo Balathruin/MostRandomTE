@@ -5,6 +5,10 @@
 #include <random>
 #include <iostream>
 #include "GeneralFunctions.h"
+#include "XoshiroCpp.hpp"
+
+/** Credit to Reputeless for the XoshiroCpp.hpp library, taken from
+    https://github.com/Reputeless/Xoshiro-cpp and used under the MIT license.       */
 
 std::vector<std::pair<std::string, bool>> promptUser(const std::vector<std::pair<std::string, bool>>& promptedForRaces,
                                                      const std::string& promptText, int* counterToIncrement)
@@ -303,9 +307,9 @@ int pickRandomNumber(int startRange, int maxRange)
 
     //Set up the number randomizer
     std::random_device rd;
-    std::mt19937 mt(rd());
-    std::uniform_int_distribution<> dist(startRange, maxRange);
+    XoshiroCpp::Xoshiro256PlusPlus xoshiro(rd());
+    std::uniform_int_distribution<int> dist(startRange, maxRange);
 
     //Generate and return number
-    return dist(mt);
+    return dist(xoshiro);
 }
