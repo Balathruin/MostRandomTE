@@ -11,6 +11,7 @@ std::vector<std::pair<std::string, bool>> promptUser(const std::vector<std::pair
 std::vector<std::pair<std::string, bool>> promptUser(const std::vector<std::pair<std::string, bool>>&,
        const std::vector<std::pair<std::string, bool>>&, const std::string&, const std::string&, int*);
 
+bool askQuestionAboutSettings(const std::string&);
 bool checkForField(int, int);
 int pickRandomNumber(int, int);
 

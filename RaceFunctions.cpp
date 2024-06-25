@@ -350,7 +350,8 @@ void randomizeCircuitLaps(std::ofstream& file, const std::string& raceName, int 
 
 void randomizeKOsAndCircuits(std::ofstream& file, const std::string& raceName, int raceInteger,
                              const std::string& raceType, const std::unordered_map<int, float>& distanceMap,
-                             const std::unordered_map<int, float>& timeMap, int loop, int numberOfRaces)
+                             const std::unordered_map<int, float>& timeMap, int loop, int numberOfRaces,
+                             bool allKnockoutsConvertedToCircuits)
 {
     std::unordered_map<int, float>::const_iterator valueFloat;
     int median;
@@ -393,24 +394,27 @@ void randomizeKOsAndCircuits(std::ofstream& file, const std::string& raceName, i
     //This block runs just if the race is a lap knockout
     else if ( raceType == "knockout" )
     {
-        //Guaranteed conversion if a boss race
-        if ( loop > numberOfRaces - 1 )
+        if ( !allKnockoutsConvertedToCircuits || raceInteger < 175 )
         {
-            convertKnockoutToCircuit(file, raceName, raceInteger);
-            convertedToCircuit = true;
-        }
-
-        //50% chance otherwise
-        else
-        {
-            if ( pickRandomNumber(0, 100) < 50 )
+            //Guaranteed conversion if a boss race
+            if ( loop > numberOfRaces - 1 )
             {
                 convertKnockoutToCircuit(file, raceName, raceInteger);
                 convertedToCircuit = true;
             }
+
+            //50% chance otherwise
+            else
+            {
+                if ( pickRandomNumber(0, 100) < 50 )
+                {
+                    convertKnockoutToCircuit(file, raceName, raceInteger);
+                    convertedToCircuit = true;
+                }
+            }
         }
 
-        if ( !convertedToCircuit )
+        if ( !convertedToCircuit && raceInteger < 175 )
         {
             file << std::string("update_field gameplay ").append(raceName)
             .append(" NumLaps 3").append("\n");
@@ -553,7 +557,7 @@ void convertSpeedtrapToSprint(std::ofstream& file, int raceInteger, const std::s
 }
 
 void randomizeSprintsAndSpeedtraps(std::ofstream& file, const std::string& raceType, int raceInteger,
-                                   const std::string& raceName)
+                                   const std::string& raceName, bool allSpeedtrapsConvertedToSprints)
 {
     if ( raceType == "sprint" )
     {
@@ -563,7 +567,7 @@ void randomizeSprintsAndSpeedtraps(std::ofstream& file, const std::string& raceT
 
     else
     {
-        if ( pickRandomNumber(0, 100) < 50 )
+        if ( pickRandomNumber(0, 100) < 50 && (!allSpeedtrapsConvertedToSprints || raceInteger < 175))
         { convertSpeedtrapToSprint(file, raceInteger, raceName); }
     }
 }
@@ -761,33 +765,38 @@ void randomizeGeneralFields(std::ofstream& file, const std::string& raceName,
                             const std::unordered_map<int, float>& distanceMap,
                             const std::unordered_map<int, float>& timeMap,
                             int numberOfRaces, const std::string& raceType, int raceInteger,
-                            int loop, int copChance)
+                            int loop, int copChance, bool allKnockoutsConvertedToCircuits,
+                            bool allSpeedtrapsConvertedToSprints, bool maximumTrafficDensity,
+                            bool copsOnAllTrackExpansionRaces)
 {
     /** Called from randomizeRaces and randomizePrologue races, this function randomizes fields
       * that most races have and don't have a place with other functions. Only takes arguments needed
       * for its lines and returns no value.                                                                  */
 
     //Decide if race should have cops or not
-    if ( !checkForField(raceInteger, 12) )
+    if ( !copsOnAllTrackExpansionRaces || raceInteger < 175 )
     {
-        file << std::string("add_field gameplay ").append(raceName)
-        .append(" CopsInRace").append("\n");
-    }
+        if ( !checkForField(raceInteger, 12) )
+        {
+            file << std::string("add_field gameplay ").append(raceName)
+            .append(" CopsInRace").append("\n");
+        }
 
-    if ( pickRandomNumber(0, 100) < copChance )
-    {
-        file << std::string("update_field gameplay ").append(raceName)
-        .append(" CopsInRace True").append("\n");
-    }
+        if ( pickRandomNumber(0, 100) < copChance )
+        {
+            file << std::string("update_field gameplay ").append(raceName)
+            .append(" CopsInRace True").append("\n");
+        }
 
-    else
-    {
-        file << std::string("update_field gameplay ").append(raceName)
-        .append(" CopsInRace False").append("\n");
+        else
+        {
+            file << std::string("update_field gameplay ").append(raceName)
+            .append(" CopsInRace False").append("\n");
+        }
     }
 
     //If not a drag, randomize traffic
-    if ( raceType != "drag" )
+    if ( raceType != "drag" && (!maximumTrafficDensity || raceInteger < 175))
     {
         if ( !checkForField(raceInteger, 9 ) )
         {
@@ -801,8 +810,11 @@ void randomizeGeneralFields(std::ofstream& file, const std::string& raceName,
 
     //Roll for converting one race type to a different, similar one
     if ( raceType == "circuit" || raceType == "knockout" )
-    { randomizeKOsAndCircuits(file, raceName, raceInteger, raceType, distanceMap, timeMap, loop, numberOfRaces); }
+    {
+        randomizeKOsAndCircuits(file, raceName, raceInteger, raceType,
+            distanceMap, timeMap, loop, numberOfRaces, allKnockoutsConvertedToCircuits);
+    }
 
     else if ( raceType == "sprint" || raceType == "speedtrap" )
-    { randomizeSprintsAndSpeedtraps(file, raceType, raceInteger, raceName); }
+    { randomizeSprintsAndSpeedtraps(file, raceType, raceInteger, raceName, allSpeedtrapsConvertedToSprints); }
 }

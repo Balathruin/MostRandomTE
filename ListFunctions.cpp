@@ -14,7 +14,7 @@ std::vector<std::pair<std::string, bool>> populateRacesCustomizable(int* origina
     int* originalNumberOfBigLouRacesPtr, int* originalNumberOfBaronRacesPtr, int* originalNumberOfEarlRacesPtr,
     int* originalNumberOfJewelsRacesPtr, int* originalNumberOfKazeRacesPtr, int* originalNumberOfMingRacesPtr,
     int* originalNumberOfWebsterRacesPtr, int* originalNumberOfJVRacesPtr, int* originalNumberOfRonnieRacesPtr,
-    int* originalNumberOfBullRacesPtr, int* originalNumberOfRazorRacesPtr)
+    int* originalNumberOfBullRacesPtr, int* originalNumberOfRazorRacesPtr, bool easyInstall)
 {
     /** Populates a vector with hardcoded strings for race names, taken from vlted. */
 
@@ -246,294 +246,477 @@ std::vector<std::pair<std::string, bool>> populateRacesCustomizable(int* origina
 
     /**                                 Track Expansion races                                  */
 
-    //Section for Sonny tracks
-    promptedForRaces =
+    if ( !easyInstall )
     {
-        std::make_pair("race_bin_15/15_1_101_circuit", false),
-        std::make_pair("race_bin_15/15_2_101_sprint", false),
-        std::make_pair("race_bin_15/15_3_101_knockout", false)
-    };
+        //Section for Sonny tracks
+        promptedForRaces =
+        {
+            std::make_pair("race_bin_15/15_1_101_circuit", false),
+            std::make_pair("race_bin_15/15_2_101_sprint", false),
+            std::make_pair("race_bin_15/15_3_101_knockout", false)
+        };
 
-    newAdditions = promptUser(promptedForRaces, "Add Sonny tracks? Y/N\n >> ", originalNumberOfSonnyRacesPtr);
+        newAdditions = promptUser(promptedForRaces, "\nAdd Sonny tracks? Y/N\n >> ", originalNumberOfSonnyRacesPtr);
 
-    if ( !newAdditions.empty() )
-    { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+        if ( !newAdditions.empty() )
+        { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
 
-    //Section for Taz tracks
-    promptedForRaces =
+        //Section for Taz tracks
+        promptedForRaces =
+        {
+            std::make_pair("race_bin_14/14_3_101_knockout", false),
+            std::make_pair("race_bin_14/14_2_101_sprint", false),
+            std::make_pair("race_bin_14/14_1_101_circuit", false),
+            std::make_pair("race_bin_14/14_5_101_speedtrap", false)
+        };
+
+        newAdditions = promptUser(promptedForRaces, "\nAdd Taz tracks? Y/N\n >> ", originalNumberOfTazRacesPtr);
+
+        if ( !newAdditions.empty() )
+        { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+
+        //Section for Vic tracks
+        promptedForRaces =
+        {
+            std::make_pair("race_bin_13/13_1_101_circuit", false),
+            std::make_pair("race_bin_13/13_1_102_circuit", false),
+            std::make_pair("race_bin_13/13_2_101_sprint", false),
+            std::make_pair("race_bin_13/13_3_101_knockout", false)
+        };
+
+        promptedForExtraRaces = { std::make_pair("race_bin_13/13_1_103_circuit", false) };
+
+        newAdditions = promptUser(promptedForRaces, promptedForExtraRaces, "\nAdd Vic tracks? Y/N \n>> ",
+                                  "\nAdd extra Vic track? Y/N\n >> ", originalNumberOfVicRacesPtr);
+
+        if ( !newAdditions.empty() )
+        { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+
+        //Section for Izzy tracks
+        promptedForRaces =
+        {
+            std::make_pair("race_bin_12/12_3_101_knockout", false),
+            std::make_pair("race_bin_12/12_3_102_knockout", false),
+            std::make_pair("race_bin_12/12_5_101_speedtrap", false),
+            std::make_pair("race_bin_12/12_1_101_circuit", false),
+            std::make_pair("race_bin_12/12_1_102_circuit", false),
+            std::make_pair("race_bin_12/12_2_101_sprint", false),
+            std::make_pair("race_bin_12/12_3_103_knockout", false)
+        };
+
+        promptedForExtraRaces = { std::make_pair("race_bin_12/12_1_103_circuit", false) };
+
+        newAdditions = promptUser(promptedForRaces, promptedForExtraRaces, "\nAdd Izzy tracks? Y/N\n >> ",
+                                  "\nAdd extra Izzy track? Y/N\n >> ", originalNumberOfIzzyRacesPtr);
+
+        if ( !newAdditions.empty() )
+        { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+
+        //Section for Big Lou tracks
+        promptedForRaces =
+        {
+            std::make_pair("race_bin_11/11_3_101_knockout", false),
+            std::make_pair("race_bin_11/11_2_101_sprint", false),
+            std::make_pair("race_bin_11/11_3_102_knockout", false),
+            std::make_pair("race_bin_11/11_1_101_circuit", false),
+            std::make_pair("race_bin_11/11_1_102_circuit", false),
+            std::make_pair("race_bin_11/11_5_101_speedtrap", false),
+            std::make_pair("race_bin_11/11_1_103_circuit", false),
+            std::make_pair("race_bin_11/11_3_103_knockout", false)
+        };
+
+        newAdditions = promptUser(promptedForRaces, "\nAdd Big Lou tracks? Y/N\n >> ", originalNumberOfBigLouRacesPtr);
+
+        if ( !newAdditions.empty() )
+        { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+
+        //Section for Baron tracks
+        promptedForRaces =
+        {
+            std::make_pair("race_bin_10/10_1_101_circuit", false),
+            std::make_pair("race_bin_10/10_3_101_knockout", false),
+            std::make_pair("race_bin_10/10_5_101_speedtrap", false),
+            std::make_pair("race_bin_10/10_3_102_knockout", false),
+            std::make_pair("race_bin_10/10_2_101_sprint", false),
+            std::make_pair("race_bin_10/10_1_104_circuit", false)
+        };
+
+        promptedForExtraRaces =
+        {
+            std::make_pair("race_bin_10/10_1_102_circuit", false),
+            std::make_pair("race_bin_10/10_1_103_circuit", false)
+        };
+
+        newAdditions = promptUser(promptedForRaces, promptedForExtraRaces, "\nAdd Baron tracks? Y/N\n >> ",
+                                  "\nAdd extra Baron tracks? Y/N\n >> ", originalNumberOfBaronRacesPtr);
+
+        if ( !newAdditions.empty() )
+        { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+
+        //Section for Earl tracks
+        promptedForRaces =
+        {
+            std::make_pair("race_bin_09/9_2_101_sprint", false),
+            std::make_pair("race_bin_09/9_1_101_circuit", false),
+            std::make_pair("race_bin_09/9_1_102_circuit", false),
+            std::make_pair("race_bin_09/9_3_101_knockout", false),
+            std::make_pair("race_bin_09/9_1_103_circuit", false),
+            std::make_pair("race_bin_09/9_2_102_sprint", false),
+            std::make_pair("race_bin_09/9_3_102_knockout", false),
+            std::make_pair("race_bin_09/9_1_104_circuit", false)
+        };
+
+        newAdditions = promptUser(promptedForRaces, "\nAdd Earl tracks? Y/N\n >> ", originalNumberOfEarlRacesPtr);
+
+        if ( !newAdditions.empty() )
+        { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+
+        //Section for Jewels tracks
+        promptedForRaces =
+        {
+            std::make_pair("race_bin_08/8_1_101_circuit", false),
+            std::make_pair("race_bin_08/8_2_101_sprint", false),
+            std::make_pair("race_bin_08/8_3_101_knockout", false),
+            std::make_pair("race_bin_08/8_3_102_knockout", false),
+            std::make_pair("race_bin_08/8_1_102_circuit", false),
+            std::make_pair("race_bin_08/8_1_103_circuit", false),
+            std::make_pair("race_bin_08/8_1_105_circuit", false)
+        };
+
+        promptedForExtraRaces = { std::make_pair("race_bin_08/8_1_104_circuit", false) };
+
+        newAdditions = promptUser(promptedForRaces, promptedForExtraRaces, "\nAdd Jewels tracks? Y/N\n >> ",
+                                  "\nAdd extra Jewels track? Y/N\n >> ", originalNumberOfJewelsRacesPtr);
+
+        if ( !newAdditions.empty() )
+        { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+
+        //Section for Kaze tracks
+        promptedForRaces =
+        {
+            std::make_pair("race_bin_07/7_1_101_circuit", false),
+            std::make_pair("race_bin_07/7_3_101_knockout", false),
+            std::make_pair("race_bin_07/7_2_101_sprint", false),
+            std::make_pair("race_bin_07/7_3_102_knockout", false),
+            std::make_pair("race_bin_07/7_1_102_circuit", false),
+            std::make_pair("race_bin_07/7_3_103_knockout", false),
+            std::make_pair("race_bin_07/7_5_101_speedtrap", false),
+            std::make_pair("race_bin_07/7_1_104_circuit", false)
+        };
+
+        promptedForExtraRaces = { std::make_pair("race_bin_07/7_1_103_circuit", false) };
+
+        newAdditions = promptUser(promptedForRaces, promptedForExtraRaces, "\nAdd Kaze tracks? Y/N\n >> ",
+                                  "\nAdd extra Kaze track? Y/N\n >> ", originalNumberOfKazeRacesPtr);
+
+        if ( !newAdditions.empty() )
+        { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+
+        //Section for Ming tracks
+        promptedForRaces =
+        {
+            std::make_pair("race_bin_06/6_3_101_knockout", false),
+            std::make_pair("race_bin_06/6_1_101_circuit", false),
+            std::make_pair("race_bin_06/6_5_101_speedtrap", false),
+            std::make_pair("race_bin_06/6_2_101_sprint", false),
+            std::make_pair("race_bin_06/6_3_102_knockout", false),
+            std::make_pair("race_bin_06/6_1_103_circuit", false),
+            std::make_pair("race_bin_06/6_1_104_circuit", false),
+            std::make_pair("race_bin_06/6_3_103_knockout", false),
+            std::make_pair("race_bin_06/6_1_105_circuit", false)
+        };
+
+        promptedForExtraRaces = { std::make_pair("race_bin_06/6_1_102_circuit", false) };
+
+        newAdditions = promptUser(promptedForRaces, promptedForExtraRaces, "\nAdd Ming tracks? Y/N\n >> ",
+                                  "\nAdd extra Ming track? Y/N\n >> ", originalNumberOfMingRacesPtr);
+
+        if ( !newAdditions.empty() )
+        { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+
+        //Section for Webster tracks
+        promptedForRaces =
+        {
+            std::make_pair("race_bin_05/5_3_101_knockout", false),
+            std::make_pair("race_bin_05/5_1_106_circuit", false),
+            std::make_pair("race_bin_05/5_1_101_circuit", false),
+            std::make_pair("race_bin_05/5_3_102_knockout", false),
+            std::make_pair("race_bin_05/5_2_101_sprint", false),
+            std::make_pair("race_bin_05/5_2_102_sprint", false),
+            std::make_pair("race_bin_05/5_1_102_circuit", false),
+            std::make_pair("race_bin_05/5_1_103_circuit", false),
+            std::make_pair("race_bin_05/5_3_103_knockout", false),
+            std::make_pair("race_bin_05/5_1_104_circuit", false),
+            std::make_pair("race_bin_05/5_1_105_circuit", false)
+        };
+
+        newAdditions = promptUser(promptedForRaces, "\nAdd Webster tracks? Y/N\n >> ", originalNumberOfWebsterRacesPtr);
+
+        if ( !newAdditions.empty() )
+        { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+
+        //Section for JV tracks
+        promptedForRaces =
+        {
+            std::make_pair("race_bin_04/4_1_101_circuit", false),
+            std::make_pair("race_bin_04/4_3_101_knockout", false),
+            std::make_pair("race_bin_04/4_1_102_circuit", false),
+            std::make_pair("race_bin_04/4_2_101_sprint", false),
+            std::make_pair("race_bin_04/4_3_102_knockout", false),
+            std::make_pair("race_bin_04/4_1_103_circuit", false),
+            std::make_pair("race_bin_04/4_1_104_circuit", false),
+            std::make_pair("race_bin_04/4_2_102_sprint", false),
+            std::make_pair("race_bin_04/4_3_103_knockout", false),
+            std::make_pair("race_bin_04/4_3_104_knockout", false),
+            std::make_pair("race_bin_04/4_2_103_sprint", false)
+        };
+
+        newAdditions = promptUser(promptedForRaces, "\nAdd JV tracks? Y/N\n >> ", originalNumberOfJVRacesPtr);
+
+        if ( !newAdditions.empty() )
+        { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+
+        //Section for Ronnie tracks
+        promptedForRaces =
+        {
+            std::make_pair("race_bin_03/3_1_101_circuit", false),
+            std::make_pair("race_bin_03/3_1_102_circuit", false),
+            std::make_pair("race_bin_03/3_5_101_speedtrap", false),
+            std::make_pair("race_bin_03/3_3_101_knockout", false),
+            std::make_pair("race_bin_03/3_1_103_circuit", false),
+            std::make_pair("race_bin_03/3_3_102_knockout", false),
+            std::make_pair("race_bin_03/3_2_101_sprint", false),
+            std::make_pair("race_bin_03/3_1_104_circuit", false),
+            std::make_pair("race_bin_03/3_3_103_knockout", false),
+            std::make_pair("race_bin_03/3_3_104_knockout", false)
+        };
+
+        newAdditions = promptUser(promptedForRaces, "\nAdd Ronnie tracks? Y/N\n >> ", originalNumberOfRonnieRacesPtr);
+
+        if ( !newAdditions.empty() )
+        { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+
+        //Section for Bull tracks
+        promptedForRaces =
+        {
+            std::make_pair("race_bin_02/2_1_101_circuit", false),
+            std::make_pair("race_bin_02/2_1_105_circuit", false),
+            std::make_pair("race_bin_02/2_2_101_sprint", false),
+            std::make_pair("race_bin_02/2_1_102_circuit", false),
+            std::make_pair("race_bin_02/2_3_101_knockout", false),
+            std::make_pair("race_bin_02/2_5_101_speedtrap", false),
+            std::make_pair("race_bin_02/2_3_102_knockout", false),
+            std::make_pair("race_bin_02/2_1_103_circuit", false),
+            std::make_pair("race_bin_02/2_1_104_circuit", false),
+            std::make_pair("race_bin_02/2_3_103_knockout", false),
+            std::make_pair("race_bin_02/2_1_106_circuit", false)
+        };
+
+        newAdditions = promptUser(promptedForRaces, "\nAdd Bull tracks? Y/N\n >> ", originalNumberOfBullRacesPtr);
+
+        if ( !newAdditions.empty() )
+        { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+
+        //Section for Razor tracks
+        promptedForRaces =
+        {
+            std::make_pair("race_bin_01/1_1_101_circuit", false),
+            std::make_pair("race_bin_01/1_1_102_circuit", false),
+            std::make_pair("race_bin_01/1_3_101_knockout", false),
+            std::make_pair("race_bin_01/1_1_103_circuit", false),
+            std::make_pair("race_bin_01/1_1_104_circuit", false),
+            std::make_pair("race_bin_01/1_3_102_knockout", false),
+            std::make_pair("race_bin_01/1_3_103_knockout", false),
+            std::make_pair("race_bin_01/1_3_104_knockout", false),
+            std::make_pair("race_bin_01/1_1_105_circuit", false),
+            std::make_pair("race_bin_01/1_1_106_circuit", false)
+        };
+
+        newAdditions = promptUser(promptedForRaces, "\nAdd Razor tracks? Y/N\n >> ", originalNumberOfRazorRacesPtr);
+
+        if ( !newAdditions.empty() )
+        { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+    }
+
+    else
     {
-        std::make_pair("race_bin_14/14_3_101_knockout", false),
-        std::make_pair("race_bin_14/14_2_101_sprint", false),
-        std::make_pair("race_bin_14/14_1_101_circuit", false),
-        std::make_pair("race_bin_14/14_5_101_speedtrap", false)
-    };
+        //Sonny track expansion races
+        vector.emplace_back("race_bin_15/15_1_101_circuit", false);            //Race 4
+        vector.emplace_back("race_bin_15/15_2_101_sprint", false);             //Race 5
+        vector.emplace_back("race_bin_15/15_3_101_knockout", false);           //Race 6
 
-    newAdditions = promptUser(promptedForRaces, "\nAdd Taz tracks? Y/N\n >> ", originalNumberOfTazRacesPtr);
+        *originalNumberOfSonnyRacesPtr += 3;
 
-    if ( !newAdditions.empty() )
-    { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+        //Taz track expansion races
+        vector.emplace_back("race_bin_14/14_3_101_knockout", false);           //Race 7
+        vector.emplace_back("race_bin_14/14_2_101_sprint", false);             //Race 8
+        vector.emplace_back("race_bin_14/14_1_101_circuit", false);            //Race 9
+        vector.emplace_back("race_bin_14/14_5_101_speedtrap", false);          //Race 10
 
-    //Section for Vic tracks
-    promptedForRaces =
-    {
-        std::make_pair("race_bin_13/13_1_101_circuit", false),
-        std::make_pair("race_bin_13/13_1_102_circuit", false),
-        std::make_pair("race_bin_13/13_2_101_sprint", false),
-        std::make_pair("race_bin_13/13_3_101_knockout", false)
-    };
+        *originalNumberOfTazRacesPtr += 4;
 
-    promptedForExtraRaces = { std::make_pair("race_bin_13/13_1_103_circuit", false) };
+        //Vic track expansion races
+        vector.emplace_back("race_bin_13/13_1_101_circuit", false);            //Race 8
+        vector.emplace_back("race_bin_13/13_1_102_circuit", false);            //Race 9
+        vector.emplace_back("race_bin_13/13_2_101_sprint", false);             //Race 10
+        vector.emplace_back("race_bin_13/13_3_101_knockout", false);           //Race 11
 
-    newAdditions = promptUser(promptedForRaces, promptedForExtraRaces, "\nAdd Vic tracks? Y/N \n>> ",
-                              "\nAdd extra Vic track? Y/N\n >> ", originalNumberOfVicRacesPtr);
+        *originalNumberOfVicRacesPtr += 4;
 
-    if ( !newAdditions.empty() )
-    { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+        //Izzy track expansion races
+        vector.emplace_back("race_bin_12/12_3_101_knockout", false);           //Race 8
+        vector.emplace_back("race_bin_12/12_3_102_knockout", false);           //Race 9
+        vector.emplace_back("race_bin_12/12_5_101_speedtrap", false);          //Race 10
+        vector.emplace_back("race_bin_12/12_1_101_circuit", false);            //Race 11
+        vector.emplace_back("race_bin_12/12_1_102_circuit", false);            //Race 12
+        vector.emplace_back("race_bin_12/12_2_101_sprint", false);             //Race 13
+        vector.emplace_back("race_bin_12/12_3_103_knockout", false);           //Race 14
 
-    //Section for Izzy tracks
-    promptedForRaces =
-    {
-        std::make_pair("race_bin_12/12_3_101_knockout", false),
-        std::make_pair("race_bin_12/12_3_102_knockout", false),
-        std::make_pair("race_bin_12/12_5_101_speedtrap", false),
-        std::make_pair("race_bin_12/12_1_101_circuit", false),
-        std::make_pair("race_bin_12/12_1_102_circuit", false),
-        std::make_pair("race_bin_12/12_2_101_sprint", false),
-        std::make_pair("race_bin_12/12_3_103_knockout", false)
-    };
+        *originalNumberOfIzzyRacesPtr += 7;
 
-    promptedForExtraRaces = { std::make_pair("race_bin_12/12_1_103_circuit", false) };
+        //Big Lou expansion track races
+        vector.emplace_back("race_bin_11/11_3_101_knockout", false);           //Race 9
+        vector.emplace_back("race_bin_11/11_2_101_sprint", false);             //Race 10
+        vector.emplace_back("race_bin_11/11_3_102_knockout", false);           //Race 11
+        vector.emplace_back("race_bin_11/11_1_101_circuit", false);            //Race 12
+        vector.emplace_back("race_bin_11/11_1_102_circuit", false);            //Race 13
+        vector.emplace_back("race_bin_11/11_5_101_speedtrap", false);          //Race 14
+        vector.emplace_back("race_bin_11/11_1_103_circuit", false);            //Race 15
+        vector.emplace_back("race_bin_11/11_3_103_knockout", false);           //Race 16
 
-    newAdditions = promptUser(promptedForRaces, promptedForExtraRaces, "\nAdd Izzy tracks? Y/N\n >> ",
-                              "\nAdd extra Izzy track? Y/N\n >> ", originalNumberOfIzzyRacesPtr);
+        *originalNumberOfBigLouRacesPtr += 8;
 
-    if ( !newAdditions.empty() )
-    { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+        //Baron track expansion races
+        vector.emplace_back("race_bin_10/10_1_101_circuit", false);            //Race 9
+        vector.emplace_back("race_bin_10/10_3_101_knockout", false);           //Race 10
+        vector.emplace_back("race_bin_10/10_5_101_speedtrap", false);          //Race 11
+        vector.emplace_back("race_bin_10/10_3_102_knockout", false);           //Race 12
+        vector.emplace_back("race_bin_10/10_2_101_sprint", false);             //Race 13
+        vector.emplace_back("race_bin_10/10_1_104_circuit", false);            //Race 14
 
-    //Section for Big Lou tracks
-    promptedForRaces =
-    {
-        std::make_pair("race_bin_11/11_3_101_knockout", false),
-        std::make_pair("race_bin_11/11_2_101_sprint", false),
-        std::make_pair("race_bin_11/11_3_102_knockout", false),
-        std::make_pair("race_bin_11/11_1_101_circuit", false),
-        std::make_pair("race_bin_11/11_1_102_circuit", false),
-        std::make_pair("race_bin_11/11_5_101_speedtrap", false),
-        std::make_pair("race_bin_11/11_1_103_circuit", false),
-        std::make_pair("race_bin_11/11_3_103_knockout", false)
-    };
+        *originalNumberOfBaronRacesPtr += 6;
 
-    newAdditions = promptUser(promptedForRaces, "\nAdd Big Lou tracks? Y/N\n >> ", originalNumberOfBigLouRacesPtr);
+        //Earl track expansion races
+        vector.emplace_back("race_bin_09/9_2_101_sprint", false);              //Race 9
+        vector.emplace_back("race_bin_09/9_1_101_circuit", false);             //Race 10
+        vector.emplace_back("race_bin_09/9_1_102_circuit", false);             //Race 11
+        vector.emplace_back("race_bin_09/9_3_101_knockout", false);            //Race 12
+        vector.emplace_back("race_bin_09/9_1_103_circuit", false);             //Race 13
+        vector.emplace_back("race_bin_09/9_2_102_sprint", false);              //Race 14
+        vector.emplace_back("race_bin_09/9_3_102_knockout", false);            //Race 15
+        vector.emplace_back("race_bin_09/9_1_104_circuit", false);             //Race 16
 
-    if ( !newAdditions.empty() )
-    { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+        *originalNumberOfEarlRacesPtr += 8;
 
-    //Section for Baron tracks
-    promptedForRaces =
-    {
-        std::make_pair("race_bin_10/10_1_101_circuit", false),
-        std::make_pair("race_bin_10/10_3_101_knockout", false),
-        std::make_pair("race_bin_10/10_5_101_speedtrap", false),
-        std::make_pair("race_bin_10/10_3_102_knockout", false),
-        std::make_pair("race_bin_10/10_2_101_sprint", false),
-        std::make_pair("race_bin_10/10_1_104_circuit", false)
-    };
+        //Jewels track expansion races
+        vector.emplace_back("race_bin_08/8_1_101_circuit", false);             //Race 8
+        vector.emplace_back("race_bin_08/8_2_101_sprint", false);              //Race 9
+        vector.emplace_back("race_bin_08/8_3_101_knockout", false);            //Race 10
+        vector.emplace_back("race_bin_08/8_3_102_knockout", false);            //Race 11
+        vector.emplace_back("race_bin_08/8_1_102_circuit", false);             //Race 12
+        vector.emplace_back("race_bin_08/8_1_103_circuit", false);             //Race 13
+        vector.emplace_back("race_bin_08/8_1_105_circuit", false);             //Race 14
 
-    promptedForExtraRaces =
-    {
-        std::make_pair("race_bin_10/10_1_102_circuit", false),
-        std::make_pair("race_bin_10/10_1_103_circuit", false)
-    };
+        *originalNumberOfJewelsRacesPtr += 7;
 
-    newAdditions = promptUser(promptedForRaces, promptedForExtraRaces, "\nAdd Baron tracks? Y/N\n >> ",
-                              "\nAdd extra Baron tracks? Y/N\n >> ", originalNumberOfBaronRacesPtr);
+        //Kaze track expansion races
+        vector.emplace_back("race_bin_07/7_1_101_circuit", false);             //Race 11
+        vector.emplace_back("race_bin_07/7_3_101_knockout", false);            //Race 12
+        vector.emplace_back("race_bin_07/7_2_101_sprint", false);              //Race 13
+        vector.emplace_back("race_bin_07/7_3_102_knockout", false);            //Race 14
+        vector.emplace_back("race_bin_07/7_1_102_circuit", false);             //Race 15
+        vector.emplace_back("race_bin_07/7_3_103_knockout", false);            //Race 16
+        vector.emplace_back("race_bin_07/7_5_101_speedtrap", false);           //Race 17
+        vector.emplace_back("race_bin_07/7_1_104_circuit", false);             //Race 18
 
-    if ( !newAdditions.empty() )
-    { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+        *originalNumberOfKazeRacesPtr += 8;
 
-    //Section for Earl tracks
-    promptedForRaces =
-    {
-        std::make_pair("race_bin_09/9_2_101_sprint", false),
-        std::make_pair("race_bin_09/9_1_101_circuit", false),
-        std::make_pair("race_bin_09/9_1_102_circuit", false),
-        std::make_pair("race_bin_09/9_3_101_knockout", false),
-        std::make_pair("race_bin_09/9_1_103_circuit", false),
-        std::make_pair("race_bin_09/9_2_102_sprint", false),
-        std::make_pair("race_bin_09/9_3_102_knockout", false),
-        std::make_pair("race_bin_09/9_1_104_circuit", false)
-    };
+        //Ming track expansion races
+        vector.emplace_back("race_bin_06/6_3_101_knockout", false);            //Race 12
+        vector.emplace_back("race_bin_06/6_1_101_circuit", false);             //Race 13
+        vector.emplace_back("race_bin_06/6_5_101_speedtrap", false);           //Race 14
+        vector.emplace_back("race_bin_06/6_2_101_sprint", false);              //Race 15
+        vector.emplace_back("race_bin_06/6_3_102_knockout", false);            //Race 16
+        vector.emplace_back("race_bin_06/6_1_103_circuit", false);             //Race 17
+        vector.emplace_back("race_bin_06/6_1_104_circuit", false);             //Race 18
+        vector.emplace_back("race_bin_06/6_3_103_knockout", false);            //Race 19
+        vector.emplace_back("race_bin_06/6_1_105_circuit", false);             //Race 20
 
-    newAdditions = promptUser(promptedForRaces, "\nAdd Earl tracks? Y/N\n >> ", originalNumberOfEarlRacesPtr);
+        *originalNumberOfMingRacesPtr += 9;
 
-    if ( !newAdditions.empty() )
-    { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+        //Webster track expansion races
+        vector.emplace_back("race_bin_05/5_3_101_knockout", false);            //Race 11
+        vector.emplace_back("race_bin_05/5_1_106_circuit", false);             //Race 12
+        vector.emplace_back("race_bin_05/5_1_101_circuit", false);             //Race 13
+        vector.emplace_back("race_bin_05/5_3_102_knockout", false);            //Race 14
+        vector.emplace_back("race_bin_05/5_2_101_sprint", false);              //Race 15
+        vector.emplace_back("race_bin_05/5_2_102_sprint", false);              //Race 16
+        vector.emplace_back("race_bin_05/5_1_102_circuit", false);             //Race 17
+        vector.emplace_back("race_bin_05/5_1_103_circuit", false);             //Race 18
+        vector.emplace_back("race_bin_05/5_3_103_knockout", false);            //Race 19
+        vector.emplace_back("race_bin_05/5_1_104_circuit", false);             //Race 20
+        vector.emplace_back("race_bin_05/5_1_105_circuit", false);             //Race 21
 
-    //Section for Jewels tracks
-    promptedForRaces =
-    {
-        std::make_pair("race_bin_08/8_1_101_circuit", false),
-        std::make_pair("race_bin_08/8_2_101_sprint", false),
-        std::make_pair("race_bin_08/8_3_101_knockout", false),
-        std::make_pair("race_bin_08/8_3_102_knockout", false),
-        std::make_pair("race_bin_08/8_1_102_circuit", false),
-        std::make_pair("race_bin_08/8_1_103_circuit", false),
-        std::make_pair("race_bin_08/8_1_105_circuit", false)
-    };
+        *originalNumberOfWebsterRacesPtr += 11;
 
-    promptedForExtraRaces = { std::make_pair("race_bin_08/8_1_104_circuit", false) };
+        //JV track expansion races
+        vector.emplace_back("race_bin_04/4_1_101_circuit", false);             //Race 12
+        vector.emplace_back("race_bin_04/4_3_101_knockout", false);            //Race 13
+        vector.emplace_back("race_bin_04/4_1_102_circuit", false);             //Race 14
+        vector.emplace_back("race_bin_04/4_2_101_sprint", false);              //Race 15
+        vector.emplace_back("race_bin_04/4_3_102_knockout", false);            //Race 16
+        vector.emplace_back("race_bin_04/4_1_103_circuit", false);             //Race 17
+        vector.emplace_back("race_bin_04/4_1_104_circuit", false);             //Race 18
+        vector.emplace_back("race_bin_04/4_2_102_sprint", false);              //Race 19
+        vector.emplace_back("race_bin_04/4_3_103_knockout", false);            //Race 20
+        vector.emplace_back("race_bin_04/4_3_104_knockout", false);            //Race 21
+        vector.emplace_back("race_bin_04/4_2_103_sprint", false);              //Race 22
 
-    newAdditions = promptUser(promptedForRaces, promptedForExtraRaces, "\nAdd Jewels tracks? Y/N\n >> ",
-                              "\nAdd extra Jewels track? Y/N\n >> ", originalNumberOfJewelsRacesPtr);
+        *originalNumberOfJVRacesPtr += 11;
 
-    if ( !newAdditions.empty() )
-    { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+        //Ronnie track expansion races
+        vector.emplace_back("race_bin_03/3_1_101_circuit", false);             //Race 13
+        vector.emplace_back("race_bin_03/3_1_102_circuit", false);             //Race 14
+        vector.emplace_back("race_bin_03/3_5_101_speedtrap", false);           //Race 15
+        vector.emplace_back("race_bin_03/3_3_101_knockout", false);            //Race 16
+        vector.emplace_back("race_bin_03/3_1_103_circuit", false);             //Race 17
+        vector.emplace_back("race_bin_03/3_3_102_knockout", false);            //Race 18
+        vector.emplace_back("race_bin_03/3_2_101_sprint", false);              //Race 19
+        vector.emplace_back("race_bin_03/3_1_104_circuit", false);             //Race 20
+        vector.emplace_back("race_bin_03/3_3_103_knockout", false);            //Race 21
+        vector.emplace_back("race_bin_03/3_3_104_knockout", false);            //Race 22
 
-    //Section for Kaze tracks
-    promptedForRaces =
-    {
-        std::make_pair("race_bin_07/7_1_101_circuit", false),
-        std::make_pair("race_bin_07/7_3_101_knockout", false),
-        std::make_pair("race_bin_07/7_2_101_sprint", false),
-        std::make_pair("race_bin_07/7_3_102_knockout", false),
-        std::make_pair("race_bin_07/7_1_102_circuit", false),
-        std::make_pair("race_bin_07/7_3_103_knockout", false),
-        std::make_pair("race_bin_07/7_5_101_speedtrap", false),
-        std::make_pair("race_bin_07/7_1_104_circuit", false)
-    };
+        *originalNumberOfRonnieRacesPtr += 10;
 
-    promptedForExtraRaces = { std::make_pair("race_bin_07/7_1_103_circuit", false) };
+        //Bull track expansion races
+        vector.emplace_back("race_bin_02/2_1_101_circuit", false);             //Race 13
+        vector.emplace_back("race_bin_02/2_1_105_circuit", false);             //Race 14
+        vector.emplace_back("race_bin_02/2_2_101_sprint", false);              //Race 15
+        vector.emplace_back("race_bin_02/2_1_102_circuit", false);             //Race 16
+        vector.emplace_back("race_bin_02/2_3_101_knockout", false);            //Race 17
+        vector.emplace_back("race_bin_02/2_5_101_speedtrap", false);           //Race 18
+        vector.emplace_back("race_bin_02/2_3_102_knockout", false);            //Race 19
+        vector.emplace_back("race_bin_02/2_1_103_circuit", false);             //Race 20
+        vector.emplace_back("race_bin_02/2_1_104_circuit", false);             //Race 21
+        vector.emplace_back("race_bin_02/2_3_103_knockout", false);            //Race 22
+        vector.emplace_back("race_bin_02/2_1_106_circuit", false);             //Race 23
 
-    newAdditions = promptUser(promptedForRaces, promptedForExtraRaces, "\nAdd Kaze tracks? Y/N\n >> ",
-                              "\nAdd extra Kaze track? Y/N\n >> ", originalNumberOfKazeRacesPtr);
+        *originalNumberOfBullRacesPtr += 11;
 
-    if ( !newAdditions.empty() )
-    { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+        //Razor track expansion races
+        vector.emplace_back("race_bin_01/1_1_101_circuit", false);             //Race 12
+        vector.emplace_back("race_bin_01/1_1_102_circuit", false);             //Race 13
+        vector.emplace_back("race_bin_01/1_3_101_knockout", false);            //Race 14
+        vector.emplace_back("race_bin_01/1_1_103_circuit", false);             //Race 15
+        vector.emplace_back("race_bin_01/1_1_104_circuit", false);             //Race 16
+        vector.emplace_back("race_bin_01/1_3_102_knockout", false);            //Race 17
+        vector.emplace_back("race_bin_01/1_3_103_knockout", false);            //Race 18
+        vector.emplace_back("race_bin_01/1_3_104_knockout", false);            //Race 19
+        vector.emplace_back("race_bin_01/1_1_105_circuit", false);             //Race 20
+        vector.emplace_back("race_bin_01/1_1_106_circuit", false);             //Race 21
 
-    //Section for Ming tracks
-    promptedForRaces =
-    {
-        std::make_pair("race_bin_06/6_3_101_knockout", false),
-        std::make_pair("race_bin_06/6_1_101_circuit", false),
-        std::make_pair("race_bin_06/6_5_101_speedtrap", false),
-        std::make_pair("race_bin_06/6_2_101_sprint", false),
-        std::make_pair("race_bin_06/6_3_102_knockout", false),
-        std::make_pair("race_bin_06/6_1_103_circuit", false),
-        std::make_pair("race_bin_06/6_1_104_circuit", false),
-        std::make_pair("race_bin_06/6_3_103_knockout", false),
-        std::make_pair("race_bin_06/6_1_105_circuit", false)
-    };
-
-    promptedForExtraRaces = { std::make_pair("race_bin_06/6_1_102_circuit", false) };
-
-    newAdditions = promptUser(promptedForRaces, promptedForExtraRaces, "\nAdd Ming tracks? Y/N\n >> ",
-                              "\nAdd extra Ming track? Y/N\n >> ", originalNumberOfMingRacesPtr);
-
-    if ( !newAdditions.empty() )
-    { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
-
-    //Section for Webster tracks
-    promptedForRaces =
-    {
-        std::make_pair("race_bin_05/5_3_101_knockout", false),
-        std::make_pair("race_bin_05/5_1_106_circuit", false),
-        std::make_pair("race_bin_05/5_1_101_circuit", false),
-        std::make_pair("race_bin_05/5_3_102_knockout", false),
-        std::make_pair("race_bin_05/5_2_101_sprint", false),
-        std::make_pair("race_bin_05/5_2_102_sprint", false),
-        std::make_pair("race_bin_05/5_1_102_circuit", false),
-        std::make_pair("race_bin_05/5_1_103_circuit", false),
-        std::make_pair("race_bin_05/5_3_103_knockout", false),
-        std::make_pair("race_bin_05/5_1_104_circuit", false),
-        std::make_pair("race_bin_05/5_1_105_circuit", false)
-    };
-
-    newAdditions = promptUser(promptedForRaces, "\nAdd Webster tracks? Y/N\n >> ", originalNumberOfWebsterRacesPtr);
-
-    if ( !newAdditions.empty() )
-    { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
-
-    //Section for JV tracks
-    promptedForRaces =
-    {
-        std::make_pair("race_bin_04/4_1_101_circuit", false),
-        std::make_pair("race_bin_04/4_3_101_knockout", false),
-        std::make_pair("race_bin_04/4_1_102_circuit", false),
-        std::make_pair("race_bin_04/4_2_101_sprint", false),
-        std::make_pair("race_bin_04/4_3_102_knockout", false),
-        std::make_pair("race_bin_04/4_1_103_circuit", false),
-        std::make_pair("race_bin_04/4_1_104_circuit", false),
-        std::make_pair("race_bin_04/4_2_102_sprint", false),
-        std::make_pair("race_bin_04/4_3_103_knockout", false),
-        std::make_pair("race_bin_04/4_3_104_knockout", false),
-        std::make_pair("race_bin_04/4_2_103_sprint", false)
-    };
-
-    newAdditions = promptUser(promptedForRaces, "\nAdd JV tracks? Y/N\n >> ", originalNumberOfJVRacesPtr);
-
-    if ( !newAdditions.empty() )
-    { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
-
-    //Section for Ronnie tracks
-    promptedForRaces =
-    {
-        std::make_pair("race_bin_03/3_1_101_circuit", false),
-        std::make_pair("race_bin_03/3_1_102_circuit", false),
-        std::make_pair("race_bin_03/3_5_101_speedtrap", false),
-        std::make_pair("race_bin_03/3_3_101_knockout", false),
-        std::make_pair("race_bin_03/3_1_103_circuit", false),
-        std::make_pair("race_bin_03/3_3_102_knockout", false),
-        std::make_pair("race_bin_03/3_2_101_sprint", false),
-        std::make_pair("race_bin_03/3_1_104_circuit", false),
-        std::make_pair("race_bin_03/3_3_103_knockout", false),
-        std::make_pair("race_bin_03/3_3_104_knockout", false)
-    };
-
-    newAdditions = promptUser(promptedForRaces, "\nAdd Ronnie tracks? Y/N\n >> ", originalNumberOfRonnieRacesPtr);
-
-    if ( !newAdditions.empty() )
-    { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
-
-    //Section for Bull tracks
-    promptedForRaces =
-    {
-        std::make_pair("race_bin_02/2_1_101_circuit", false),
-        std::make_pair("race_bin_02/2_1_105_circuit", false),
-        std::make_pair("race_bin_02/2_2_101_sprint", false),
-        std::make_pair("race_bin_02/2_1_102_circuit", false),
-        std::make_pair("race_bin_02/2_3_101_knockout", false),
-        std::make_pair("race_bin_02/2_5_101_speedtrap", false),
-        std::make_pair("race_bin_02/2_3_102_knockout", false),
-        std::make_pair("race_bin_02/2_1_103_circuit", false),
-        std::make_pair("race_bin_02/2_1_104_circuit", false),
-        std::make_pair("race_bin_02/2_3_103_knockout", false),
-        std::make_pair("race_bin_02/2_1_106_circuit", false)
-    };
-
-    newAdditions = promptUser(promptedForRaces, "\nAdd Bull tracks? Y/N\n >> ", originalNumberOfBullRacesPtr);
-
-    if ( !newAdditions.empty() )
-    { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
-
-    //Section for Razor tracks
-    promptedForRaces =
-    {
-        std::make_pair("race_bin_01/1_1_101_circuit", false),
-        std::make_pair("race_bin_01/1_1_102_circuit", false),
-        std::make_pair("race_bin_01/1_3_101_knockout", false),
-        std::make_pair("race_bin_01/1_1_103_circuit", false),
-        std::make_pair("race_bin_01/1_1_104_circuit", false),
-        std::make_pair("race_bin_01/1_3_102_knockout", false),
-        std::make_pair("race_bin_01/1_3_103_knockout", false),
-        std::make_pair("race_bin_01/1_3_104_knockout", false),
-        std::make_pair("race_bin_01/1_1_105_circuit", false),
-        std::make_pair("race_bin_01/1_1_106_circuit", false)
-    };
-
-    newAdditions = promptUser(promptedForRaces, "\nAdd Razor tracks? Y/N\n >> ", originalNumberOfRazorRacesPtr);
-
-    if ( !newAdditions.empty() )
-    { vector.insert(vector.end(), newAdditions.begin(), newAdditions.end()); }
+        *originalNumberOfRazorRacesPtr += 10;
+    }
 
     return vector;
 }

@@ -8,7 +8,7 @@
 #include "XoshiroCpp.hpp"
 
 /** Credit to Reputeless for the XoshiroCpp.hpp library, taken from
-    https://github.com/Reputeless/Xoshiro-cpp and used under the MIT license.       */
+    https://github.com/Reputeless/Xoshiro-cpp and used under the MIT license.   */
 
 std::vector<std::pair<std::string, bool>> promptUser(const std::vector<std::pair<std::string, bool>>& promptedForRaces,
                                                      const std::string& promptText, int* counterToIncrement)
@@ -20,9 +20,10 @@ std::vector<std::pair<std::string, bool>> promptUser(const std::vector<std::pair
     std::string answer;
     bool answerGiven = false;
 
+    std::cout << promptText;
+
     while ( !answerGiven )
     {
-        std::cout << promptText;
         std::cin >> answer;
 
         if ( answer == "Y" || answer == "y" )
@@ -36,6 +37,8 @@ std::vector<std::pair<std::string, bool>> promptUser(const std::vector<std::pair
         }
 
         else if ( answer == "N" || answer == "n" ) { answerGiven = true; }
+
+        else { std::cout << "\nBad input. Try again >> "; }
     }
 
     return returnVector;
@@ -53,9 +56,10 @@ std::vector<std::pair<std::string, bool>> promptUser(const std::vector<std::pair
     bool answerGiven = false;
     bool answerForExtraTracksGiven = false;
 
+    std::cout << promptText;
+
     while ( !answerGiven )
     {
-        std::cout << promptText;
         std::cin >> answer;
 
         if ( answer == "Y" || answer == "y" )
@@ -81,13 +85,48 @@ std::vector<std::pair<std::string, bool>> promptUser(const std::vector<std::pair
                 }
 
                 else if ( answer == "N" || answer == "n" ) { answerForExtraTracksGiven = true; }
+
+                else { std::cout << "\nBad input. Try again >> "; }
             }
         }
 
         else if ( answer == "N" || answer == "n" ) { answerGiven = true; }
+
+        else { std::cout << "\nBad input. Try again >> "; }
     }
 
     return returnVector;
+}
+
+bool askQuestionAboutSettings(const std::string& prompt)
+{
+    //Variables
+    std::string answer;
+    bool questionAnswered = false;
+    bool settingGiven;
+
+    std::cout << prompt;
+
+    while ( !questionAnswered )
+    {
+        std::cin >> answer;
+
+        if ( answer == "Y" || answer == "y" )
+        {
+            settingGiven = true;
+            questionAnswered = true;
+        }
+
+        else if ( answer == "N" || answer == "n" )
+        {
+            settingGiven = false;
+            questionAnswered = true;
+        }
+
+        else { std::cout << "\nBad input. Try again >> "; }
+    }
+
+    return settingGiven;
 }
 
 bool checkForField(int raceInteger, int checkType)

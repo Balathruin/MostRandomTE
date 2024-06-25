@@ -8,7 +8,7 @@
 #include <unordered_map>
 
 std::vector<std::pair<std::string, bool>> populateRacesCustomizable(int*, int*, int*, int*, int*, int*, int*,
-                                          int*, int*, int*, int*, int*, int*, int*, int*);
+                                          int*, int*, int*, int*, int*, int*, int*, int*, bool);
 
 std::unordered_map<std::string, int> createRaceMap();
 std::unordered_map<int, float> createDistanceMap();
