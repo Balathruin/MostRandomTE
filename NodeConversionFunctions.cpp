@@ -26,7 +26,7 @@ void resetPerformanceMarkers()
 
     std::array<std::string, 7>::iterator foundMarker;
     std::ofstream file;
-    file.open("Random.nfsms", std::ios_base::app);
+    file.open("TERandomized.nfsms", std::ios_base::app);
 
     file << std::string("# performance markers modified as needed").append("\n");
 
@@ -115,7 +115,7 @@ void resetVisualMarkers()
     //Variables and header
     std::array<std::string, 8>::iterator foundMarker;
     std::ofstream file;
-    file.open("Random.nfsms", std::ios_base::app);
+    file.open("TERandomized.nfsms", std::ios_base::app);
 
     file << std::string("# visual markers modified as needed").append("\n");
 
@@ -213,7 +213,7 @@ void resetRandomMarkers()
 
     std::array<std::string, 5>::iterator foundMarker;
     std::ofstream file;
-    file.open("Random.nfsms", std::ios_base::app);
+    file.open("TERandomized.nfsms", std::ios_base::app);
 
     file << std::string("# random markers modified as needed").append("\n");
 
@@ -288,7 +288,7 @@ void resetMilestones()
       * of every type of milestone. The remaining milestone nodes are used as templates.             */
 
     std::ofstream file;
-    file.open("Random.nfsms", std::ios_base::app);
+    file.open("TERandomized.nfsms", std::ios_base::app);
 
     //Header for function call
     file << std::string("# deleting old milestone nodes\n");
@@ -395,7 +395,7 @@ void convertCollectorsEditionRaces()
 {
     std::ofstream file;
 
-    file.open("Random.nfsms", std::ios_base::app);
+    file.open("TERandomized.nfsms", std::ios_base::app);
 
     file << std::string("# converting black edition races to regular races\n");
     file << std::string("delete_field gameplay race_bin_collectors/21_2_2_sprint CollectorsEditionRace\n");
@@ -413,7 +413,7 @@ void convertCollectorsEditionRaces()
 void createSpeedtrapTemplate()
 {
     std::ofstream file;
-    file.open("Random.nfsms", std::ios_base::app);
+    file.open("TERandomized.nfsms", std::ios_base::app);
 
     file << std::string("# copy one of the speedtraps to use as a template for race conversions").append("\n");
 
@@ -426,7 +426,7 @@ void createSpeedtrapTemplate()
 void deleteSpeedtrapTemplate()
 {
     std::ofstream file;
-    file.open("Random.nfsms", std::ios_base::app);
+    file.open("TERandomized.nfsms", std::ios_base::app);
 
     file << std::string("# delete the speedtrap template from earlier").append("\n");
     file << std::string("delete_node gameplay speedtrap_template").append("\n\n");
@@ -440,7 +440,7 @@ void deleteMilestoneTemplates()
       * templates from resetMilestones.                                                                 */
 
     std::ofstream file;
-    file.open("Random.nfsms", std::ios_base::app);
+    file.open("TERandomized.nfsms", std::ios_base::app);
 
     //Header for function call
     file << std::string("# deleting milestone template nodes\n");
@@ -463,7 +463,7 @@ void deleteMarkerTemplates()
 {
     //File variables
     std::ofstream file;
-    file.open("Random.nfsms", std::ios_base::app);
+    file.open("TERandomized.nfsms", std::ios_base::app);
 
     file << std::string("# deleting template marker nodes\n");
     file << std::string("delete_node gameplay templates/rewards/reward_add_impound_box").append("\n");

@@ -27,7 +27,7 @@ void randomizeFreeRoam()
     std::string newGPSTarget = freeRoamZones[pickRandomNumber(11, 14)];
     std::string newCareerStart = freeRoamZones[pickRandomNumber(0, 2)];
 
-    file.open("Random.nfsms", std::ios_base::app);
+    file.open("TERandomized.nfsms", std::ios_base::app);
     file << std::string("# free roam zones and the prologue drive to safehouse are randomized").append("\n");
 
     for ( int loop = 0; loop < numberOfZones; loop++ )

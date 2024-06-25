@@ -116,7 +116,7 @@ void randomizeOpponents(const std::array<std::string, 41>& regularOpponentList,
 {
     //Variables
     std::ofstream file;
-    file.open("Random.nfsms", std::ios_base::app);
+    file.open("TERandomized.nfsms", std::ios_base::app);
     int newSkillLevel;
     int averageSkillLevel = 30;
     double averageSkillLevelFloat = 30;
@@ -284,7 +284,7 @@ std::vector<std::pair<std::string, bool>> randomizePrologueRaces(int numberOfRac
     const std::string& pickedRogCar = aiCarList[pickRandomNumber(0, (int)aiCarList.size() - 1)];
     std::array<std::string, 12> fmvs = getListOfFMVs();
 
-    file.open("Random.nfsms", std::ios_base::app);
+    file.open("TERandomized.nfsms", std::ios_base::app);
 
     //Prologue Razor races and final chase are set to the chosen car
     file << std::string("# set car for events not in the pool and randomize scripted opponents").append("\n");
@@ -713,7 +713,7 @@ std::vector<std::pair<std::string, bool>> randomizeChapter(int regularRaces, int
     int chapterMilestones;
     int chapterSpeedtraps;
 
-    file.open("Random.nfsms", std::ios_base::app);
+    file.open("TERandomized.nfsms", std::ios_base::app);
 
     bossIndexes = updateNumberOfChapterRaces(fileReference, regularRaces,
            originalNumberOfRaces, bossRaces,
