@@ -112,7 +112,7 @@ std::vector<std::string> updateNumberOfChapterRaces(std::ofstream& file, int num
 void randomizeOpponents(const std::array<std::string, 41>& regularOpponentList,
                         const std::array<std::string, 18>& scriptedOpponentList,
                         const std::array<std::string, 6>& startingOpponentList,
-                        const std::array<std::string, 35>& aiCarList)
+                        const std::array<std::string, 73>& presetCarList)
 {
     //Variables
     std::ofstream file;
@@ -173,7 +173,7 @@ void randomizeOpponents(const std::array<std::string, 41>& regularOpponentList,
         if ( loop < 20 )
         {
             file << std::string("update_field gameplay ").append(fullOpponentList[loop])
-            .append(" PresetRide ").append(aiCarList[pickRandomNumber(0, (int)aiCarList.size() - 1)])
+            .append(" PresetRide ").append(presetCarList[pickRandomNumber(0, (int)presetCarList.size() - 1)])
             .append("\n");
         }
 
@@ -186,7 +186,7 @@ void randomizeOpponents(const std::array<std::string, 41>& regularOpponentList,
                 .append(" PresetRide").append("\n");
 
                 file << std::string("update_field gameplay ").append(fullOpponentList[loop])
-                .append(" PresetRide ").append(aiCarList[pickRandomNumber(0, (int) aiCarList.size() - 1)])
+                .append(" PresetRide ").append(presetCarList[pickRandomNumber(0, (int) presetCarList.size() - 1)])
                 .append("\n");
             }
         }
@@ -264,7 +264,7 @@ std::vector<std::pair<std::string, bool>> randomizePrologueRaces(int numberOfRac
                           const std::array<std::string, 41>& opponentList, std::array<std::string, 73> carList,
                           const std::unordered_map<int, float>& distanceMap,
                           const std::unordered_map<int, float>& timeMap,
-                          const std::array<std::string, 35>& aiCarList, bool allKnockoutsConvertedToCircuits,
+                          const std::array<std::string, 73>& presetCarList, bool allKnockoutsConvertedToCircuits,
                           bool allSpeedtrapsConvertedToSprints, bool maximumTrafficDensity,
                           bool copsOnAllTrackExpansionRaces)
 {
@@ -279,9 +279,9 @@ std::vector<std::pair<std::string, bool>> randomizePrologueRaces(int numberOfRac
     std::string emptyPostRaceActivityField;
     std::string pickedMarker;
     int copChance = pickRandomNumber(0, 75);
-    const std::string& pickedRazorCar = aiCarList[pickRandomNumber(0, (int)aiCarList.size() - 1)];
+    const std::string& pickedRazorCar = presetCarList[pickRandomNumber(0, (int)presetCarList.size() - 1)];
     std::string pickedPlayerCar = carList[pickRandomNumber(0, (int)carList.size() - 1)];
-    const std::string& pickedRogCar = aiCarList[pickRandomNumber(0, (int)aiCarList.size() - 1)];
+    const std::string& pickedRogCar = presetCarList[pickRandomNumber(0, (int)presetCarList.size() - 1)];
     std::array<std::string, 12> fmvs = getListOfFMVs();
 
     file.open("TERandomized.nfsms", std::ios_base::app);
@@ -687,12 +687,12 @@ std::vector<std::pair<std::string, bool>> randomizePrologue(int numberOfRaces, i
                  std::vector<std::pair<std::string, bool>> races, const std::unordered_map<std::string, int>& raceMap,
                  const std::array<std::string, 41>& opponentList, const std::array<std::string, 73>& carList,
                  const std::unordered_map<int, float>& distanceMap, const std::unordered_map<int, float>& timeMap,
-                 const std::array<std::string, 35>& aiCarList, bool allKnockoutsConvertedToCircuits,
+                 const std::array<std::string, 73>& presetCarList, bool allKnockoutsConvertedToCircuits,
                  bool allSpeedtrapsConvertedToSprints, bool maximumTrafficDensity, bool copsOnAllTrackExpansionRaces)
 {
     //Main function for prologue
     races = randomizePrologueRaces(numberOfRaces, races, raceCashValue, raceMap, opponentList,
-                carList, distanceMap, timeMap, aiCarList, allKnockoutsConvertedToCircuits,
+                carList, distanceMap, timeMap, presetCarList, allKnockoutsConvertedToCircuits,
                 allSpeedtrapsConvertedToSprints, maximumTrafficDensity, copsOnAllTrackExpansionRaces);
 
     return races;
@@ -872,8 +872,7 @@ int main()
     std::unordered_map<std::string, int> raceMap = createRaceMap();
     std::unordered_map<int, float> distanceMap = createDistanceMap();
     std::unordered_map<int, float> timeMap = createTimeMap();
-    std::array<std::string, 73> carList = getListOfPlayerCars();
-    std::array<std::string, 35> aiCarList = getListOfAICars();
+    std::array<std::string, 73> presetCarList = getListOfPresetCars();
     std::array<std::string, 41> opponentList = getListOfRegularOpponents();
     std::array<std::string, 18> scriptedOpponentList = getListOfScriptedOpponents();
     std::array<std::string, 6> startingOpponentList = getListOfStartingOpponents();
@@ -1036,7 +1035,7 @@ int main()
     int bountyGap = currentMinimumBounty;
 
     //Randomize all regular opponents from this function
-    randomizeOpponents(opponentList, scriptedOpponentList, startingOpponentList, aiCarList);
+    randomizeOpponents(opponentList, scriptedOpponentList, startingOpponentList, presetCarList);
 
     //Have all boroughs unlocked from start
     randomizeFreeRoam();
@@ -1057,7 +1056,7 @@ int main()
 
     //Prologue
     races = randomizePrologue(3, 10000, races, raceMap,
-                opponentList, carList, distanceMap, timeMap, aiCarList, allKnockoutsConvertedToCircuits,
+                opponentList, presetCarList, distanceMap, timeMap, presetCarList, allKnockoutsConvertedToCircuits,
                 allSpeedtrapsConvertedToSprints, maximumTrafficDensity, copsOnAllTrackExpansionRaces);
 
     //Sonny

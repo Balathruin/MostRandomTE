@@ -3525,27 +3525,18 @@ std::array<std::string, 6> getListOfStartingOpponents()
         "race_bin_15/opponent1", "race_bin_15/opponent2", "race_bin_15/opponent3" };
 }
 
-std::array<std::string, 73> getListOfPlayerCars()
+std::array<std::string, 73> getListOfPresetCars()
 {
     return std::array<std::string, 73> { "M3GTRCAREERSTART", "RAZORMUSTANG", "DDAYSUPRA", "OPM_MUSTANG_BOSS",
-        "OPM_WRX_VERSION2", "OPM_RX8_Version3", "BL15", "BL14", "BL13", "BL12", "BL11", "BL10", "BL9", "BL8",
-        "BL7", "BL6", "BL5", "BL4", "BL3", "BL2", "E3_DEMO_BMW", "CS_CAR_01", "CS_CAR_02", "CS_CAR_03",
-        "CS_CAR_04", "CS_CAR_05", "CS_CAR_06", "CS_CAR_07", "CS_CAR_08", "CS_CAR_09", "CS_CAR_10", "CS_CAR_11",
-        "CS_CAR_12", "CS_CAR_13", "CS_CAR_14", "CS_CAR_15", "CS_CAR_16", "CS_CAR_17", "CS_CAR_18", "CS_CAR_19",
-        "CS_CAR_20", "CS_CAR_21", "CS_CAR_22", "CS_CAR_23", "CS_CAR_24", "CS_CAR_26", "CS_CAR_27", "CS_CAR_28",
-        "CS_CAR_29", "CS_CAR_30", "CS_CAR_31", "CS_CAR_32", "CS_CAR_33", "CS_CAR_34", "CS_CAR_PIZZA",
-        "CS_CAR_MINIVAN", "CS_CAR_COPGTO", "CS_CAR_TAXI", "CS_CAR_HENCH", "CASTROLGT", "BONUS_C6R", "BONUS_GT2",
-        "BONUS_SL65", "CE_997S", "CE_C6R", "CE_CAMARO", "CE_CORVETTE", "CE_ELISE", "CE_GT2", "CE_GTRSTREET",
-        "CE_SL500", "CE_SL65", "CE_SUPRA" };
-}
-
-std::array<std::string, 35> getListOfAICars()
-{
-    return std::array<std::string, 35> { "M3GTRCAREERSTART", "RAZORMUSTANG", "DDAYSUPRA", "OPM_MUSTANG_BOSS",
-        "OPM_WRX_VERSION2", "OPM_RX8_Version3", "BL15", "BL14", "BL13", "BL12", "BL11", "BL10", "BL9", "BL8",
-        "BL7", "BL6", "BL5", "BL4","BL3", "BL2", "E3_DEMO_BMW", "CASTROLGT", "BONUS_C6R", "BONUS_GT2",
-        "BONUS_SL65", "CE_997S", "CE_C6R", "CE_CAMARO", "CE_CORVETTE", "CE_ELISE", "CE_GT2", "CE_GTRSTREET",
-        "CE_SL500", "CE_SL65", "CE_SUPRA" };
+        "OPM_MUSTANG_VERSION2", "GT_ELISE_ROG", "OPM_WRX_VERSION2", "OPM_RX8_Version3", "OPM_RX8_VERSION2",
+        "STARKY_HUTCH_EVO_ROG", "BL15", "BL14", "BL13", "BL12", "BL11", "BL10", "BL9", "BL8", "BL7", "BL6", "BL5",
+        "BL4","BL3", "BL2", "E3_DEMO_BMW", "E3_DEMO_RX8", "CASTROLGT", "BONUS_C6R", "BONUS_GT2", "BONUS_SL65",
+        "CE_997S", "CE_C6R", "CE_CAMARO", "CE_CORVETTE", "CE_ELISE", "CE_GT2", "CE_GTRSTREET", "CE_SL500", "CE_SL65",
+        "CE_SUPRA", "CS_CAR_01", "CS_CAR_02", "CS_CAR_03", "CS_CAR_04", "CS_CAR_05", "CS_CAR_06", "CS_CAR_07",
+        "CS_CAR_08", "CS_CAR_09", "CS_CAR_10", "CS_CAR_11", "CS_CAR_12", "CS_CAR_13", "CS_CAR_14", "CS_CAR_15",
+        "CS_CAR_16", "CS_CAR_17", "CS_CAR_18", "CS_CAR_19", "CS_CAR_20", "CS_CAR_22", "CS_CAR_24", "CS_CAR_COPGTO",
+        "CS_CAR_HENCH", "CS_CAR_26", "CS_CAR_27", "CS_CAR_28", "CS_CAR_29", "CS_CAR_30", "CS_CAR_31", "CS_CAR_32",
+        "CS_CAR_33", "CS_CAR_34" };
 }
 
 std::array<std::string, 69> getListOfEngineSounds()
