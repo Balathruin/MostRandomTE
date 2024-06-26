@@ -6,6 +6,6 @@
 #define MOSTRANDOM_PURSUITFUNCTIONS_H
 
 void randomizeMilestones(std::ofstream&, int, int, const std::string&);
-int randomizeSpeedtraps(std::ofstream&, int, const std::string&);
+void randomizeSpeedtraps(std::ofstream&, int, int, const std::string&);
 
 #endif //MOSTRANDOM_PURSUITFUNCTIONS_H

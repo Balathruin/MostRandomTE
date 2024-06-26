@@ -2247,7 +2247,7 @@ std::vector<std::array<std::string, 4>> getSpeedtrapCoordinatesForSprints(int ra
             {
                 std::array<std::string, 4> { "921.3778", "2191.046", "154.5059", "20" },
                 std::array<std::string, 4> { "1698.595", "1829.437", "168.3076", "25" },
-                std::array<std::string, 4> { "995.6763", "1721.156", "160.3623", "20" },
+                std::array<std::string, 4> { "995.6763", "1721.156", "153.3623", "20" },
                 std::array<std::string, 4> { "-417.6116", "2402.144", "243.8887", "20" },
                 std::array<std::string, 4> { "-100.0152", "3657.865", "226.5215", "20" },
                 std::array<std::string, 4> { "491.0581", "3342.904", "194.8252", "20" }
@@ -2299,7 +2299,7 @@ std::vector<std::array<std::string, 4>> getSpeedtrapCoordinatesForSprints(int ra
                 std::array<std::string, 4> { "2080.125", "1218.93", "151.1944", "20" },
                 std::array<std::string, 4> { "1559.921", "516.071", "86.68262", "20" },
                 std::array<std::string, 4> { "1004.636", "190.2112", "100.7393", "20" },
-                std::array<std::string, 4> { "1758.688", "-32.39207", "90.5293", "20" },
+                std::array<std::string, 4> { "1758.688", "-32.39207", "105.5293", "20" },
                 std::array<std::string, 4> { "2759.875", "609.0981", "45.48047", "20" }
             };
 

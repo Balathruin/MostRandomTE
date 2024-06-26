@@ -61,11 +61,53 @@ void randomizeMilestones(std::ofstream& file, int heatLevel, int bountyGap, cons
         .append(" Children ").append(std::to_string(numberOfNewMilestones)).append("\n");
     }
 
-    switch(pickRandomNumber(1, 3))
+    switch(heatLevel)
     {
-        case 1: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.2); break;
-        case 2: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.175); break;
-        default: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.15);
+        case 1:
+            switch(pickRandomNumber(1, 3))
+            {
+                case 1: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.20); break;
+                case 2: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.19); break;
+                default: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.18);
+            }
+
+            break;
+
+        case 2:
+            switch(pickRandomNumber(1, 3))
+            {
+                case 1: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.20); break;
+                case 2: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.18); break;
+                default: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.16);
+            }
+
+            break;
+
+        case 3:
+            switch(pickRandomNumber(1, 3))
+            {
+                case 1: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.21); break;
+                case 2: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.17); break;
+                default: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.14);
+            }
+
+            break;
+
+        case 4:
+            switch(pickRandomNumber(1, 2))
+            {
+                case 1: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.12); break;
+                default: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.11);
+            }
+
+            break;
+
+        default:
+            switch(pickRandomNumber(1, 2))
+            {
+                case 1: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.07); break;
+                default: newMilestoneBountyValue = static_cast<int>(bountyGap * 0.06);
+            }
     }
 
     //Select and randomize between 2 and 4 milestones
@@ -257,7 +299,7 @@ void randomizeMilestones(std::ofstream& file, int heatLevel, int bountyGap, cons
     file << std::string("\n");
 }
 
-int randomizeSpeedtraps(std::ofstream& file, int bountyGap, const std::string& raceBin)
+void randomizeSpeedtraps(std::ofstream& file, int bountyGap, int heatLevel, const std::string& raceBin)
 {
     int numberOfSpeedtraps;
     int speedtrapBountyValue;
@@ -271,11 +313,48 @@ int randomizeSpeedtraps(std::ofstream& file, int bountyGap, const std::string& r
 
     file << std::string("# randomizing speedtrap bounty for ").append(raceBin).append("\n");
 
-    switch(pickRandomNumber(1, 3))
+    switch(heatLevel)
     {
-        case 1: speedtrapBountyValue = static_cast<int>(bountyGap * 0.20); break;
-        case 2: speedtrapBountyValue = static_cast<int>(bountyGap * 0.175); break;
-        default: speedtrapBountyValue = static_cast<int>(bountyGap * 0.15);
+        case 1:
+            switch(pickRandomNumber(1, 3))
+            {
+                case 1: speedtrapBountyValue = static_cast<int>(bountyGap * 0.16); break;
+                case 2: speedtrapBountyValue = static_cast<int>(bountyGap * 0.145); break;
+                default: speedtrapBountyValue = static_cast<int>(bountyGap * 0.13);
+            }
+
+            break;
+
+        case 2:
+            switch(pickRandomNumber(1, 3))
+            {
+                case 1: speedtrapBountyValue = static_cast<int>(bountyGap * 0.10); break;
+                case 2: speedtrapBountyValue = static_cast<int>(bountyGap * 0.08); break;
+                default: speedtrapBountyValue = static_cast<int>(bountyGap * 0.06);
+            }
+
+            break;
+
+        case 3:
+            switch(pickRandomNumber(1, 3))
+            {
+                case 1: speedtrapBountyValue = static_cast<int>(bountyGap * 0.12); break;
+                case 2: speedtrapBountyValue = static_cast<int>(bountyGap * 0.10); break;
+                default: speedtrapBountyValue = static_cast<int>(bountyGap * 0.08);
+            }
+
+            break;
+
+        case 4:
+            switch(pickRandomNumber(1, 2))
+            {
+                case 1: speedtrapBountyValue = static_cast<int>(bountyGap * 0.08); break;
+                default: speedtrapBountyValue = static_cast<int>(bountyGap * 0.07);
+            }
+
+            break;
+
+        default: speedtrapBountyValue = static_cast<int>(bountyGap * 0.05);
     }
 
     for ( int loop = 0; loop < numberOfSpeedtraps; loop++ )
@@ -286,6 +365,4 @@ int randomizeSpeedtraps(std::ofstream& file, int bountyGap, const std::string& r
     }
 
     file << std::string("\n");
-
-    return numberOfSpeedtraps;
 }

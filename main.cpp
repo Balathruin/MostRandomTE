@@ -41,6 +41,8 @@ std::vector<std::string> updateNumberOfChapterRaces(std::ofstream& file, int num
     std::vector<int> possibleMinimumRaceWins;
     float numberOfRacesFloat;
     numberOfRacesFloat = (float)numberOfRaces;
+    float minRaceRequirements;
+    float maxRaceRequirements;
 
     file << std::string("# changing number of races for ").append(raceBin).append("\n");
 
@@ -93,9 +95,18 @@ std::vector<std::string> updateNumberOfChapterRaces(std::ofstream& file, int num
 
     if ( numberOfRaces != 1 )
     {
+        if ( numberOfRaces < 15 )
+        { minRaceRequirements = 0.25; maxRaceRequirements = 0.50; }
+
+        else if ( numberOfRaces < 29 )
+        { minRaceRequirements = 0.20; maxRaceRequirements = 0.33; }
+
+        else { minRaceRequirements = 0.15; maxRaceRequirements = 0.25; }
+
         for ( int loop = 0; loop < numberOfRaces; loop++ )
         {
-            if ( ((float)loop + 1) / numberOfRacesFloat >= 0.25 && ((float)loop + 1) / numberOfRacesFloat <= 0.50 )
+            if ( ((float)loop + 1) / numberOfRacesFloat >= minRaceRequirements &&
+               ((float)loop + 1) / numberOfRacesFloat <= maxRaceRequirements )
             { possibleMinimumRaceWins.emplace_back(loop + 1); }
         }
     }
@@ -660,27 +671,15 @@ std::vector<std::pair<std::string, bool>> randomizeRaces(std::ofstream& file,
     return races;
 }
 
-void updatePursuitRequirements(std::ofstream& file, int totalMilestones, int minimumBounty, const std::string& raceBin)
+void updatePursuitRequirements(std::ofstream& file, int minimumBounty, const std::string& raceBin)
 {
-    std::vector<int> possibleMinimumMilestones;
-    float numberOfMilestonesFloat;
-    numberOfMilestonesFloat = (float)totalMilestones;
-
     file << std::string("# changing number of milestones and bounty for ").append(raceBin).append("\n");
 
     file << std::string("update_field gameplay ").append(raceBin).append(" RequiredBounty ")
     .append(std::to_string(minimumBounty)).append("\n");
 
-    for ( int loop = 0; loop < totalMilestones; loop++ )
-    {
-        if ( ((float)loop + 1) / numberOfMilestonesFloat >= 0.40 &&
-        ((float)loop + 1) / numberOfMilestonesFloat <= 0.80 )
-        { possibleMinimumMilestones.emplace_back(loop + 1); }
-    }
-
     file << std::string("update_field gameplay ").append(raceBin).append(" RequiredChallenges ")
-    .append(std::to_string(possibleMinimumMilestones[pickRandomNumber(0,
-    (int)possibleMinimumMilestones.size() - 1)])).append("\n\n");
+    .append(std::to_string(pickRandomNumber(4, 5))).append("\n\n");
 }
 
 std::vector<std::pair<std::string, bool>> randomizePrologue(int numberOfRaces, int raceCashValue,
@@ -710,8 +709,6 @@ std::vector<std::pair<std::string, bool>> randomizeChapter(int regularRaces, int
 {
     std::ofstream file;
     std::ofstream& fileReference = file;
-    int chapterMilestones;
-    int chapterSpeedtraps;
 
     file.open("TERandomized.nfsms", std::ios_base::app);
 
@@ -727,14 +724,12 @@ std::vector<std::pair<std::string, bool>> randomizeChapter(int regularRaces, int
 
     //Milestones are randomized next
     randomizeMilestones(fileReference, heatLevel, bountyGap, raceBin);
-    chapterMilestones = 4;
 
     //Speedtraps are next
-    chapterSpeedtraps = randomizeSpeedtraps(fileReference, bountyGap, raceBin);
+    randomizeSpeedtraps(fileReference, bountyGap, heatLevel, raceBin);
 
     //Change pursuit requirements based on last two function calls
-    updatePursuitRequirements(fileReference, chapterSpeedtraps + chapterMilestones,
-           minimumBounty, raceBin);
+    updatePursuitRequirements(fileReference, minimumBounty, raceBin);
 
     //All done
     file.close();
@@ -788,7 +783,7 @@ int main()
     std::vector<std::pair<std::string, bool>> races;
     bool answerGiven = false;
 
-    std::cout << "Welcome to the Track Expansion v0.6.2 randomizer!" << std::endl;
+    std::cout << "Welcome to the Track Expansion v0.6.2 randomizer!\n" << std::endl;
     std::cout << "Choose an option:" << std::endl;
     std::cout << "1: Easy install script" << std::endl;
     std::cout << "2: Custom install script" << std::endl;
@@ -854,10 +849,17 @@ int main()
             std::cout << std::endl;
 
             std::cout << "The script will be created as TERandomized.nfsms. If a file with the same name" << std::endl;
-            std::cout << "is in the same directory, this program will add to it. Make sure you have moved" << std::endl;
-            std::cout << "out or deleted any old scripts before running the program. After the program" << std::endl;
-            std::cout << "is finished running, import the generated script into vlted. There should be" << std::endl;
-            std::cout << "no errors." << std::endl;
+            std::cout << "is in the same directory, this program will add to it. Make sure you have" << std::endl;
+            std::cout << "moved out or deleted any old scripts before running the program. After the" << std::endl;
+            std::cout << "program is finished running, import the generated script into vlted. There" << std::endl;
+            std::cout << "should be no errors." << std::endl;
+            std::cout << std::endl;
+
+            std::cout << "It is highly recommended you use a different save file for each randomizer" << std::endl;
+            std::cout << "script and back up the GLOBAL folder before applying a randomizer script." << std::endl;
+            std::cout << "Avoid using save files for vanilla or other mods, they may become unusable." << std::endl;
+            std::cout << "To restore your game, replace the randomized GLOBAL folder with the one you" << std::endl;
+            std::cout << "backed up." << std::endl;
             std::cout << std::endl;
 
             std::cout << "Select another option >> ";
@@ -1150,7 +1152,7 @@ int main()
     numberOfBossRacesForBoss = bossRacesResult.second;
     currentRaceVariation = bossRacesResult.first;
 
-    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 200000, previousMinimumBounty + 400000);
+    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 225000, previousMinimumBounty + 450000);
     bountyGap = currentMinimumBounty - previousMinimumBounty;
     previousMinimumBounty = currentMinimumBounty;
 
@@ -1169,7 +1171,7 @@ int main()
     numberOfBossRacesForBoss = bossRacesResult.second;
     currentRaceVariation = bossRacesResult.first;
 
-    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 200000, previousMinimumBounty + 400000);
+    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 225000, previousMinimumBounty + 450000);
     bountyGap = currentMinimumBounty - previousMinimumBounty;
     previousMinimumBounty = currentMinimumBounty;
 
@@ -1188,7 +1190,7 @@ int main()
     numberOfBossRacesForBoss = bossRacesResult.second;
     currentRaceVariation = bossRacesResult.first;
 
-    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 200000, previousMinimumBounty + 400000);
+    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 225000, previousMinimumBounty + 450000);
     bountyGap = currentMinimumBounty - previousMinimumBounty;
     previousMinimumBounty = currentMinimumBounty;
 
@@ -1207,7 +1209,7 @@ int main()
     numberOfBossRacesForBoss = bossRacesResult.second;
     currentRaceVariation = bossRacesResult.first;
 
-    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 400000, previousMinimumBounty + 1000000);
+    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 225000, previousMinimumBounty + 450000);
     bountyGap = currentMinimumBounty - previousMinimumBounty;
     previousMinimumBounty = currentMinimumBounty;
 
@@ -1215,7 +1217,7 @@ int main()
     races = randomizeChapter(numberOfRacesForBoss, *originalNumberOfKazeRacesPtr,
           numberOfBossRacesForBoss, 2, races, raceMap, opponentList, distanceMap, timeMap,
           "race_bin_07",10000, 24000, "race_bin_07/kira_nazakato",
-          startingOpponentList, 4, currentMinimumBounty, bountyGap, kazeIndexes,
+          startingOpponentList, 3, currentMinimumBounty, bountyGap, kazeIndexes,
           allKnockoutsConvertedToCircuits, allSpeedtrapsConvertedToSprints, maximumTrafficDensity,
           copsOnAllTrackExpansionRaces);
 
@@ -1226,7 +1228,7 @@ int main()
     numberOfBossRacesForBoss = bossRacesResult.second;
     currentRaceVariation = bossRacesResult.first;
 
-    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 400000, previousMinimumBounty + 1000000);
+    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 550000, previousMinimumBounty + 1000000);
     bountyGap = currentMinimumBounty - previousMinimumBounty;
     previousMinimumBounty = currentMinimumBounty;
 
@@ -1245,7 +1247,7 @@ int main()
     numberOfBossRacesForBoss = bossRacesResult.second;
     currentRaceVariation = bossRacesResult.first;
 
-    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 400000, previousMinimumBounty + 1000000);
+    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 550000, previousMinimumBounty + 1000000);
     bountyGap = currentMinimumBounty - previousMinimumBounty;
     previousMinimumBounty = currentMinimumBounty;
 
@@ -1264,7 +1266,7 @@ int main()
     numberOfBossRacesForBoss = bossRacesResult.second;
     currentRaceVariation = bossRacesResult.first;
 
-    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 400000, previousMinimumBounty + 1000000);
+    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 550000, previousMinimumBounty + 1000000);
     bountyGap = currentMinimumBounty - previousMinimumBounty;
     previousMinimumBounty = currentMinimumBounty;
 
@@ -1283,7 +1285,7 @@ int main()
     numberOfBossRacesForBoss = bossRacesResult.second;
     currentRaceVariation = bossRacesResult.first;
 
-    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 1000000, previousMinimumBounty + 3000000);
+    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 1500000, previousMinimumBounty + 3000000);
     bountyGap = currentMinimumBounty - previousMinimumBounty;
     previousMinimumBounty = currentMinimumBounty;
 
@@ -1302,7 +1304,7 @@ int main()
     numberOfBossRacesForBoss = bossRacesResult.second;
     currentRaceVariation = bossRacesResult.first;
 
-    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 1000000, previousMinimumBounty + 3000000);
+    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 1500000, previousMinimumBounty + 3000000);
     bountyGap = currentMinimumBounty - previousMinimumBounty;
     previousMinimumBounty = currentMinimumBounty;
 
@@ -1316,7 +1318,7 @@ int main()
 
     numberOfRacesForBoss = *originalNumberOfRazorRacesPtr + (currentRaceVariation * -1);
 
-    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 1000000, previousMinimumBounty + 3000000);
+    currentMinimumBounty = pickRandomNumber(previousMinimumBounty + 1500000, previousMinimumBounty + 3000000);
     bountyGap = currentMinimumBounty - previousMinimumBounty;
 
     //Razor
@@ -1332,7 +1334,7 @@ int main()
     deleteMilestoneTemplates();
     deleteMarkerTemplates();
 
-    std::cout << "\nScript successfully generated. Closing program in a few seconds.........";
+    std::cout << "\nScript successfully generated. Closing program in a few seconds.........\n";
 
     std::chrono::seconds timespan(5);
     std::this_thread::sleep_for(timespan);
