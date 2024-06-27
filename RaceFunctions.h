@@ -16,11 +16,11 @@ void convertBossRaceToRegularRace(std::ofstream&, const std::string&, int, int, 
 
 void convertToPrologueRace(std::ofstream&, const std::string&, int, int);
 void convertKnockoutToCircuit(std::ofstream&, const std::string&, int);
-void convertCircuitToKnockout(std::ofstream&, const std::string&, int);
+void convertCircuitToKnockout(std::ofstream&, const std::string&, int, bool);
 void randomizeCircuitLaps(std::ofstream&, const std::string&, int);
 
 void randomizeKOsAndCircuits(std::ofstream&, const std::string&, int, const std::string&,
-          const std::unordered_map<int, float>&, const std::unordered_map<int, float>&, int, int, bool);
+          const std::unordered_map<int, float>&, const std::unordered_map<int, float>&, int, int, bool, bool);
 
 void convertSprintToSpeedtrap(std::ofstream&, int, const std::string&);
 void convertSpeedtrapToSprint(std::ofstream&, int, const std::string&);
@@ -35,6 +35,6 @@ void randomizeRaceIntro(std::ofstream&, const std::string&, int, bool);
 
 void randomizeGeneralFields(std::ofstream&, const std::string&, const std::unordered_map<int, float>&,
                             const std::unordered_map<int, float>&, int, const std::string&, int, int, int,
-                            bool, bool, bool, bool);
+                            bool, bool, bool, bool, bool);
 
 #endif //MOSTRANDOM_RACEFUNCTIONS_H

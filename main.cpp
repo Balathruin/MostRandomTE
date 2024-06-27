@@ -275,8 +275,8 @@ std::vector<std::pair<std::string, bool>> randomizePrologueRaces(int numberOfRac
                           const std::array<std::string, 41>& opponentList, std::array<std::string, 73> carList,
                           const std::unordered_map<int, float>& distanceMap,
                           const std::unordered_map<int, float>& timeMap,
-                          const std::array<std::string, 73>& presetCarList, bool allKnockoutsConvertedToCircuits,
-                          bool allSpeedtrapsConvertedToSprints, bool maximumTrafficDensity,
+                          const std::array<std::string, 73>& presetCarList, bool allTEKnockoutsConvertedToCircuits,
+                          bool allTESpeedtrapsConvertedToSprints, bool maximumTrafficDensity,
                           bool copsOnAllTrackExpansionRaces)
 {
     //Initial variables
@@ -463,8 +463,8 @@ std::vector<std::pair<std::string, bool>> randomizePrologueRaces(int numberOfRac
         }
 
         randomizeGeneralFields(fileReference, raceName, distanceMap, timeMap, numberOfRaces, raceType,
-            raceInteger->second, loop, copChance, allKnockoutsConvertedToCircuits, allSpeedtrapsConvertedToSprints,
-            maximumTrafficDensity, copsOnAllTrackExpansionRaces);
+            raceInteger->second, loop, copChance, allTEKnockoutsConvertedToCircuits, allTESpeedtrapsConvertedToSprints,
+            maximumTrafficDensity, copsOnAllTrackExpansionRaces, true);
 
         //M3 is changed for a random preset car
         if ( !checkForField(raceInteger->second, 11) )
@@ -511,7 +511,7 @@ std::vector<std::pair<std::string, bool>> randomizeRaces(std::ofstream& file,
                           const std::unordered_map<int, float>& distanceMap,
                           const std::unordered_map<int, float>& timeMap,
                           const std::array<std::string, 6>& startingOpponentList,
-                          bool allKnockoutsConvertedToCircuits, bool allSpeedtrapsConvertedToSprints,
+                          bool allTEKnockoutsConvertedToCircuits, bool allTESpeedtrapsConvertedToSprints,
                           bool maximumTrafficDensity, bool copsOnAllTrackExpansionRaces)
 {
     //Initial variables
@@ -654,8 +654,8 @@ std::vector<std::pair<std::string, bool>> randomizeRaces(std::ofstream& file,
         { file << std::string("delete_field gameplay ").append(raceName).append(" IntroMovie").append("\n"); }
 
         randomizeGeneralFields(file, raceName, distanceMap, timeMap, numberOfRaces, raceType, raceInteger->second,
-            loop, copChance, allKnockoutsConvertedToCircuits, allSpeedtrapsConvertedToSprints,
-            maximumTrafficDensity, copsOnAllTrackExpansionRaces);
+            loop, copChance, allTEKnockoutsConvertedToCircuits, allTESpeedtrapsConvertedToSprints,
+            maximumTrafficDensity, copsOnAllTrackExpansionRaces, false);
 
         //A single newline character for any other function that writes to the file
         file << std::string("\n");
@@ -686,13 +686,13 @@ std::vector<std::pair<std::string, bool>> randomizePrologue(int numberOfRaces, i
                  std::vector<std::pair<std::string, bool>> races, const std::unordered_map<std::string, int>& raceMap,
                  const std::array<std::string, 41>& opponentList, const std::array<std::string, 73>& carList,
                  const std::unordered_map<int, float>& distanceMap, const std::unordered_map<int, float>& timeMap,
-                 const std::array<std::string, 73>& presetCarList, bool allKnockoutsConvertedToCircuits,
-                 bool allSpeedtrapsConvertedToSprints, bool maximumTrafficDensity, bool copsOnAllTrackExpansionRaces)
+                 const std::array<std::string, 73>& presetCarList, bool allTEKnockoutsConvertedToCircuits,
+                 bool allTESpeedtrapsConvertedToSprints, bool maximumTrafficDensity, bool copsOnAllTrackExpansionRaces)
 {
     //Main function for prologue
     races = randomizePrologueRaces(numberOfRaces, races, raceCashValue, raceMap, opponentList,
-                carList, distanceMap, timeMap, presetCarList, allKnockoutsConvertedToCircuits,
-                allSpeedtrapsConvertedToSprints, maximumTrafficDensity, copsOnAllTrackExpansionRaces);
+                carList, distanceMap, timeMap, presetCarList, allTEKnockoutsConvertedToCircuits,
+                allTESpeedtrapsConvertedToSprints, maximumTrafficDensity, copsOnAllTrackExpansionRaces);
 
     return races;
 }
@@ -704,7 +704,7 @@ std::vector<std::pair<std::string, bool>> randomizeChapter(int regularRaces, int
              const std::string& raceBin, int raceCashValue, int bossRaceCashValue,
              const std::string& bossOpponentString, const std::array<std::string, 6>& startingOpponentList,
              int heatLevel, int minimumBounty, int bountyGap, std::vector<std::string> bossIndexes,
-             bool allKnockoutsConvertedToCircuits, bool allSpeedtrapsConvertedToSprints, bool maximumTrafficDensity,
+             bool allTEKnockoutsConvertedToCircuits, bool allTESpeedtrapsConvertedToSprints, bool maximumTrafficDensity,
              bool copsOnAllTrackExpansionRaces)
 {
     std::ofstream file;
@@ -719,8 +719,8 @@ std::vector<std::pair<std::string, bool>> randomizeChapter(int regularRaces, int
     //Main function that modifies all races for the blacklist member
     races = randomizeRaces(fileReference, regularRaces, bossRaces,
            bossRaceCashValue, raceBin, bossOpponentString, races, raceCashValue, raceMap, opponentList,
-           bossIndexes, distanceMap, timeMap, startingOpponentList, allKnockoutsConvertedToCircuits,
-           allSpeedtrapsConvertedToSprints, maximumTrafficDensity, copsOnAllTrackExpansionRaces);
+           bossIndexes, distanceMap, timeMap, startingOpponentList, allTEKnockoutsConvertedToCircuits,
+           allTESpeedtrapsConvertedToSprints, maximumTrafficDensity, copsOnAllTrackExpansionRaces);
 
     //Milestones are randomized next
     randomizeMilestones(fileReference, heatLevel, bountyGap, raceBin);
@@ -773,8 +773,8 @@ int main()
     int* originalNumberOfRazorRacesPtr = &originalNumberOfRazorRaces;
 
     //Track expansion custom install option variables
-    bool allKnockoutsConvertedToCircuits;
-    bool allSpeedtrapsConvertedToSprints;
+    bool allTEKnockoutsConvertedToCircuits;
+    bool allTESpeedtrapsConvertedToSprints;
     bool maximumTrafficDensity;
     bool copsOnAllTrackExpansionRaces;
 
@@ -818,10 +818,10 @@ int main()
                 originalNumberOfRazorRacesPtr, false);
 
             //Questions are asked about Track Expansion settings when the mod was installed
-            allKnockoutsConvertedToCircuits =
+            allTEKnockoutsConvertedToCircuits =
                     askQuestionAboutSettings("\nAll knockouts converted to circuits? Y/N\n >> ");
 
-            allSpeedtrapsConvertedToSprints =
+            allTESpeedtrapsConvertedToSprints =
                     askQuestionAboutSettings("\nAll speedtraps converted to sprints? Y/N\n >> ");
 
             maximumTrafficDensity =
@@ -1058,15 +1058,15 @@ int main()
 
     //Prologue
     races = randomizePrologue(3, 10000, races, raceMap,
-                opponentList, presetCarList, distanceMap, timeMap, presetCarList, allKnockoutsConvertedToCircuits,
-                allSpeedtrapsConvertedToSprints, maximumTrafficDensity, copsOnAllTrackExpansionRaces);
+                opponentList, presetCarList, distanceMap, timeMap, presetCarList, allTEKnockoutsConvertedToCircuits,
+                allTESpeedtrapsConvertedToSprints, maximumTrafficDensity, copsOnAllTrackExpansionRaces);
 
     //Sonny
     races = randomizeChapter(numberOfRacesForBoss, *originalNumberOfSonnyRacesPtr,
         numberOfBossRacesForBoss, 2, races, raceMap, opponentList, distanceMap, timeMap,
         "race_bin_15", 1500, 5000, "race_bin_15/tony_ho",
         startingOpponentList, 1, currentMinimumBounty, bountyGap, sonnyIndexes,
-        allKnockoutsConvertedToCircuits, allSpeedtrapsConvertedToSprints, maximumTrafficDensity,
+        allTEKnockoutsConvertedToCircuits, allTESpeedtrapsConvertedToSprints, maximumTrafficDensity,
         copsOnAllTrackExpansionRaces);
 
     numberOfRacesForBoss = returnNumberOfRaces(currentRaceVariation, *originalNumberOfTazRacesPtr);
@@ -1085,7 +1085,7 @@ int main()
         numberOfBossRacesForBoss, 2, races, raceMap, opponentList, distanceMap, timeMap,
         "race_bin_14", 2000, 6000, "race_bin_14/vince_kilic",
         startingOpponentList, 1, currentMinimumBounty, bountyGap, tazIndexes,
-        allKnockoutsConvertedToCircuits, allSpeedtrapsConvertedToSprints, maximumTrafficDensity,
+        allTEKnockoutsConvertedToCircuits, allTESpeedtrapsConvertedToSprints, maximumTrafficDensity,
         copsOnAllTrackExpansionRaces);
 
     numberOfRacesForBoss = returnNumberOfRaces(currentRaceVariation, *originalNumberOfVicRacesPtr);
@@ -1104,7 +1104,7 @@ int main()
         numberOfBossRacesForBoss, 2, races, raceMap, opponentList, distanceMap, timeMap,
         "race_bin_13", 2500, 6000, "race_bin_13/victor_vasquez",
         startingOpponentList, 1, currentMinimumBounty, bountyGap, vicIndexes,
-        allKnockoutsConvertedToCircuits, allSpeedtrapsConvertedToSprints, maximumTrafficDensity,
+        allTEKnockoutsConvertedToCircuits, allTESpeedtrapsConvertedToSprints, maximumTrafficDensity,
         copsOnAllTrackExpansionRaces);
 
     numberOfRacesForBoss = returnNumberOfRaces(currentRaceVariation, *originalNumberOfIzzyRacesPtr);
@@ -1123,7 +1123,7 @@ int main()
         numberOfBossRacesForBoss, 2, races, raceMap, opponentList, distanceMap, timeMap,
         "race_bin_12", 3000, 8000, "race_bin_12/isabel_diaz",
         startingOpponentList, 2, currentMinimumBounty, bountyGap, izzyIndexes,
-        allKnockoutsConvertedToCircuits, allSpeedtrapsConvertedToSprints, maximumTrafficDensity,
+        allTEKnockoutsConvertedToCircuits, allTESpeedtrapsConvertedToSprints, maximumTrafficDensity,
         copsOnAllTrackExpansionRaces);
 
     numberOfRacesForBoss = returnNumberOfRaces(currentRaceVariation, *originalNumberOfBigLouRacesPtr);
@@ -1142,7 +1142,7 @@ int main()
          numberOfBossRacesForBoss, 2, races, raceMap, opponentList, distanceMap,  timeMap,
          "race_bin_11", 4000, 10000, "race_bin_11/lou_park",
          startingOpponentList, 2, currentMinimumBounty, bountyGap, bigLouIndexes,
-         allKnockoutsConvertedToCircuits, allSpeedtrapsConvertedToSprints, maximumTrafficDensity,
+         allTEKnockoutsConvertedToCircuits, allTESpeedtrapsConvertedToSprints, maximumTrafficDensity,
          copsOnAllTrackExpansionRaces);
 
     numberOfRacesForBoss = returnNumberOfRaces(currentRaceVariation, *originalNumberOfBaronRacesPtr);
@@ -1161,7 +1161,7 @@ int main()
          numberOfBossRacesForBoss, 2, races, raceMap, opponentList, distanceMap, timeMap,
          "race_bin_10", 5000, 12000, "race_bin_10/karl_smit",
          startingOpponentList, 3, currentMinimumBounty, bountyGap, baronIndexes,
-         allKnockoutsConvertedToCircuits, allSpeedtrapsConvertedToSprints, maximumTrafficDensity,
+         allTEKnockoutsConvertedToCircuits, allTESpeedtrapsConvertedToSprints, maximumTrafficDensity,
          copsOnAllTrackExpansionRaces);
 
     numberOfRacesForBoss = returnNumberOfRaces(currentRaceVariation, *originalNumberOfEarlRacesPtr);
@@ -1180,7 +1180,7 @@ int main()
           numberOfBossRacesForBoss, 2, races, raceMap, opponentList, distanceMap, timeMap,
           "race_bin_09", 6000, 16000, "race_bin_09/pierre_dupont",
           startingOpponentList, 3, currentMinimumBounty, bountyGap, earlIndexes,
-          allKnockoutsConvertedToCircuits, allSpeedtrapsConvertedToSprints, maximumTrafficDensity,
+          allTEKnockoutsConvertedToCircuits, allTESpeedtrapsConvertedToSprints, maximumTrafficDensity,
           copsOnAllTrackExpansionRaces);
 
     numberOfRacesForBoss = returnNumberOfRaces(currentRaceVariation, *originalNumberOfJewelsRacesPtr);
@@ -1199,7 +1199,7 @@ int main()
           numberOfBossRacesForBoss, 2, races, raceMap, opponentList, distanceMap, timeMap,
           "race_bin_08",8000, 20000, "race_bin_08/jade_barrett",
           startingOpponentList, 3, currentMinimumBounty, bountyGap, jewelsIndexes,
-          allKnockoutsConvertedToCircuits, allSpeedtrapsConvertedToSprints, maximumTrafficDensity,
+          allTEKnockoutsConvertedToCircuits, allTESpeedtrapsConvertedToSprints, maximumTrafficDensity,
           copsOnAllTrackExpansionRaces);
 
     numberOfRacesForBoss = returnNumberOfRaces(currentRaceVariation, *originalNumberOfKazeRacesPtr);
@@ -1218,7 +1218,7 @@ int main()
           numberOfBossRacesForBoss, 2, races, raceMap, opponentList, distanceMap, timeMap,
           "race_bin_07",10000, 24000, "race_bin_07/kira_nazakato",
           startingOpponentList, 3, currentMinimumBounty, bountyGap, kazeIndexes,
-          allKnockoutsConvertedToCircuits, allSpeedtrapsConvertedToSprints, maximumTrafficDensity,
+          allTEKnockoutsConvertedToCircuits, allTESpeedtrapsConvertedToSprints, maximumTrafficDensity,
           copsOnAllTrackExpansionRaces);
 
     numberOfRacesForBoss = returnNumberOfRaces(currentRaceVariation, *originalNumberOfMingRacesPtr);
@@ -1237,7 +1237,7 @@ int main()
           numberOfBossRacesForBoss, 2, races, raceMap, opponentList, distanceMap, timeMap,
           "race_bin_06",12000, 28000, "race_bin_06/hector_domingo",
           startingOpponentList, 4, currentMinimumBounty, bountyGap, mingIndexes,
-          allKnockoutsConvertedToCircuits, allSpeedtrapsConvertedToSprints, maximumTrafficDensity,
+          allTEKnockoutsConvertedToCircuits, allTESpeedtrapsConvertedToSprints, maximumTrafficDensity,
           copsOnAllTrackExpansionRaces);
 
     numberOfRacesForBoss = returnNumberOfRaces(currentRaceVariation, *originalNumberOfWebsterRacesPtr);
@@ -1256,7 +1256,7 @@ int main()
           numberOfBossRacesForBoss, 3, races, raceMap, opponentList, distanceMap, timeMap,
           "race_bin_05",14000, 48000, "race_bin_05/wes_allen",
           startingOpponentList, 4, currentMinimumBounty, bountyGap, websterIndexes,
-          allKnockoutsConvertedToCircuits, allSpeedtrapsConvertedToSprints, maximumTrafficDensity,
+          allTEKnockoutsConvertedToCircuits, allTESpeedtrapsConvertedToSprints, maximumTrafficDensity,
           copsOnAllTrackExpansionRaces);
 
     numberOfRacesForBoss = returnNumberOfRaces(currentRaceVariation, *originalNumberOfJVRacesPtr);
@@ -1275,7 +1275,7 @@ int main()
           numberOfBossRacesForBoss, 3, races, raceMap, opponentList, distanceMap, timeMap,
           "race_bin_04", 16000, 54000, "race_bin_04/joe_vega",
           startingOpponentList, 4, currentMinimumBounty, bountyGap, jvIndexes,
-          allKnockoutsConvertedToCircuits, allSpeedtrapsConvertedToSprints, maximumTrafficDensity,
+          allTEKnockoutsConvertedToCircuits, allTESpeedtrapsConvertedToSprints, maximumTrafficDensity,
           copsOnAllTrackExpansionRaces);
 
     numberOfRacesForBoss = returnNumberOfRaces(currentRaceVariation, *originalNumberOfRonnieRacesPtr);
@@ -1294,7 +1294,7 @@ int main()
           numberOfBossRacesForBoss, 3, races, raceMap, opponentList, distanceMap, timeMap,
           "race_bin_03", 18000, 60000, "race_bin_03/ronnie_mccrea",
           startingOpponentList, 5, currentMinimumBounty, bountyGap, ronnieIndexes,
-          allKnockoutsConvertedToCircuits, allSpeedtrapsConvertedToSprints, maximumTrafficDensity,
+          allTEKnockoutsConvertedToCircuits, allTESpeedtrapsConvertedToSprints, maximumTrafficDensity,
           copsOnAllTrackExpansionRaces);
 
     numberOfRacesForBoss = returnNumberOfRaces(currentRaceVariation, *originalNumberOfBullRacesPtr);
@@ -1313,7 +1313,7 @@ int main()
           numberOfBossRacesForBoss, 3, races, raceMap, opponentList, distanceMap, timeMap,
           "race_bin_02", 20000, 75000, "race_bin_02/toro_sato",
           startingOpponentList, 5, currentMinimumBounty, bountyGap, bullIndexes,
-          allKnockoutsConvertedToCircuits, allSpeedtrapsConvertedToSprints, maximumTrafficDensity,
+          allTEKnockoutsConvertedToCircuits, allTESpeedtrapsConvertedToSprints, maximumTrafficDensity,
           copsOnAllTrackExpansionRaces);
 
     numberOfRacesForBoss = *originalNumberOfRazorRacesPtr + (currentRaceVariation * -1);
@@ -1326,7 +1326,7 @@ int main()
           5, races, raceMap, opponentList, distanceMap, timeMap, "race_bin_01",
           25000, 0, "race_bin_01/razor_callahan", startingOpponentList,
           5, currentMinimumBounty, bountyGap, razorIndexes,
-          allKnockoutsConvertedToCircuits, allSpeedtrapsConvertedToSprints, maximumTrafficDensity,
+          allTEKnockoutsConvertedToCircuits, allTESpeedtrapsConvertedToSprints, maximumTrafficDensity,
           copsOnAllTrackExpansionRaces);
 
     //Cleanup
@@ -1334,7 +1334,7 @@ int main()
     deleteMilestoneTemplates();
     deleteMarkerTemplates();
 
-    std::cout << "\nScript successfully generated. Closing program in a few seconds.........\n";
+    std::cout << "\nScript successfully generated. Closing program in a few seconds.........\n\n";
 
     std::chrono::seconds timespan(5);
     std::this_thread::sleep_for(timespan);
