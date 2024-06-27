@@ -167,22 +167,29 @@ void convertBossRaceToRegularRace(std::ofstream& file, const std::string& raceNa
     /** Called from randomizeRaces if a race chosen to be a regular race was originally
       * a boss race. Takes data for its lines from randomizeRaces as arguments.            */
 
+    //Single variable for calculations
+    int cashForRace;
+
     //This field is always present in boss races, no need to check
     file << std::string("delete_field gameplay ").append(raceName).append(" RivalBestTime").append("\n");
 
     //Boss races except for the last one have no cash value, so a random one is added
     if ( raceType != "drag" )
     {
+        cashForRace = pickRandomNumber(raceCashValue / 2, int(raceCashValue * 1.5));
+        if ( cashForRace < 1000 ) { cashForRace = 1000; }
+
         file << std::string("update_field gameplay ").append(raceName).append(" CashValue ")
-        .append(std::to_string(pickRandomNumber(raceCashValue / 2, int(raceCashValue * 1.5))))
-        .append("\n");
+        .append(std::to_string(cashForRace)).append("\n");
     }
 
     else
     {
+        cashForRace = pickRandomNumber(raceCashValue / 2, int(raceCashValue * 1.5))/4;
+        if ( cashForRace < 500 ) { cashForRace = 500; }
+
         file << std::string("update_field gameplay ").append(raceName).append(" CashValue ")
-        .append(std::to_string(pickRandomNumber(raceCashValue / 2, int(raceCashValue * 1.5))/4))
-        .append("\n");
+        .append(std::to_string(cashForRace)).append("\n");
     }
 
     //Inconsistent fields are checked and deleted here
@@ -398,7 +405,7 @@ void randomizeKOsAndCircuits(std::ofstream& file, const std::string& raceName, i
     //This block runs just if the race is a lap knockout
     else if ( raceType == "knockout" )
     {
-        if (!allTEKnockoutsConvertedToCircuits || raceInteger < 175 )
+        if ( !allTEKnockoutsConvertedToCircuits || raceInteger < 175 )
         {
             //Guaranteed conversion if intended to be a boss or prologue race
             if ( loop > numberOfRaces - 1 || isPrologueRace )
@@ -418,7 +425,7 @@ void randomizeKOsAndCircuits(std::ofstream& file, const std::string& raceName, i
             }
         }
 
-        if ( !convertedToCircuit && raceInteger < 175 )
+        if ( !convertedToCircuit )
         {
             file << std::string("update_field gameplay ").append(raceName)
             .append(" NumLaps 3").append("\n");
@@ -809,7 +816,7 @@ void randomizeGeneralFields(std::ofstream& file, const std::string& raceName,
         }
 
         file << std::string("update_field gameplay ").append(raceName).append(" TrafficLevel ")
-        .append(std::to_string(pickRandomNumber(0, 100))).append("\n");
+        .append(std::to_string(pickRandomNumber(0, 50))).append("\n");
     }
 
     //Roll for converting one race type to a different, similar one

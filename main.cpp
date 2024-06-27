@@ -289,7 +289,7 @@ std::vector<std::pair<std::string, bool>> randomizePrologueRaces(int numberOfRac
     std::string raceType;
     std::string emptyPostRaceActivityField;
     std::string pickedMarker;
-    int copChance = pickRandomNumber(0, 75);
+    int copChance = pickRandomNumber(0, 40);
     const std::string& pickedRazorCar = presetCarList[pickRandomNumber(0, (int)presetCarList.size() - 1)];
     std::string pickedPlayerCar = carList[pickRandomNumber(0, (int)carList.size() - 1)];
     const std::string& pickedRogCar = presetCarList[pickRandomNumber(0, (int)presetCarList.size() - 1)];
@@ -449,7 +449,7 @@ std::vector<std::pair<std::string, bool>> randomizePrologueRaces(int numberOfRac
         .append(fmvs[pickRandomNumber(0, (int)fmvs.size() - 1)]).append("\n");
 
         //Function responsible for intros is called for any non-tollbooth race
-        if ( raceType != "tollbooth" && raceName != "16_1_1_circuit" )
+        if ( raceType != "tollbooth" && raceType != "drag" && raceName != "16_1_1_circuit" )
         {
             switch(loop)
             {
@@ -521,7 +521,7 @@ std::vector<std::pair<std::string, bool>> randomizeRaces(std::ofstream& file,
     std::string raceName;
     std::string raceType;
     std::string emptyPostRaceActivityField;
-    int copChance = pickRandomNumber(0, 75);
+    int copChance = pickRandomNumber(0, 40);
     std::vector<std::pair<std::string, int>> chosenTriggers;
     std::vector<std::string> triggerDetails;
     bool hasBossRaceTrigger = false;
@@ -625,7 +625,7 @@ std::vector<std::pair<std::string, bool>> randomizeRaces(std::ofstream& file,
         }
 
         //Randomize race intro after conversion
-        if ( raceType != "tollbooth" && raceName != "16_1_1_circuit" )
+        if ( raceType != "tollbooth" && raceType != "drag" && raceName != "16_1_1_circuit" )
         {
             if ( loop < numberOfRaces )
             { randomizeRaceIntro(file, raceName, raceInteger->second, false); }
@@ -819,16 +819,16 @@ int main()
 
             //Questions are asked about Track Expansion settings when the mod was installed
             allTEKnockoutsConvertedToCircuits =
-                    askQuestionAboutSettings("\nAll knockouts converted to circuits? Y/N\n >> ");
+                    askQuestionAboutSettings("\nTrack expansion knockouts converted to circuits? Y/N\n >> ");
 
             allTESpeedtrapsConvertedToSprints =
-                    askQuestionAboutSettings("\nAll speedtraps converted to sprints? Y/N\n >> ");
+                    askQuestionAboutSettings("\nTrack expansion speedtraps converted to sprints? Y/N\n >> ");
 
             maximumTrafficDensity =
-                    askQuestionAboutSettings("\nTraffic density set to maximum? Y/N\n >> ");
+                    askQuestionAboutSettings("\nTrack expansion race traffic density set to maximum? Y/N\n >> ");
 
             copsOnAllTrackExpansionRaces =
-                    askQuestionAboutSettings("\nCops enabled on all races? Y/N\n >> ");
+                    askQuestionAboutSettings("\nCops enabled on all track expansion races? Y/N\n >> ");
 
             answerGiven = true;
         }
