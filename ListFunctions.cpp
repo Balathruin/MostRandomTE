@@ -1932,358 +1932,277 @@ std::vector<std::array<std::string, 4>> getSpeedtrapCoordinatesForSprints(int ra
 
         //Sonny sprint
         case 2:
-            coordinates.reserve(10);
+            coordinates.reserve(4);
             coordinates =
             {
-                std::array<std::string, 4> { "918.9474", "2192.522", "154.6827", "15" },
-                std::array<std::string, 4> { "647.2923", "2267.94", "155.2334", "15" },
-                std::array<std::string, 4> { "339.7794", "2509.759", "165.8652", "15" },
-                std::array<std::string, 4> { "75.01915", "2813.721", "181.9326", "15" },
-                std::array<std::string, 4> { "-257.5334", "3106.408", "186.1562", "30" },
-                std::array<std::string, 4> { "-148.6559", "3643.847", "224.625", "20" },
-                std::array<std::string, 4> { "237.4056", "3646.836", "188.6806", "15" },
-                std::array<std::string, 4> { "386.9245", "3208.586", "188.7832", "15" },
-                std::array<std::string, 4> { "633.6992", "3420.494", "199.3398", "20" },
-                std::array<std::string, 4> { "727.4005", "3903.406", "210.5361", "20" }
+                std::array<std::string, 4> { "1032.5", "2133.5", "153", "20" },
+                std::array<std::string, 4> { "-143.5", "2862", "199", "25" },
+                std::array<std::string, 4> { "-152.5", "3642", "223.5", "25" },
+                std::array<std::string, 4> { "467", "3349.5", "195.5", "15" }
             };
 
             return coordinates;
 
         //Taz sprints
         case 7:
-            coordinates.reserve(11);
+            coordinates.reserve(5);
             coordinates =
             {
-                std::array<std::string, 4> { "-227.2868", "2900.204", "193.4189", "20" },
-                std::array<std::string, 4> { "371.6307", "2973.813", "182.6944", "15" },
-                std::array<std::string, 4> { "260.6436", "3275.008", "188.7246", "15" },
-                std::array<std::string, 4> { "636.1453", "4127.933", "201.7725", "20" },
-                std::array<std::string, 4> { "693.0433", "3663.954", "207.6631", "20" },
-                std::array<std::string, 4> { "730.2437", "3245.798", "199.502", "20" },
-                std::array<std::string, 4> { "1141.478", "3247.251", "199.9218", "35" },
-                std::array<std::string, 4> { "1301.541", "3659.868", "199.5752", "15" },
-                std::array<std::string, 4> { "1972.719", "3563.479", "159.5918", "25" },
-                std::array<std::string, 4> { "2119.642", "3031.964", "134.7988", "15" },
-                std::array<std::string, 4> { "2171.775", "2353.044", "147.1025", "25" }
+                std::array<std::string, 4> { "370.5", "2974", "183", "15" },
+                std::array<std::string, 4> { "336", "4132.5", "194", "20" },
+                std::array<std::string, 4> { "685.5", "3297.5", "201", "30" },
+                std::array<std::string, 4> { "1972.5", "3563.5", "160.5", "30" },
+                std::array<std::string, 4> { "2192", "2553", "133", "15" }
             };
 
             return coordinates;
 
         case 8:
-            coordinates.reserve(9);
+            coordinates.reserve(5);
             coordinates =
             {
-                std::array<std::string, 4> { "1243.259", "3512.799", "201.5566", "20" },
                 std::array<std::string, 4> { "1160.925", "3048.544", "199.8564", "15" },
-                std::array<std::string, 4> { "1513.042", "2528.768", "153.832", "15" },
-                std::array<std::string, 4> { "1636.158", "2322.748", "149.877", "15" },
+                std::array<std::string, 4> { "1513.042", "2528.768", "153.832", "20" },
                 std::array<std::string, 4> { "1309.661", "2143.88", "147.9023", "20" },
-                std::array<std::string, 4> { "1135.069", "2394.461", "154.6777", "15" },
-                std::array<std::string, 4> { "610.7286", "2750.194", "170.0684", "15" },
-                std::array<std::string, 4> { "520.1992", "2520.386", "169.7187", "20" },
-                std::array<std::string, 4> { "565.3503", "2315.002", "159.4199", "15" }
+                std::array<std::string, 4> { "809.5", "2746.5", "150.5", "15" },
+                std::array<std::string, 4> { "565.3503", "2315.002", "159.4199", "20" }
             };
 
             return coordinates;
 
         case 12:
-            coordinates.reserve(9);
+            coordinates.reserve(4);
             coordinates =
             {
-                std::array<std::string, 4> { "-134.1395", "2859.386", "197.3935", "20" },
-                std::array<std::string, 4> { "732.2509", "2805.393", "153.0117", "15" },
-                std::array<std::string, 4> { "887.9932", "2409.629", "151.537", "15" },
-                std::array<std::string, 4> { "1468.987", "2303.455", "141.991", "20" },
-                std::array<std::string, 4> { "1669.888", "2132.089", "139.4316", "25" },
-                std::array<std::string, 4> { "2170.72", "2264.667", "153.7481", "25" },
-                std::array<std::string, 4> { "2386.846", "2883.917", "143.6162", "25" },
-                std::array<std::string, 4> { "2521.552", "3490.231", "187.9471", "30" },
-                std::array<std::string, 4> { "2582.09", "4180.105", "251.1943", "30" }
+                std::array<std::string, 4> { "612.5", "2805", "169.5", "15" },
+                std::array<std::string, 4> { "1468", "2302.5", "143.5", "20" },
+                std::array<std::string, 4> { "2287.5", "2664.5", "133", "30" },
+                std::array<std::string, 4> { "2612", "4230", "259", "35" }
             };
 
             return coordinates;
 
         case 13:
-            coordinates.reserve(10);
+            coordinates.reserve(4);
             coordinates =
             {
-                std::array<std::string, 4> { "729.682", "3710.044", "199.8594", "20" },
-                std::array<std::string, 4> { "594.937", "3298.873", "199.7178", "15" },
-                std::array<std::string, 4> { "259.2776", "3277.874", "188.7344", "15" },
-                std::array<std::string, 4> { "110.8528", "3714.579", "195.8662", "15" },
-                std::array<std::string, 4> { "-213.2061", "3369.544", "212.0331", "20" },
-                std::array<std::string, 4> { "-226.8266", "2899.885", "193.4658", "20" },
-                std::array<std::string, 4> { "393.464", "2430.737", "164.8359", "15" },
-                std::array<std::string, 4> { "912.355", "2195.72", "155.1026", "15" },
-                std::array<std::string, 4> { "1245.154", "2138.188", "149.7275", "15" },
-                std::array<std::string, 4> { "1815.492", "2277.494", "145.0928", "15" }
+                std::array<std::string, 4> { "567", "3209", "202", "15" },
+                std::array<std::string, 4> { "-224.5", "3494.5", "216", "15" },
+                std::array<std::string, 4> { "393.5", "2430.5", "165", "20" },
+                std::array<std::string, 4> { "1592", "2273.5", "145", "15" }
             };
 
             return coordinates;
 
         //Vic sprints
         case 14:
-            coordinates.reserve(10);
+            coordinates.reserve(6);
             coordinates =
             {
-                std::array<std::string, 4> { "670.6066", "3610.698", "200.5244", "20" },
-                std::array<std::string, 4> { "588.9578", "3293.153", "200.3203", "15" },
-                std::array<std::string, 4> { "356.6913", "3047.893", "189.2695", "15" },
-                std::array<std::string, 4> { "491.2178", "2809.916", "178.9034", "15" },
-                std::array<std::string, 4> { "519.4848", "2521.248", "166.1739", "25" },
-                std::array<std::string, 4> { "595.3471", "2424.04", "162.1279", "15" },
-                std::array<std::string, 4> { "1892.167", "1910.006", "150.1299", "15" },
-                std::array<std::string, 4> { "2084.131", "1227.667", "150.959", "20" },
-                std::array<std::string, 4> { "1761.553", "1241.2", "140.3389", "20" },
-                std::array<std::string, 4> { "1313.944", "1428.054", "127.0585", "20" }
+                std::array<std::string, 4> { "588", "3292.5", "200", "20" },
+                std::array<std::string, 4> { "356.6913", "3047.893", "189", "15" },
+                std::array<std::string, 4> { "595.3471", "2424.04", "164", "15" },
+                std::array<std::string, 4> { "1323", "2286", "146.5", "25" },
+                std::array<std::string, 4> { "1892", "1910", "150", "20" },
+                std::array<std::string, 4> { "1761.553", "1241.2", "141", "20" }
             };
 
             return coordinates;
 
         case 21:
-            coordinates.reserve(12);
+            coordinates.reserve(6);
             coordinates =
             {
-                std::array<std::string, 4> { "1766.766", "2033.14", "148.9873", "25" },
-                std::array<std::string, 4> { "1315.61", "2144.044", "147.045", "15" },
-                std::array<std::string, 4> { "1129.863", "2425.04", "153.3515", "15" },
-                std::array<std::string, 4> { "370.1951", "2986.205", "183.9229", "15" },
-                std::array<std::string, 4> { "395.6783", "3212.337", "182.9941", "15" },
-                std::array<std::string, 4> { "685.743", "3413.195", "202.0458", "20" },
-                std::array<std::string, 4> { "1283.806", "3653.809", "198.2168", "20" },
-                std::array<std::string, 4> { "2089.124", "3236.629", "145.1064", "20" },
-                std::array<std::string, 4> { "2395.52", "2545.369", "122.1416", "15" },
+                std::array<std::string, 4> { "1130", "2425", "154", "15" },
+                std::array<std::string, 4> { "395.5", "3212.5", "188.5", "15" },
+                std::array<std::string, 4> { "1284", "3651", "199.5", "20" },
+                std::array<std::string, 4> { "2087.5", "3236.5", "147.5", "15" },
                 std::array<std::string, 4> { "2550.194", "1967.421", "106.4493", "15" },
-                std::array<std::string, 4> { "2129.077", "1284.677", "149.5302", "20" },
-                std::array<std::string, 4> { "1679.455", "1262.416", "137.7186", "15" }
+                std::array<std::string, 4> { "2035", "1158", "151.5", "20" }
             };
 
             return coordinates;
 
         case 22:
-            coordinates.reserve(9);
+            coordinates.reserve(4);
             coordinates =
             {
-                std::array<std::string, 4> { "557.4293", "2325.034", "160.0234", "20" },
-                std::array<std::string, 4> { "497.1766", "2565.516", "169.6855", "30" },
-                std::array<std::string, 4> { "611.4219", "2726.615", "171.6465", "20" },
-                std::array<std::string, 4> { "862.5847", "2662.773", "151.7773", "20" },
-                std::array<std::string, 4> { "1240.85", "2139.153", "149.8428", "20" },
-                std::array<std::string, 4> { "1473.83", "2153.437", "144.2432", "20" },
-                std::array<std::string, 4> { "1613.03", "2512.587", "151.0811", "20" },
-                std::array<std::string, 4> { "1200.404", "2972.296", "192.6377", "20" },
-                std::array<std::string, 4> { "1217.595", "3340.844", "204.0488", "20" }
+                std::array<std::string, 4> { "664.5", "2389", "158", "15" },
+                std::array<std::string, 4> { "982.5", "2585", "153.5", "15" },
+                std::array<std::string, 4> { "1704", "2346", "150.5", "15" },
+                std::array<std::string, 4> { "1200.5", "2777", "175", "15" }
             };
 
             return coordinates;
 
         //Izzy sprints
         case 28:
-            coordinates.reserve(9);
+            coordinates.reserve(4);
             coordinates =
             {
-                std::array<std::string, 4> { "1206.542", "2959.256", "195.792", "20" },
-                std::array<std::string, 4> { "1432.493", "2357.719", "144.1231", "20" },
-                std::array<std::string, 4> { "1473.398", "2148.207", "144.333", "20" },
-                std::array<std::string, 4> { "931.4027", "2186.257", "154.3701", "20" },
-                std::array<std::string, 4> { "390.8716", "2434.537", "165.1864", "20" },
-                std::array<std::string, 4> { "159.3222", "2782.846", "181.0225", "20" },
-                std::array<std::string, 4> { "284.4357", "2835.235", "179.6562", "20" },
-                std::array<std::string, 4> { "355.9077", "3046.74", "189.6738", "20" },
-                std::array<std::string, 4> { "233.7324", "3337.005", "188.7295", "20" }
+                std::array<std::string, 4> { "1483.5", "2162", "144.5", "15" },
+                std::array<std::string, 4> { "591", "2290.5", "159", "20" },
+                std::array<std::string, 4> { "357", "3047", "189.5", "15" },
+                std::array<std::string, 4> { "336", "4132.5", "194", "25" }
             };
 
             return coordinates;
 
         case 29:
-            coordinates.reserve(9);
+            coordinates.reserve(5);
             coordinates =
             {
-                std::array<std::string, 4> { "-462.4389", "2857.449", "202.4853", "30" },
-                std::array<std::string, 4> { "134.4955", "2050.079", "227.6347", "20" },
-                std::array<std::string, 4> { "1524.221", "1696.495", "166.4942", "20" },
-                std::array<std::string, 4> { "1874.274", "2080.781", "156.8798", "20" },
-                std::array<std::string, 4> { "2125.426", "2704.232", "121.5264", "20" },
-                std::array<std::string, 4> { "1610.244", "3818.848", "183.3486", "20" },
-                std::array<std::string, 4> { "1160.069", "3696.237", "200.2568", "20" },
-                std::array<std::string, 4> { "683.7432", "4000.387", "209.0527", "20" },
-                std::array<std::string, 4> { "691.3384", "4274.299", "206.838", "20" }
+                std::array<std::string, 4> { "134.5", "2051.5", "219", "20" },
+                std::array<std::string, 4> { "1524", "1700.5", "170.5", "30" },
+                std::array<std::string, 4> { "2121.5", "2704", "124.5", "30" },
+                std::array<std::string, 4> { "1610", "3809", "184.5", "15" },
+                std::array<std::string, 4> { "692.5", "4000.5", "214", "20" }
             };
 
             return coordinates;
 
         case 30:
-            coordinates.reserve(10);
+            coordinates.reserve(4);
             coordinates =
             {
-                std::array<std::string, 4> { "3876.244", "707.8425", "22.84278", "20" },
-                std::array<std::string, 4> { "3971.848", "434.7128", "33.24316", "20" },
-                std::array<std::string, 4> { "4440.777", "599.2013", "53.2041", "25" },
-                std::array<std::string, 4> { "4483.741", "832.8619", "58.94629", "20" },
-                std::array<std::string, 4> { "4743.761", "826.8389", "19.14355", "30" },
-                std::array<std::string, 4> { "4635.085", "1124.795", "10.43555", "20" },
-                std::array<std::string, 4> { "4384.807", "1434.583", "14.12109", "20" },
-                std::array<std::string, 4> { "4033.54", "2241.259", "32.75391", "20" },
-                std::array<std::string, 4> { "4068.643", "2853.294", "24.36426", "20" },
-                std::array<std::string, 4> { "3891.955", "3387.954", "13.12207", "25" }
+                std::array<std::string, 4> { "4261", "508", "52.5", "15" },
+                std::array<std::string, 4> { "4500", "1234.5", "24.5", "20" },
+                std::array<std::string, 4> { "4085", "2302", "33", "20" },
+                std::array<std::string, 4> { "4168.5", "3301", "15.5", "20" }
             };
 
             return coordinates;
 
         //Big Lou sprints
         case 32:
-            coordinates.reserve(9);
+            coordinates.reserve(5);
             coordinates =
             {
-                std::array<std::string, 4> { "4103.956", "-170.5849", "16.46582", "20" },
-                std::array<std::string, 4> { "4385.472", "50.77212", "9.012695", "15" },
-                std::array<std::string, 4> { "4680.667", "268.7491", "10.444336", "20" },
-                std::array<std::string, 4> { "4336.232", "597.399", "50.02832", "15" },
-                std::array<std::string, 4> { "4132.485", "705.2825", "55.45996", "20" },
-                std::array<std::string, 4> { "4135.575", "1002.327", "65.59666", "20" },
-                std::array<std::string, 4> { "3711.414", "1048.957", "54.26367", "15" },
-                std::array<std::string, 4> { "3094.094", "1073.008", "65.92188", "25" },
-                std::array<std::string, 4> { "3027.14", "1923.864", "103.3711", "30" }
+                std::array<std::string, 4> { "4385.5", "46", "9", "20" },
+                std::array<std::string, 4> { "4337", "597.399", "51", "15" },
+                std::array<std::string, 4> { "3711.414", "1046", "54.26367", "20" },
+                std::array<std::string, 4> { "3124.5", "1252", "77", "25" },
+                std::array<std::string, 4> { "2915", "1999", "114", "30" }
             };
 
             return coordinates;
 
         case 37:
-            coordinates.reserve(10);
+            coordinates.reserve(6);
             coordinates =
             {
-                std::array<std::string, 4> { "3336.415", "3615.32", "41.18751", "30" },
-                std::array<std::string, 4> { "4065.412", "2847.523", "23.88477", "30" },
-                std::array<std::string, 4> { "4085.03", "2290.792", "32.87696", "25" },
-                std::array<std::string, 4> { "4382.644", "1429.824", "14.10937", "20" },
-                std::array<std::string, 4> { "4800.435", "995.467", "12.49121", "20" },
-                std::array<std::string, 4> { "4706.543", "798.1749", "26.4668", "30" },
-                std::array<std::string, 4> { "4485.155", "965.7788", "58.58398", "20" },
-                std::array<std::string, 4> { "4438.696", "597.8345", "53.47559", "20" },
-                std::array<std::string, 4> { "3966.656", "430.8192", "31.2041", "20" },
-                std::array<std::string, 4> { "3875.864", "718.8088", "21.09863", "20" }
+                std::array<std::string, 4> { "4192", "3208", "17.5", "25" },
+                std::array<std::string, 4> { "4085", "2302", "33", "20" },
+                std::array<std::string, 4> { "4382.5", "1436", "14", "15" },
+                std::array<std::string, 4> { "4795.5", "995.5", "12.5", "20" },
+                std::array<std::string, 4> { "4423", "593.5", "52.5", "20" },
+                std::array<std::string, 4> { "3843.5", "508", "24", "25" }
             };
 
             return coordinates;
 
         //Baron sprints
         case 46:
-            coordinates.reserve(9);
+            coordinates.reserve(6);
             coordinates =
             {
-                std::array<std::string, 4> { "3021.856", "1915.133", "103.4297", "20" },
-                std::array<std::string, 4> { "3091.069", "1073.008", "65.93067", "20" },
+                std::array<std::string, 4> { "3176.5", "1743", "102.5", "20" },
+                std::array<std::string, 4> { "3098", "1073", "66", "25" },
                 std::array<std::string, 4> { "3710.265", "1046.2", "54.29004", "20" },
-                std::array<std::string, 4> { "4136.724", "1003.016", "65.62302", "20" },
-                std::array<std::string, 4> { "4132.485", "705.2825", "55.45996", "20" },
-                std::array<std::string, 4> { "4336.232", "601.741", "50.05762", "20" },
+                std::array<std::string, 4> { "4132.485", "705.2825", "56.5", "15" },
                 std::array<std::string, 4> { "4690.651", "261.7112", "9.004883", "20" },
-                std::array<std::string, 4> { "4367.796", "50.26893", "9.046875", "20" },
-                std::array<std::string, 4> { "4143.658", "-150.2335", "16.45215", "20" }
+                std::array<std::string, 4> { "4143.658", "-150.2335", "16.45215", "25" }
             };
 
             return coordinates;
 
         case 47:
-            coordinates.reserve(13);
+            coordinates.reserve(7);
             coordinates =
             {
-                std::array<std::string, 4> { "2346.335", "1289.311", "132.4012", "20" },
-                std::array<std::string, 4> { "2812.778", "968.6901", "77.47119", "20" },
-                std::array<std::string, 4> { "3707.364", "1047.466", "63.73804", "20" },
-                std::array<std::string, 4> { "3873.488", "698.6506", "23.4834", "20" },
-                std::array<std::string, 4> { "3949.139", "426.7924", "29.58012", "20" },
-                std::array<std::string, 4> { "4443.084", "602.6832", "56.68018", "20" },
-                std::array<std::string, 4> { "4517.928", "987.8903", "61.03461", "20" },
-                std::array<std::string, 4> { "4499.97", "1216.876", "25.6748", "25" },
-                std::array<std::string, 4> { "3937.606", "2224.862", "41.40723", "20" },
-                std::array<std::string, 4> { "3546.854", "2402.916", "22.26855", "20" },
-                std::array<std::string, 4> { "3677.772", "2833.426", "6.282227", "20" },
-                std::array<std::string, 4> { "3199.403", "3300.484", "36.76465", "20" },
-                std::array<std::string, 4> { "3095.171", "2592.551", "40.89355", "20" }
+                std::array<std::string, 4> { "2546.5", "1086.5", "90.5", "20" },
+                std::array<std::string, 4> { "3707.5", "1047.5", "55.5", "25" },
+                std::array<std::string, 4> { "4443", "602.5", "54.5", "20" },
+                std::array<std::string, 4> { "4501", "1217", "23.5", "25" },
+                std::array<std::string, 4> { "3935.5", "2226", "40.5", "25" },
+                std::array<std::string, 4> { "3679", "2833.5", "10.5", "15" },
+                std::array<std::string, 4> { "2805", "2992.5", "64", "25" }
             };
 
             return coordinates;
 
         case 50:
-            coordinates.reserve(9);
+            coordinates.reserve(6);
             coordinates =
             {
-                std::array<std::string, 4> { "789.8304", "4334.063", "234.9121", "30" },
-                std::array<std::string, 4> { "677.3022", "4019.977", "212.6358", "30" },
-                std::array<std::string, 4> { "916.7797", "3790.159", "202.0938", "15" },
-                std::array<std::string, 4> { "1149.681", "3069.881", "199.7412", "15" },
-                std::array<std::string, 4> { "1539.177", "2515.244", "151.5596", "20" },
-                std::array<std::string, 4> { "1984.578", "1959.909", "145.2959", "15" },
-                std::array<std::string, 4> { "2829.067", "669.582", "45.76074", "20" },
-                std::array<std::string, 4> { "2998.231", "-6.117301", "17.14254", "35" },
-                std::array<std::string, 4> { "3691.184", "-327.6299", "21.59274", "15" }
+                std::array<std::string, 4> { "683.5", "4020", "212.5", "20" },
+                std::array<std::string, 4> { "1149.5", "3070", "199.5", "15" },
+                std::array<std::string, 4> { "1792.5", "2415", "151.5", "20" },
+                std::array<std::string, 4> { "2110.5", "1486", "151.5", "15" },
+                std::array<std::string, 4> { "2832", "669.5", "46", "20" },
+                std::array<std::string, 4> { "3283.5", "-211", "15.5", "30" }
             };
 
             return coordinates;
 
         //Earl sprint
         case 61:
-            coordinates.reserve(9);
+            coordinates.reserve(8);
             coordinates =
             {
-                std::array<std::string, 4> { "4793.972", "774.312", "12.38184", "20" },
-                std::array<std::string, 4> { "4402.343", "1019.323", "63.10352", "20" },
-                std::array<std::string, 4> { "4312.198", "357.556", "37.30664", "20" },
-                std::array<std::string, 4> { "3850.916", "892.6737", "41.78125", "20" },
-                std::array<std::string, 4> { "3934.583", "1330.231", "53.375", "20" },
+                std::array<std::string, 4> { "3649.5", "3576", "35.5", "20" },
+                std::array<std::string, 4> { "3107", "2595", "41", "25" },
                 std::array<std::string, 4> { "3997.227", "2148.108", "25.69825", "20" },
-                std::array<std::string, 4> { "3106.976", "2603.62", "40.8623", "25" },
-                std::array<std::string, 4> { "3616.332", "3625.956", "29.41504", "25" },
-                std::array<std::string, 4> { "4166.567", "3100.76", "30.09277", "20" }
+                std::array<std::string, 4> { "3934.583", "1330.231", "54", "20" },
+                std::array<std::string, 4> { "3850.916", "892.6737", "42.5", "20" },
+                std::array<std::string, 4> { "4312.198", "357.556", "38", "20" },
+                std::array<std::string, 4> { "4402.343", "1019.323", "64", "20" },
+                std::array<std::string, 4> { "4793.972", "774.312", "13", "20" }
             };
 
             return coordinates;
 
         //Jewels sprints
         case 66:
-            coordinates.reserve(6);
+            coordinates.reserve(7);
             coordinates =
             {
                 std::array<std::string, 4> { "921.3778", "2191.046", "154.5059", "20" },
-                std::array<std::string, 4> { "1698.595", "1829.437", "168.3076", "25" },
-                std::array<std::string, 4> { "995.6763", "1721.156", "153.3623", "20" },
-                std::array<std::string, 4> { "-417.6116", "2402.144", "243.8887", "20" },
-                std::array<std::string, 4> { "-100.0152", "3657.865", "226.5215", "20" },
-                std::array<std::string, 4> { "491.0581", "3342.904", "194.8252", "20" }
+                std::array<std::string, 4> { "1698.595", "1829.437", "168.3076", "30" },
+                std::array<std::string, 4> { "995.6763", "1721.156", "153.3623", "30" },
+                std::array<std::string, 4> { "-417.6116", "2402.144", "243.8887", "30" },
+                std::array<std::string, 4> { "-100.0152", "3657.865", "226.5215", "25" },
+                std::array<std::string, 4> { "491.0581", "3342.904", "194.8252", "15" },
+                std::array<std::string, 4> { "1137", "3092", "199", "20" }
             };
 
             return coordinates;
 
         case 69:
-            coordinates.reserve(9);
+            coordinates.reserve(7);
             coordinates =
             {
-                std::array<std::string, 4> { "2922.35", "604.2132", "37.23242", "20" },
-                std::array<std::string, 4> { "1761.094", "-33.72891", "90.5", "20" },
-                std::array<std::string, 4> { "1016.281", "285.3146", "104.2354", "20" },
-                std::array<std::string, 4> { "1802.531", "576.2384", "93.01172", "20" },
-                std::array<std::string, 4> { "1972.493", "1006.612", "132.0538", "20" },
-                std::array<std::string, 4> { "2126.947", "2198.662", "164.1445", "20" },
-                std::array<std::string, 4> { "2436.45", "3422.405", "192.8828", "25" },
-                std::array<std::string, 4> { "1758.109", "4312.465", "219.7559", "25" },
-                std::array<std::string, 4> { "1089.748", "4437.092", "212.167", "25" }
+                std::array<std::string, 4> { "2922.5", "607", "38", "25" },
+                std::array<std::string, 4> { "1642", "-83.5", "101", "20" },
+                std::array<std::string, 4> { "1802", "576", "93.5", "20" },
+                std::array<std::string, 4> { "2066", "1523.5", "150.5", "25" },
+                std::array<std::string, 4> { "2127", "2198.5", "164.5", "30" },
+                std::array<std::string, 4> { "2446.5", "3432.5", "201", "35" },
+                std::array<std::string, 4> { "2008", "4379.5", "244", "35" }
             };
 
             return coordinates;
 
         //Kaze sprints
         case 71:
-            coordinates.reserve(7);
+            coordinates.reserve(5);
             coordinates =
             {
-                std::array<std::string, 4> { "2624.771", "4272.51", "259.0157", "30" },
-                std::array<std::string, 4> { "2360.804", "3324.683", "197.5361", "25" },
-                std::array<std::string, 4> { "2240.428", "2582.153", "131.9121", "20" },
-                std::array<std::string, 4> { "1851.476", "1951.398", "149.4697", "20" },
+                std::array<std::string, 4> { "2361", "3324.5", "206.5", "25" },
+                std::array<std::string, 4> { "1849.5", "1951.5", "149.5", "20" },
                 std::array<std::string, 4> { "2005.249", "1057.231", "139.9834", "20" },
                 std::array<std::string, 4> { "1801.98", "576.4349", "93.01855", "20" },
-                std::array<std::string, 4> { "2021.62", "-138.7498", "110.0488", "20" }
+                std::array<std::string, 4> { "2020", "-138.5", "107.5", "20" }
             };
 
             return coordinates;
@@ -2292,35 +2211,28 @@ std::vector<std::array<std::string, 4>> getSpeedtrapCoordinatesForSprints(int ra
             coordinates.reserve(9);
             coordinates =
             {
-                std::array<std::string, 4> { "1094.084", "4436.212", "212.2891", "20" },
-                std::array<std::string, 4> { "1758.011", "4310.501", "219.7559", "30" },
-                std::array<std::string, 4> { "2434.295", "3422.83", "192.9707", "30" },
-                std::array<std::string, 4> { "2126.33", "2197.729", "164.2608", "20" },
-                std::array<std::string, 4> { "2080.125", "1218.93", "151.1944", "20" },
+                std::array<std::string, 4> { "1094.084", "4436.212", "215.5", "30" },
+                std::array<std::string, 4> { "2542.5", "4526", "262.5", "35" },
+                std::array<std::string, 4> { "2434.295", "3422.83", "200", "35" },
+                std::array<std::string, 4> { "2126.33", "2197.729", "164.2608", "30" },
+                std::array<std::string, 4> { "2080.125", "1218.93", "151.1944", "25" },
                 std::array<std::string, 4> { "1559.921", "516.071", "86.68262", "20" },
                 std::array<std::string, 4> { "1004.636", "190.2112", "100.7393", "20" },
-                std::array<std::string, 4> { "1758.688", "-32.39207", "105.5293", "20" },
-                std::array<std::string, 4> { "2759.875", "609.0981", "45.48047", "20" }
+                std::array<std::string, 4> { "1758.688", "-32.39207", "105.5", "20" },
+                std::array<std::string, 4> { "2756", "606", "46.5", "25" }
             };
 
             return coordinates;
 
         case 81:
-            coordinates.reserve(12);
+            coordinates.reserve(5);
             coordinates =
             {
-                std::array<std::string, 4> { "2145.47", "2215.343", "160.5527", "20" },
-                std::array<std::string, 4> { "2520.698", "1763.646", "112.0498", "30" },
-                std::array<std::string, 4> { "2500.232", "1108.753", "98.46289", "20" },
-                std::array<std::string, 4> { "2695.183", "596.1105", "52.91504", "20" },
-                std::array<std::string, 4> { "2553.38", "10.24371", "96.0547", "25" },
-                std::array<std::string, 4> { "2577.787", "-339.2645", "115.8965", "25" },
-                std::array<std::string, 4> { "1719.465", "-152.0413", "133.5869", "20" },
-                std::array<std::string, 4> { "1535.658", "-95.8205", "99.61133", "20" },
-                std::array<std::string, 4> { "1089.474", "160.8677", "98.49809", "20" },
-                std::array<std::string, 4> { "1588.042", "185.681", "93.95117", "20" },
-                std::array<std::string, 4> { "1388.942", "366.3758", "99.18359", "20" },
-                std::array<std::string, 4> { "976.1771", "413.8442", "108.8809", "20" }
+                std::array<std::string, 4> { "2445.5", "2524", "123", "20" },
+                std::array<std::string, 4> { "2500", "1108", "99.5", "25" },
+                std::array<std::string, 4> { "2521", "230", "91", "20" },
+                std::array<std::string, 4> { "1536", "-95.5", "98.5", "20" },
+                std::array<std::string, 4> { "1388", "367.5", "104", "25" }
             };
 
             return coordinates;
@@ -2332,55 +2244,49 @@ std::vector<std::array<std::string, 4>> getSpeedtrapCoordinatesForSprints(int ra
                 std::array<std::string, 4> { "1242.524", "2137.573", "149.8017", "20" },
                 std::array<std::string, 4> { "1980.578", "1741.158", "150.501", "15" },
                 std::array<std::string, 4> { "2678.63", "790.3736", "69.21777", "25" },
-                std::array<std::string, 4> { "3436.222", "-337.1812", "14.79199", "30" },
-                std::array<std::string, 4> { "4325.552", "16.81068", "9.846677", "20" },
-                std::array<std::string, 4> { "4819.451", "809.3515", "14.83594", "20" },
-                std::array<std::string, 4> { "4281.265", "1328.468", "38.62012", "15" }
+                std::array<std::string, 4> { "3436", "-333", "15.5", "30" },
+                std::array<std::string, 4> { "4325.552", "16.81068", "9.846677", "25" },
+                std::array<std::string, 4> { "4819.451", "809.3515", "15.5", "20" },
+                std::array<std::string, 4> { "3869", "1105.5", "66.5", "15" }
             };
 
             return  coordinates;
 
         //Ming sprints
         case 83:
-            coordinates.reserve(7);
+            coordinates.reserve(4);
             coordinates =
             {
                 std::array<std::string, 4> { "1192.523", "-773.6458", "124.0781", "20" },
-                std::array<std::string, 4> { "1727.031", "-663.2106", "115.666", "20" },
-                std::array<std::string, 4> { "1779.915", "-24.77111", "104.0625", "20" },
-                std::array<std::string, 4> { "2128.433", "22.27049", "94.64063", "20" },
-                std::array<std::string, 4> { "1761.318", "375.2563", "92.89063", "20" },
-                std::array<std::string, 4> { "1481.271", "450.1915", "115.8877", "20" },
-                std::array<std::string, 4> { "1636.792", "997.9111", "122.1162", "20" }
+                std::array<std::string, 4> { "1779.915", "-24.77111", "104.5", "20" },
+                std::array<std::string, 4> { "1761.318", "377.5", "92.89063", "20" },
+                std::array<std::string, 4> { "1638.656", "712.4404", "121.8071", "25" }
             };
 
             return coordinates;
 
         case 86:
-            coordinates.reserve(6);
+            coordinates.reserve(4);
             coordinates =
             {
-                std::array<std::string, 4> { "1657.254", "822.4499", "123.291", "20" },
-                std::array<std::string, 4> { "1664.791", "-33.42774", "101.0752", "20" },
-                std::array<std::string, 4> { "1561.23", "-688.5742", "114.8926", "25" },
-                std::array<std::string, 4> { "358.3468", "-464.7075", "125.8887", "25" },
-                std::array<std::string, 4> { "363.3483", "-18.02285", "115.4884", "25" },
-                std::array<std::string, 4> { "956.8276", "416.8457", "110.1797", "20" }
+                std::array<std::string, 4> { "1657.5", "822.5", "124", "30" },
+                std::array<std::string, 4> { "1561", "-688.5", "116", "30" },
+                std::array<std::string, 4> { "407.5", "-515.5", "133.5", "30" },
+                std::array<std::string, 4> { "957", "418.5", "110.5", "20" }
             };
 
             return coordinates;
 
         case 90:
-            coordinates.reserve(7);
+            coordinates.reserve(6);
             coordinates =
             {
-                std::array<std::string, 4> { "2021.838", "-139.6848", "110.0957", "20" },
-                std::array<std::string, 4> { "1802.773", "576.3218", "93.01367", "20" },
+                std::array<std::string, 4> { "2119", "-89.5", "105", "20" },
+                std::array<std::string, 4> { "1802", "576.5", "93", "20" },
                 std::array<std::string, 4> { "2005.249", "1057.231", "139.9834", "20" },
-                std::array<std::string, 4> { "1851.476", "1951.398", "149.4697", "20" },
-                std::array<std::string, 4> { "2240.428", "2582.153", "131.9121", "20" },
-                std::array<std::string, 4> { "2360.804", "3324.683", "197.5361", "35" },
-                std::array<std::string, 4> { "2622.347", "4260.308", "258.0323", "35" }
+                std::array<std::string, 4> { "1980.5", "1725", "150", "20" },
+                std::array<std::string, 4> { "2355.5", "3082", "182.5", "35" },
+                std::array<std::string, 4> { "2252.5", "4516", "247.5", "35" }
             };
 
             return coordinates;
@@ -2390,153 +2296,129 @@ std::vector<std::array<std::string, 4>> getSpeedtrapCoordinatesForSprints(int ra
             coordinates.reserve(10);
             coordinates =
             {
-                std::array<std::string, 4> { "1521.057", "1155.492", "117.6865", "25" },
-                std::array<std::string, 4> { "-364.7754", "2356.698", "241.5479", "20" },
-                std::array<std::string, 4> { "-138.3705", "3646.626", "224.1143", "20" },
-                std::array<std::string, 4> { "629.2085", "4146.218", "198.5791", "20" },
-                std::array<std::string, 4> { "1779.739", "3769.392", "169.5869", "20" },
-                std::array<std::string, 4> { "1762.375", "2039.609", "148.0371", "35" },
-                std::array<std::string, 4> { "1197.741", "2982.079", "193.4541", "20" },
-                std::array<std::string, 4> { "894.2403", "3170.992", "199.3975", "20" },
-                std::array<std::string, 4> { "342.0208", "3092.73", "188.7441", "20" },
-                std::array<std::string, 4> { "610.6276", "2727.391", "170.9599", "20" }
+                std::array<std::string, 4> { "986", "1732.5", "153.5", "25" },
+                std::array<std::string, 4> { "-361", "2356.5", "241.5", "20" },
+                std::array<std::string, 4> { "-138.5", "3646.5, 223", "20" },
+                std::array<std::string, 4> { "633", "4146", "199", "20" },
+                std::array<std::string, 4> { "2018.5", "3549.5", "159.5", "20" },
+                std::array<std::string, 4> { "1760.5", "2039.5", "148", "35" },
+                std::array<std::string, 4> { "1362", "2822", "171.5", "20" },
+                std::array<std::string, 4> { "726", "3255.5", "199", "20" },
+                std::array<std::string, 4> { "339", "3092.5", "188.5", "20" },
+                std::array<std::string, 4> { "546", "2647.5", "166", "20" }
             };
 
             return coordinates;
 
         case 103:
-            coordinates.reserve(10);
+            coordinates.reserve(4);
             coordinates =
             {
-                std::array<std::string, 4> { "2509.52", "2497.671", "122.4208", "25" },
-                std::array<std::string, 4> { "2533.438", "1718.266", "117.0381", "35" },
-                std::array<std::string, 4> { "2476.298", "1113.672", "102.0938", "20" },
-                std::array<std::string, 4> { "2682.315", "791.5881", "68.54492", "30" },
-                std::array<std::string, 4> { "3020.413", "-16.46531", "19.22071", "35" },
-                std::array<std::string, 4> { "3326.444", "-309.7901", "16.79883", "20" },
-                std::array<std::string, 4> { "4207.369", "80.39259", "2.411133", "15" },
-                std::array<std::string, 4> { "3852.282", "886.8719", "41.00293", "20" },
-                std::array<std::string, 4> { "3454.844", "1244.703", "80.45313", "20" },
-                std::array<std::string, 4> { "3338.535", "1731.643", "105.3887", "20" }
+                std::array<std::string, 4> { "2476.5", "1114.5", "102.5", "20" },
+                std::array<std::string, 4> { "3283.5", "-211", "15.5", "30" },
+                std::array<std::string, 4> { "4207.5", "79.5", "13.5", "20" },
+                std::array<std::string, 4> { "3454.844", "1244.703", "80.45313", "20" }
             };
 
             return coordinates;
 
         case 106:
-            coordinates.reserve(9);
+            coordinates.reserve(5);
             coordinates =
             {
-                std::array<std::string, 4> { "4824.769", "818.5687", "21.10449", "20" },
-                std::array<std::string, 4> { "4338.974", "160.613", "19.49707", "20" },
-                std::array<std::string, 4> { "3779.361", "-305.3108", "17.90625", "20" },
-                std::array<std::string, 4> { "3000.168", "-5.882346", "19.26269", "30" },
-                std::array<std::string, 4> { "2776.275", "725.6134", "55.38477", "20" },
-                std::array<std::string, 4> { "2292.33", "1305.056", "146.2793", "20" },
-                std::array<std::string, 4> { "2081.125", "1718.344", "162.585", "20" },
-                std::array<std::string, 4> { "1509.561", "2534.324", "154.7051", "20" },
-                std::array<std::string, 4> { "1990.381", "2063.037", "144.5127", "20" }
+                std::array<std::string, 4> { "4338.974", "160.613", "19.49707", "15" },
+                std::array<std::string, 4> { "3283.5", "-211", "15.5", "30" },
+                std::array<std::string, 4> { "2726.5", "704.5", "55.5", "15" },
+                std::array<std::string, 4> { "2082", "1718.5", "162.5", "15" },
+                std::array<std::string, 4> { "1509.5", "2534.5", "155", "15" }
             };
 
             return coordinates;
 
         case 108:
-            coordinates.reserve(10);
+            coordinates.reserve(7);
             coordinates =
             {
-                std::array<std::string, 4> { "610.6276", "2727.391", "170.9599", "20" },
-                std::array<std::string, 4> { "342.9821", "3080.659", "189.2275", "20" },
-                std::array<std::string, 4> { "888.5839", "3171.73", "199.3965", "20" },
-                std::array<std::string, 4> { "1180.232", "3011.503", "198.1855", "20" },
-                std::array<std::string, 4> { "1743.441", "2057.177", "146.3945", "25" },
-                std::array<std::string, 4> { "1777.774", "3762.915", "168.875", "25" },
-                std::array<std::string, 4> { "627.0817", "4150.441", "198.8281", "20" },
-                std::array<std::string, 4> { "-138.3705", "3646.626", "224.1143", "20" },
-                std::array<std::string, 4> { "-363.409", "2357.869", "241.5235", "20" },
-                std::array<std::string, 4> { "994.8439", "1723.021", "153.8359", "20" }
+                std::array<std::string, 4> { "610.6276", "2727.391", "170.9599", "15" },
+                std::array<std::string, 4> { "891.5", "3174.5", "204.5", "25" },
+                std::array<std::string, 4> { "1564.5", "2242", "145.5", "20" },
+                std::array<std::string, 4> { "2078.5", "3283", "154", "15" },
+                std::array<std::string, 4> { "629", "4150.5", "198.5", "25" },
+                std::array<std::string, 4> { "-356.5", "2973.5", "190", "30" },
+                std::array<std::string, 4> { "994.8439", "1723.021", "153.8359", "25" }
             };
 
             return coordinates;
 
         //JV sprint
         case 115:
-            coordinates.reserve(12);
+            coordinates.reserve(9);
             coordinates =
             {
                 std::array<std::string, 4> { "976.1771", "413.8442", "108.8809", "20" },
-                std::array<std::string, 4> { "1388.942", "366.3758", "99.18359", "20" },
-                std::array<std::string, 4> { "1586.931", "184.1451", "93.91699", "20" },
-                std::array<std::string, 4> { "1089.474", "160.8677", "98.49809", "25" },
-                std::array<std::string, 4> { "1535.964", "-94.29073", "99.5", "15" },
-                std::array<std::string, 4> { "1719.465", "-152.0413", "133.5869", "20" },
-                std::array<std::string, 4> { "2576.919", "-338.6137", "115.9219", "25" },
-                std::array<std::string, 4> { "2553.746", "13.52119", "95.78126", "25" },
-                std::array<std::string, 4> { "2709.72", "598.3825", "52.58887", "20" },
+                std::array<std::string, 4> { "1584", "184", "94", "25" },
+                std::array<std::string, 4> { "1088.5", "161", "99.5", "20" },
+                std::array<std::string, 4> { "1721.5", "-152", "96.5", "25" },
+                std::array<std::string, 4> { "2576.919", "-338.6137", "115.9219", "30" },
+                std::array<std::string, 4> { "2709.72", "598.3825", "52.58887", "25" },
                 std::array<std::string, 4> { "2500.232", "1108.753", "98.46289", "20" },
                 std::array<std::string, 4> { "2520.698", "1763.646", "112.0498", "30" },
-                std::array<std::string, 4> { "2145.47", "2215.343", "160.5527", "25" }
+                std::array<std::string, 4> { "2145.47", "2215.343", "160.5527", "30" }
             };
 
             return coordinates;
 
         //Ronnie sprints
         case 123:
-            coordinates.reserve(7);
+            coordinates.reserve(6);
             coordinates =
             {
-                std::array<std::string, 4> { "3331.309", "3617.967", "37.60938", "20" },
-                std::array<std::string, 4> { "2915.188", "3023.835", "63.63086", "20" },
-                std::array<std::string, 4> { "3103.047", "2599.732", "40.94043", "25" },
-                std::array<std::string, 4> { "2538.102", "1954.67", "105.5889", "20" },
-                std::array<std::string, 4> { "2007.052", "1057.502", "140.2119", "20" },
-                std::array<std::string, 4> { "1801.94", "596.3895", "94.05957", "20" },
-                std::array<std::string, 4> { "995.4659", "221.4725", "102.1533", "20" }
+                std::array<std::string, 4> { "3163", "3129", "40", "15" },
+                std::array<std::string, 4> { "2990", "2480", "43.5", "25" },
+                std::array<std::string, 4> { "2527", "1754.5", "114", "30" },
+                std::array<std::string, 4> { "2132", "796.5", "131", "15" },
+                std::array<std::string, 4> { "1032.5", "126.5", "101.5", "20" },
+                std::array<std::string, 4> { "2448", "261.5", "91", "20" }
             };
 
             return coordinates;
 
         case 127:
-            coordinates.reserve(7);
+            coordinates.reserve(5);
             coordinates =
             {
-                std::array<std::string, 4> { "2011.476", "-134.4106", "104.1563", "20" },
-                std::array<std::string, 4> { "1800.17", "576.3218", "93.01172", "20" },
-                std::array<std::string, 4> { "2005.249", "1057.231", "139.9834", "20" },
-                std::array<std::string, 4> { "1880.91", "1920.266", "149.8974", "20" },
-                std::array<std::string, 4> { "2240.428", "2582.153", "131.9121", "20" },
-                std::array<std::string, 4> { "2379.766", "3356.098", "196.08", "30" },
-                std::array<std::string, 4> { "2623.366", "4393.721", "265.7617", "30" }
+                std::array<std::string, 4> { "2128.5", "307", "99", "20" },
+                std::array<std::string, 4> { "2005", "1057", "140.5", "20" },
+                std::array<std::string, 4> { "1881", "1920.5", "150.5", "20" },
+                std::array<std::string, 4> { "2355.5", "3082", "182.5", "35" },
+                std::array<std::string, 4> { "2623.5", "4393.5", "275", "35" }
             };
 
             return coordinates;
 
         case 133:
-            coordinates.reserve(7);
+            coordinates.reserve(6);
             coordinates =
             {
-                std::array<std::string, 4> { "2134.598", "2692.088", "123.3223", "20" },
-                std::array<std::string, 4> { "3020.17", "1912.663", "104.2197", "20" },
-                std::array<std::string, 4> { "4608.567", "1123.98", "13.03222", "20" },
-                std::array<std::string, 4> { "4061.515", "934.571", "59.30469", "20" },
-                std::array<std::string, 4> { "4330.065", "113.7581", "16.44629", "20" },
-                std::array<std::string, 4> { "3053.976", "-31.63036", "17.27929", "30" },
-                std::array<std::string, 4> { "1725.069", "-662.8195", "114.5", "25" }
+                std::array<std::string, 4> { "3182", "1812.5", "102", "20" },
+                std::array<std::string, 4> { "4538.5", "1123", "15", "20" },
+                std::array<std::string, 4> { "4248.5", "1034.5", "63.5", "20" },
+                std::array<std::string, 4> { "4327", "54", "10", "20" },
+                std::array<std::string, 4> { "3054", "-24.5", "18", "30" },
+                std::array<std::string, 4> { "2559", "-6", "112.5", "30" }
             };
 
             return coordinates;
 
         case 136:
-            coordinates.reserve(9);
+            coordinates.reserve(5);
             coordinates =
             {
                 std::array<std::string, 4> { "4045.412", "921.2703", "58.39453", "15" },
-                std::array<std::string, 4> { "4642.887", "1121.286", "11.37305", "20" },
-                std::array<std::string, 4> { "3722.703", "1298.985", "72.16698", "20" },
-                std::array<std::string, 4> { "2859.015", "988.7518", "78.00781", "20" },
+                std::array<std::string, 4> { "4643", "1122.5", "11.5", "20" },
+                std::array<std::string, 4> { "3723", "1300", "72", "20" },
                 std::array<std::string, 4> { "2293.575", "1300.333", "146.0538", "20" },
-                std::array<std::string, 4> { "2010.297", "1062.017", "141.1143", "20" },
-                std::array<std::string, 4> { "1801.616", "600.6136", "94.43262", "20" },
-                std::array<std::string, 4> { "2182.013", "186.2478", "80.24609", "20" },
-                std::array<std::string, 4> { "1763.749", "-29.95683", "90.5", "20" }
+                std::array<std::string, 4> { "2128.5", "307", "99", "20" }
             };
 
             return coordinates;
@@ -2546,13 +2428,13 @@ std::vector<std::array<std::string, 4>> getSpeedtrapCoordinatesForSprints(int ra
             coordinates.reserve(7);
             coordinates =
             {
-                std::array<std::string, 4> { "994.015", "232.354", "102.5693", "25" },
-                std::array<std::string, 4> { "1801.94", "596.3895", "94.05957", "25" },
-                std::array<std::string, 4> { "2007.052", "1057.502", "140.2119", "20" },
-                std::array<std::string, 4> { "2540.304", "1957.851", "105.7998", "20" },
-                std::array<std::string, 4> { "3120.457", "2609.163", "49.46973", "35" },
-                std::array<std::string, 4> { "2953.734", "2993.214", "57.72754", "20" },
-                std::array<std::string, 4> { "3331.071", "3618.003", "37.65234", "25" }
+                std::array<std::string, 4> { "2673.5", "469.5", "70", "20" },
+                std::array<std::string, 4> { "1529.5", "-96", "98", "20" },
+                std::array<std::string, 4> { "1801.94", "596.3895", "94.05957", "20" },
+                std::array<std::string, 4> { "2534.5", "1698", "122", "30" },
+                std::array<std::string, 4> { "3120.5", "2600", "41", "25" },
+                std::array<std::string, 4> { "2957.5", "2996", "59", "15" },
+                std::array<std::string, 4> { "3331", "3618", "40", "15" }
             };
 
             return coordinates;
@@ -2561,31 +2443,30 @@ std::vector<std::array<std::string, 4>> getSpeedtrapCoordinatesForSprints(int ra
             coordinates.reserve(7);
             coordinates =
             {
-                std::array<std::string, 4> { "2545.093", "1961.012", "106.1162", "20" },
-                std::array<std::string, 4> { "2812.677", "3026.861", "61.71289", "15" },
-                std::array<std::string, 4> { "3632.76", "2619.8", "11.10254", "15" },
-                std::array<std::string, 4> { "3926.081", "2219.097", "38.91797", "15" },
-                std::array<std::string, 4> { "4311.945", "1332.048", "31.32227", "15" },
-                std::array<std::string, 4> { "3448.821", "1238.087", "80.21387", "15" },
+                std::array<std::string, 4> { "2805", "2313", "93", "25" },
+                std::array<std::string, 4> { "2914.5", "3027", "63.5", "15" },
+                std::array<std::string, 4> { "3630.5", "2938.5", "11", "15" },
+                std::array<std::string, 4> { "3925", "2220", "39", "25" },
+                std::array<std::string, 4> { "4312", "1333", "31.5", "25" },
+                std::array<std::string, 4> { "3450", "1238", "80", "20" },
                 std::array<std::string, 4> { "4118.835", "724.795", "54.61914", "15" }
             };
 
             return coordinates;
 
         case 152:
-            coordinates.reserve(11);
+            coordinates.reserve(10);
             coordinates =
             {
-                std::array<std::string, 4> { "2314.857", "932.59", "132.7686", "15" },
-                std::array<std::string, 4> { "1638.01", "999.5876", "122.0977", "25" },
-                std::array<std::string, 4> { "1748.355", "2049.513", "146.9756", "30" },
-                std::array<std::string, 4> { "527.1174", "2340.25", "161.623", "20" },
-                std::array<std::string, 4> { "220.058", "2839.601", "180.2275", "15" },
-                std::array<std::string, 4> { "246.0561", "3620.818", "187.917", "20" },
-                std::array<std::string, 4> { "1134.592", "4423.688", "214.0049", "25" },
-                std::array<std::string, 4> { "2260.479", "4521.984", "253.0771", "30" },
-                std::array<std::string, 4> { "2553.405", "3815.501", "226.6563", "35" },
-                std::array<std::string, 4> { "2437.83", "2528.435", "120.8857", "20" },
+                std::array<std::string, 4> { "1636", "999.5", "122.5", "25" },
+                std::array<std::string, 4> { "1749.5", "2050.5", "147", "30" },
+                std::array<std::string, 4> { "921.5", "2191", "155", "20" },
+                std::array<std::string, 4> { "220", "2836.5", "180.5", "15" },
+                std::array<std::string, 4> { "247.5", "3621", "188.5", "15" },
+                std::array<std::string, 4> { "1134.5", "4423.5", "219", "30" },
+                std::array<std::string, 4> { "2255.5", "4522", "248.5", "35" },
+                std::array<std::string, 4> { "2553.5", "3815.5", "233", "35" },
+                std::array<std::string, 4> { "2438", "2528.5", "122.5", "20" },
                 std::array<std::string, 4> { "3001.855", "1924.179", "107.1719", "25" }
             };
 
@@ -2593,48 +2474,48 @@ std::vector<std::array<std::string, 4>> getSpeedtrapCoordinatesForSprints(int ra
 
         //Razor sprints
         case 154:
-            coordinates.reserve(7);
+            coordinates.reserve(9);
             coordinates =
             {
-                std::array<std::string, 4> { "1091.964", "647.8892", "113.7383", "25" },
+                std::array<std::string, 4> { "967", "548", "115.5", "20" },
                 std::array<std::string, 4> { "1454.829", "1348.722", "125.8047", "20" },
-                std::array<std::string, 4> { "2038.331", "2885.37", "141.8662", "30" },
-                std::array<std::string, 4> { "689.9584", "3988.483", "216.164", "20" },
-                std::array<std::string, 4> { "-201.6377", "3226.595", "192.6211", "20" },
-                std::array<std::string, 4> { "-341.812", "3938.311", "239.0909", "25" },
-                std::array<std::string, 4> { "598.3944", "4550.684", "223.6309", "20" }
+                std::array<std::string, 4> { "1980.506", "1724.759", "150.2153", "20" },
+                std::array<std::string, 4> { "2043.5", "2885.5", "142", "30" },
+                std::array<std::string, 4> { "1466.443", "3742.286", "190", "20" },
+                std::array<std::string, 4> { "698", "3988.483", "214", "20" },
+                std::array<std::string, 4> { "341.5", "3085.5", "188", "20" },
+                std::array<std::string, 4> { "-342", "3938", "236", "25" },
+                std::array<std::string, 4> { "468.6606", "4527.372", "231", "25" }
             };
 
             return coordinates;
 
         case 155:
-            coordinates.reserve(7);
+            coordinates.reserve(10);
             coordinates =
             {
-                std::array<std::string, 4> { "4054.582", "2920.971", "30.08105", "20" },
+                std::array<std::string, 4> { "4054.582", "2925", "30.08105", "20" },
+                std::array<std::string, 4> { "3558", "2053.5", "68", "20" },
                 std::array<std::string, 4> { "3643.443", "1306.033", "81.2998", "20" },
-                std::array<std::string, 4> { "4229.982", "1260.079", "46.625", "20" },
-                std::array<std::string, 4> { "4699.709", "543.241", "9.671875", "20" },
-                std::array<std::string, 4> { "3106.605", "-33.30618", "13.61719", "20" },
-                std::array<std::string, 4> { "2636.196", "755.7601", "62.91601", "20" },
-                std::array<std::string, 4> { "1980.634", "1725.876", "150.7041", "20" }
+                std::array<std::string, 4> { "4229.982", "1262.5", "47", "20" },
+                std::array<std::string, 4> { "4700.5", "545", "9.671875", "20" },
+                std::array<std::string, 4> { "4329", "23", "9", "20" },
+                std::array<std::string, 4> { "3713.5", "-320.5", "21", "20" },
+                std::array<std::string, 4> { "3106.605", "-32", "13.61719", "25" },
+                std::array<std::string, 4> { "2640", "759", "63", "25" },
+                std::array<std::string, 4> { "2302", "1297.5", "146", "20" }
             };
 
             return coordinates;
 
         case 156:
-            coordinates.reserve(9);
+            coordinates.reserve(4);
             coordinates =
             {
-                std::array<std::string, 4> { "2956.667", "591.6778", "31.76758", "20" },
-                std::array<std::string, 4> { "2564.191", "308.5582", "85.21191", "20" },
-                std::array<std::string, 4> { "2098.772", "950.547", "125.6777", "25" },
-                std::array<std::string, 4> { "1226.783", "784.5218", "116.1973", "25" },
-                std::array<std::string, 4> { "537.397", "371.5119", "112.7119", "25" },
+                std::array<std::string, 4> { "2564", "308", "86.5", "20" },
+                std::array<std::string, 4> { "1227.5", "784.5", "116", "25" },
                 std::array<std::string, 4> { "337.2456", "-46.02396", "115.9004", "25" },
-                std::array<std::string, 4> { "369.3607", "-476.8636", "126.7666", "25" },
-                std::array<std::string, 4> { "1209.287", "-783.1482", "125.4199", "15" },
-                std::array<std::string, 4> { "1731.349", "-171.5293", "95.2373", "20" }
+                std::array<std::string, 4> { "1209.5", "-784", "125.5", "15" }
             };
 
             return coordinates;
@@ -2643,17 +2524,17 @@ std::vector<std::array<std::string, 4>> getSpeedtrapCoordinatesForSprints(int ra
             coordinates.reserve(11);
             coordinates =
             {
-                std::array<std::string, 4> { "2914.99", "2003.755", "113.6572", "30" },
-                std::array<std::string, 4> { "2444.71", "2522.113", "123.3222", "20" },
-                std::array<std::string, 4> { "2553.405", "3815.501", "226.6563", "30" },
-                std::array<std::string, 4> { "2552.619", "4515.849", "264.7412", "25" },
-                std::array<std::string, 4> { "1106.951", "4431.651", "212.8614", "20" },
-                std::array<std::string, 4> { "154.6939", "3839.064", "188.5869", "20" },
-                std::array<std::string, 4> { "220.058", "2839.601", "180.2275", "20" },
+                std::array<std::string, 4> { "2915", "1999", "113.5", "30" },
+                std::array<std::string, 4> { "2445", "2524", "122", "20" },
+                std::array<std::string, 4> { "2553.405", "3815.501", "233", "35" },
+                std::array<std::string, 4> { "2552.619", "4515.849", "262.5", "35" },
+                std::array<std::string, 4> { "1106.951", "4431.651", "215", "30" },
+                std::array<std::string, 4> { "161.5", "3839", "189", "20" },
+                std::array<std::string, 4> { "220", "2836.5", "180", "15" },
                 std::array<std::string, 4> { "527.1174", "2340.25", "161.623", "20" },
-                std::array<std::string, 4> { "1771.045", "2027.657", "148.8017", "25" },
-                std::array<std::string, 4> { "1637.671", "1000.336", "122.0713", "20" },
-                std::array<std::string, 4> { "2314.857", "932.59", "133.7686", "20" }
+                std::array<std::string, 4> { "1771.045", "2027.657", "149", "30" },
+                std::array<std::string, 4> { "1637.671", "1000.336", "122.5", "30" },
+                std::array<std::string, 4> { "2314.857", "932.5", "133", "20" }
             };
 
             return coordinates;
@@ -2662,82 +2543,68 @@ std::vector<std::array<std::string, 4>> getSpeedtrapCoordinatesForSprints(int ra
             coordinates.reserve(7);
             coordinates =
             {
-                std::array<std::string, 4> { "2483.41", "-518.9597", "132.8066", "25" },
-                std::array<std::string, 4> { "2643.953", "341.2476", "82.22459", "25" },
-                std::array<std::string, 4> { "4343.349", "178.8255", "19.27441", "20" },
-                std::array<std::string, 4> { "4061.515", "934.571", "59.30469", "25" },
-                std::array<std::string, 4> { "4636.692", "1123.586", "11.09375", "20" },
-                std::array<std::string, 4> { "3011.289", "1916.332", "110.123", "25" },
-                std::array<std::string, 4> { "2134.979", "2693.232", "122.9952", "35" }
+                std::array<std::string, 4> { "2644", "341.5", "85.5", "25" },
+                std::array<std::string, 4> { "3283.5", "-211", "15.5", "30" },
+                std::array<std::string, 4> { "4342.5", "179", "22", "20" },
+                std::array<std::string, 4> { "4061.5", "937", "60", "15" },
+                std::array<std::string, 4> { "4636.5", "1123", "12", "20" },
+                std::array<std::string, 4> { "3574", "1316.5", "80.5", "25" },
+                std::array<std::string, 4> { "2633", "2236", "108", "25" }
             };
 
             return coordinates;
 
         case 168:
-            coordinates.reserve(8);
+            coordinates.reserve(7);
             coordinates =
             {
-                std::array<std::string, 4> { "1128.374", "3724.939", "211.6504", "20" },
-                std::array<std::string, 4> { "-340.0385", "3880.324", "238.1221", "30" },
-                std::array<std::string, 4> { "1160.184", "3049.883", "199.7002", "20" },
-                std::array<std::string, 4> { "2133.702", "1455.354", "147.1582", "20" },
-                std::array<std::string, 4> { "3682.142", "1054.742", "57.57422", "20" },
-                std::array<std::string, 4> { "4131.563", "1024.649", "64.59668", "25" },
-                std::array<std::string, 4> { "4311.674", "670.6627", "34.29004", "25" },
-                std::array<std::string, 4> { "2361.781", "226.1072", "92.7793", "20" }
+                std::array<std::string, 4> { "588.5", "4548.5", "223.5", "20" },
+                std::array<std::string, 4> { "-26", "3667.5", "222", "15" },
+                std::array<std::string, 4> { "588", "3292.5", "199.5", "15" },
+                std::array<std::string, 4> { "1433", "2497.5", "157.5", "15" },
+                std::array<std::string, 4> { "1989", "2045.5", "144", "20" },
+                std::array<std::string, 4> { "2808.5", "973.5", "79", "20" },
+                std::array<std::string, 4> { "4132.5", "1024.5", "66", "15" }
             };
 
             return coordinates;
 
         //Prologue sprints
         case 170:
-            coordinates.reserve(6);
+            coordinates.reserve(3);
             coordinates =
             {
-                std::array<std::string, 4> { "1051.489", "449.1164", "107.3145", "20" },
-                std::array<std::string, 4> { "1646.948", "542.022", "89.66888", "20" },
-                std::array<std::string, 4> { "1807.978", "618.4438", "106.7948", "25" },
-                std::array<std::string, 4> { "2082.837", "1224.404", "149.5263", "20" },
-                std::array<std::string, 4> { "2306.271", "1301.342", "142.2041", "20" },
-                std::array<std::string, 4> { "2712.685", "886.0176", "85.79781", "20" }
+                std::array<std::string, 4> { "1803", "618.5", "96", "15" },
+                std::array<std::string, 4> { "2139", "1294.5", "149", "20" },
+                std::array<std::string, 4> { "2713.5", "886", "83.5", "20" }
             };
 
             return coordinates;
 
         case 171:
-            coordinates.reserve(9);
+            coordinates.reserve(3);
             coordinates =
             {
-                std::array<std::string, 4> { "2691.895", "594.6967", "55.57323", "25" },
-                std::array<std::string, 4> { "2675.015", "363.6713", "80.80369", "25" },
-                std::array<std::string, 4> { "2423.423", "538.7394", "90.90327", "15" },
-                std::array<std::string, 4> { "2327.354", "929.0919", "121.8642", "20" },
-                std::array<std::string, 4> { "1604.702", "658.0076", "121.5811", "20" },
-                std::array<std::string, 4> { "1454.518", "290.3804", "99.35154", "20" },
-                std::array<std::string, 4> { "1545.155", "-94.73048", "101.9454", "15" },
-                std::array<std::string, 4> { "1251.987", "-40.4714", "97.55575", "15" },
-                std::array<std::string, 4> { "1050.964", "445.5285", "110.1933", "15" }
+                std::array<std::string, 4> { "2327.5", "929.5", "134", "20" },
+                std::array<std::string, 4> { "1658", "26.5", "99", "20" },
+                std::array<std::string, 4> { "1051", "445.5", "107", "25" }
             };
 
             return coordinates;
 
         //Collectors edition sprints
         case 173:
-            coordinates.reserve(14);
+            coordinates.reserve(10);
             coordinates =
             {
-                std::array<std::string, 4> { "1988.909", "4367.445", "230.5", "20" },
                 std::array<std::string, 4> { "2507.224", "3868.502", "232.2305", "30" },
-                std::array<std::string, 4> { "2457.124", "2520.289", "122.0303", "15" },
                 std::array<std::string, 4> { "2848.753", "2409.61", "76.70801", "20" },
-                std::array<std::string, 4> { "2814.279", "3031.535", "61.58984", "15" },
                 std::array<std::string, 4> { "3708.155", "3490.401", "25.28125", "15" },
-                std::array<std::string, 4> { "4061.009", "2968.255", "33.49121", "15" },
-                std::array<std::string, 4> { "4328.876", "1515.571", "21.9834", "15" },
+                std::array<std::string, 4> { "4329", "1515.5", "21.5", "15" },
                 std::array<std::string, 4> { "4342.854", "180.237", "21.33691", "15" },
-                std::array<std::string, 4> { "2664.15", "354.9085", "83.76367", "15" },
+                std::array<std::string, 4> { "2664", "353", "84", "15" },
                 std::array<std::string, 4> { "361.916", "-468.2354", "126.165", "25" },
-                std::array<std::string, 4> { "1462.778", "1192.881", "116.7998", "20" },
+                std::array<std::string, 4> { "1460", "1193", "117", "20" },
                 std::array<std::string, 4> { "-566.2511", "2677.333", "230.3691", "20" },
                 std::array<std::string, 4> { "389.8765", "4514.552", "234.1826", "25" }
             };
@@ -2745,16 +2612,13 @@ std::vector<std::array<std::string, 4>> getSpeedtrapCoordinatesForSprints(int ra
             return coordinates;
 
         case 174:
-            coordinates.reserve(7);
+            coordinates.reserve(4);
             coordinates =
             {
-                std::array<std::string, 4> { "4207.762", "-121.5554", "13.13281", "20" },
                 std::array<std::string, 4> { "3402.981", "-179.9392", "12.4834", "15" },
-                std::array<std::string, 4> { "3365.51", "790.0809", "19.67871", "15" },
-                std::array<std::string, 4> { "3968.946", "785.3812", "39.91504", "15" },
-                std::array<std::string, 4> { "3923.051", "959.6981", "58.79297", "15" },
-                std::array<std::string, 4> { "2952.474", "1035.983", "67.19727", "20" },
-                std::array<std::string, 4> { "2425.672", "1153.64", "113.3741", "15" }
+                std::array<std::string, 4> { "3363.5", "790", "19.5", "15" },
+                std::array<std::string, 4> { "3923", "957.5", "58", "15" },
+                std::array<std::string, 4> { "2952.474", "1035.983", "67.19727", "20" }
             };
 
             return coordinates;
@@ -3031,11 +2895,11 @@ std::vector<std::string> getListOfRaceSpeedtraps(int raceInteger)
             return speedtrapNames;
 
         case 20:
-            speedtrapNames.reserve(5);
+            speedtrapNames.reserve(6);
             speedtrapNames =
             { "race_bin_13/13_5_2_speedtrap/speedtrap1", "race_bin_13/13_5_2_speedtrap/speedtrap2",
-              "race_bin_13/13_5_2_speedtrap/speedtrap3", "race_bin_13/13_5_2_speedtrap/speedtrap5",
-              "race_bin_13/13_5_2_speedtrap/speedtrap6" };
+              "race_bin_13/13_5_2_speedtrap/speedtrap3", "race_bin_13/13_5_2_speedtrap/speedtrap4",
+              "race_bin_13/13_5_2_speedtrap/speedtrap5", "race_bin_13/13_5_2_speedtrap/speedtrap6" };
 
             return speedtrapNames;
 
