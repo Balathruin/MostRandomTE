@@ -385,6 +385,7 @@ void resetMilestones()
     file << std::string("copy_node gameplay milestone_cops_destroyed milestone milestone_cops_immobilized\n");
     file << std::string("update_field gameplay milestone_cops_immobilized Name milestone_cops_immobilized\n");
     file << std::string("update_field gameplay milestone_cops_immobilized MilestoneName cops_destroyed_in_pursuit\n");
+    file << std::string("update_field milestonetypes cops_destroyed_in_pursuit LocalizationTag 4\n");
     file << std::string("copy_node gameplay milestones/templates/challenge_cops_destroyed "
                         "milestone_cops_immobilized milestones/templates/challenge_cops_immobilized\n\n");
 
